@@ -114,8 +114,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
 
       <main className="min-h-screen bg-white pb-20 pt-8 sm:pt-12">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {/* Breadcrumb Navigation */}
-          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
+          {/* Breadcrumb Navigation - Aligned to max-w-5xl */}
+          <nav aria-label="Breadcrumb" className="mx-auto max-w-5xl mb-6 flex flex-wrap items-center gap-1.5 text-xs text-slate-500">
             <Link href="/" className="hover:text-emerald-700 transition">
               Home
             </Link>
@@ -131,13 +131,13 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               {post.category}
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <span className="text-slate-800 font-medium truncate max-w-[200px] sm:max-w-xs">
+            <span className="text-slate-800 font-medium truncate max-w-[200px] sm:max-w-xs dark:text-slate-200">
               {post.title}
             </span>
           </nav>
 
-          {/* Article Header */}
-          <header className="mx-auto max-w-4xl text-center">
+          {/* Article Header - Stretched to Match Blog Image Width (max-w-5xl) */}
+          <header className="mx-auto max-w-5xl text-center">
             <div className="flex items-center justify-center gap-2">
               <Badge
                 variant={
@@ -167,18 +167,18 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               </Badge>
             </div>
 
-            <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-tight">
+            <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl leading-tight sm:leading-tight lg:leading-snug max-w-5xl mx-auto dark:text-white">
               {post.title}
             </h1>
 
-            <p className="mt-4 text-lg text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            <p className="mt-4 text-base sm:text-lg text-slate-600 leading-relaxed max-w-4xl mx-auto dark:text-slate-300">
               {post.excerpt}
             </p>
 
             {/* Author and Metadata Bar */}
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-500 border-y border-slate-100 py-3.5">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4 text-xs font-medium text-slate-500 border-y border-slate-100 py-3.5 dark:border-slate-800 dark:text-slate-400">
               <div className="flex items-center gap-2.5">
-                <div className="relative h-9 w-9 overflow-hidden rounded-full border border-slate-200 bg-slate-100">
+                <div className="relative h-9 w-9 overflow-hidden rounded-full border border-slate-200 bg-slate-100 dark:border-slate-700 dark:bg-slate-800">
                   <Image
                     src={post.author.avatar}
                     alt={post.author.name}
@@ -188,19 +188,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                   />
                 </div>
                 <div className="text-left">
-                  <span className="block font-bold text-slate-900">{post.author.name}</span>
-                  <span className="block text-[11px] text-slate-500">{post.author.role}</span>
+                  <span className="block font-bold text-slate-900 dark:text-white">{post.author.name}</span>
+                  <span className="block text-[11px] text-slate-500 dark:text-slate-400">{post.author.role}</span>
                 </div>
               </div>
 
-              <span className="hidden sm:inline text-slate-300">•</span>
+              <span className="hidden sm:inline text-slate-300 dark:text-slate-700">•</span>
 
               <div className="flex items-center gap-1.5">
                 <Calendar className="h-3.5 w-3.5" />
                 <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
               </div>
 
-              <span className="text-slate-300">•</span>
+              <span className="text-slate-300 dark:text-slate-700">•</span>
 
               <div className="flex items-center gap-1.5">
                 <Clock className="h-3.5 w-3.5" />
@@ -209,8 +209,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
             </div>
           </header>
 
-          {/* Featured Image */}
-          <div className="relative mx-auto mt-8 aspect-21/9 max-w-5xl overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-100 shadow-sm">
+          {/* Featured Image - max-w-5xl */}
+          <div className="relative mx-auto mt-8 aspect-21/9 max-w-5xl overflow-hidden rounded-3xl border border-slate-200/80 bg-slate-100 shadow-sm dark:border-slate-800 dark:bg-slate-900">
             <Image
               src={post.featuredImage}
               alt={post.title}
