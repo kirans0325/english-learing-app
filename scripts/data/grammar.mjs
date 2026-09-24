@@ -6,7 +6,7 @@ export const GRAMMAR_POSTS = [
     excerpt: 'Master the fundamental building blocks of the English language: functional syntax, open vs. closed classes, word-form derivation, and high-impact writing strategies to eliminate nominalizations.',
     content: `Every sentence in the English language, from a two-word nursery rhyme to a 500-page legal constitution, is constructed from eight fundamental categories of words: **The 8 Parts of Speech**. 
 
-Mastering these eight categories is not merely an academic exercise in labeling—it is the foundation of **functional syntax**. In English, words are classified not by what they look like in isolation, but by the **functional role** they perform within a living sentence. A single word like *“run”* can be a verb, a noun, or an adjective depending entirely on its syntactic position.
+Mastering these eight categories is not merely an academic exercise in labeling—it is the foundation of **functional syntax**. In English, words are classified not by what they look like in isolation, but by the **functional role** they perform within a living sentence. A single word like *"run"* can be a verb, a noun, or an adjective depending entirely on its syntactic position.
 
 In this masterclass, we will deconstruct the eight parts of speech, analyze open versus closed word classes, map word-form derivational suffixes, identify functional shifts, and apply executive writing strategies to eliminate weak nominalizations and ambiguity.
 
@@ -180,7 +180,7 @@ Vibrant & Executive (Active Verbs):
 
 ### Writing Guidelines:
 1. **Root Out Smothered Verbs**: Replace *"make an assumption"* with *"assume"*, *"conduct an investigation"* with *"investigate"*, and *"reach an agreement"* with *"agree"*.
-2. **Eliminate Pronoun Ambiguity**: Never use *“this”* or *“it”* at the start of a sentence unless its antecedent is 100% indisputable.
+2. **Eliminate Pronoun Ambiguity**: Never use *"this"* or *"it"* at the start of a sentence unless its antecedent is 100% indisputable.
 3. **Weed Out Empty Adverbs**: Instead of *"He walked very quickly"*, write *"He sprinted"*. Strong verbs render weak adverbs obsolete.
 
 ---
@@ -214,7 +214,7 @@ EXPLANATION: "We examined the budget and reached consensus" converts the bloated
       role: 'Professor of English Linguistics',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
@@ -222,7 +222,7 @@ EXPLANATION: "We examined the budget and reached consensus" converts the bloated
     featured: true,
   },
 
-  // 2. SENTENCE PATTERNS GUIDE (Retained & Elevated)
+  // 2. SENTENCE PATTERNS GUIDE
   {
     title: 'Mastering the 7 Essential English Sentence Patterns: From Basic Structures to Complex Workplace Fluency',
     slug: 'english-sentence-patterns-mastery-guide',
@@ -401,16 +401,6 @@ OPTION: SVOC (Subject + Verb + Direct Object + Object Complement)
 OPTION: SVC (Subject + Verb + Subject Complement)
 ANSWER: 2
 EXPLANATION: "Marcus" is the direct object receiving the appointment, and "interim CEO" is the object complement specifying his new status. Hence, SVOC.
-:::
-
-:::quiz
-QUESTION: Which sentence represents an incorrect usage of Pattern 2 (SVO)?
-OPTION: She approached the podium with confidence.
-OPTION: We discussed about the new pricing policy yesterday.
-OPTION: The developers analyzed the log files thoroughly.
-OPTION: Management approved the proposal last night.
-ANSWER: 1
-EXPLANATION: "Discuss" is a transitive verb that directly takes an object. Inserting the preposition "about" turns it into an ungrammatical hybrid.
 :::`,
     category: 'Grammar',
     tags: ['Grammar', 'Sentence Patterns', 'Syntax', 'Writing Style', 'Workplace English'],
@@ -419,7 +409,7 @@ EXPLANATION: "Discuss" is a transitive verb that directly takes an object. Inser
       role: 'Professor of English Linguistics',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '13 min read',
@@ -427,299 +417,150 @@ EXPLANATION: "Discuss" is a transitive verb that directly takes an object. Inser
     featured: true,
   },
 
-  // 3. PRESENT SIMPLE VS PRESENT CONTINUOUS (Repaired & Expanded)
+  // 3. SUBJECT-VERB AGREEMENT MASTERCLASS (NEW)
   {
-    title: 'Present Simple vs Present Continuous: Complete Guide with Real Examples & Stative Shifts',
-    slug: 'present-simple-vs-present-continuous',
-    excerpt: 'Understand the core differences between habits and actions happening right now, stative verbs that reject -ing, dynamic shifts, and workplace communication nuances.',
-    content: `Understanding when to use the **Present Simple** versus the **Present Continuous** (also called the Present Progressive) is one of the foundational milestones in mastering English grammar. While both describe the present, they view time from radically different psychological perspectives.
+    title: 'Subject-Verb Agreement Mastery: Tricky Collective Nouns, Inversions, Indefinite Pronouns & Proximity Rules',
+    slug: 'subject-verb-agreement-mastery-guide',
+    excerpt: 'Master the intricate rules of subject-verb agreement: navigating intervening prepositional phrases, collective nouns, the Rule of Proximity, inverted word order, and fractional quantities.',
+    content: `The golden rule of English syntax appears deceptively elementary: a singular subject requires a singular verb, and a plural subject requires a plural verb ($S_s \\to V_s$, $S_p \\to V_p$). 
 
-Native English speakers choose between these tenses almost subconsciously. For language learners, however, relying on intuition often leads to unnatural phrasing like *"I am knowing the answer"* or *"Look, it rains outside!"*
+Yet in professional communications, board resolutions, and academic journals, **Subject-Verb Agreement (SVA) errors** remain among the most frequent grammatical blunders. Why? Because English sentences frequently separate subjects from verbs with deceptive intervening clauses, indefinite pronouns, inverted word orders, and collective nouns.
 
-In this comprehensive guide, we will dismantle both tenses, explore the golden exception of stative verbs, examine emotional nuances, and analyze realistic workplace dialogues.
+In this masterclass, we will conquer the 7 critical traps of subject-verb agreement and establish an infallible protocol for matching subjects to verbs in high-stakes writing.
 
 ---
 
-## The Core Difference: Permanent vs. Temporary
+## 1. The Intervening Phrase Trap: Prepositional Noise
 
-At its heart, the difference comes down to **permanence versus temporary duration**:
-
-- The **Present Simple** is about **stability, repetition, timeless facts, and permanent realities.**
-- The **Present Continuous** is about **immediacy, progression, temporary windows of time, and active change.**
+The most common cause of SVA errors is the **intervening modifier**. Authors mistakenly match the verb to the nearest noun rather than the true grammatical head subject:
 
 \`\`\`
-Timeline Visualization:
-Present Simple (Routines/Truths):    ---[X]------[X]------[X]------[X]---> (Ongoing Habit)
-Present Continuous (Active Now):     ---------[====NOW====]-------------> (Temporary Window)
+Trap Visualization:
+[True Singular Subject]  +  [Prepositional / Parenthetical Noise Phrase]  +  [VERB?]
+          ▲                                    ▲                               ▲
+    "The quality"                     "of the components"                   "IS" (not ARE)
 \`\`\`
+
+- **Incorrect**: *"The quality of these manufactured components **are** subpar."*
+- **Correct**: *"The quality (Singular) [of these manufactured components] **is** (Singular) subpar."*
+
+### Parenthetical Phrases Never Alter Number:
+Phrases like *along with, as well as, in addition to, accompanied by, together with* are prepositional—they do **not** compound the subject:
+- *"The Chief Executive Officer, **along with three senior directors, is** (not are) attending the summit."*
+- *"Tax policy, **as well as inflation metrics, influences** (not influence) investor confidence."*
 
 :::grammar
-INCORRECT: Look outside! It rains heavily right now.
-CORRECT: Look outside! It is raining heavily right now.
-EXPLANATION: Because the rain is an active event happening at the exact moment of speech, you must use the Present Continuous ("is raining"), not the Present Simple.
+INCORRECT: A comprehensive evaluation of all regional distribution hubs were conducted yesterday.
+CORRECT: A comprehensive evaluation of all regional distribution hubs was conducted yesterday.
+EXPLANATION: The true grammatical subject is "evaluation" (singular), not "hubs" (object of preposition). The verb must be "was", not "were".
 :::
 
 ---
 
-## 1. When to Use the Present Simple
+## 2. Compound Subjects & The Rule of Proximity
 
-Formed simply with the base verb (adding **-s** or **-es** for third-person singular *he/she/it*), use the Present Simple in four primary scenarios:
+When subjects are joined by conjunctions, the choice of conjunction dictates the verb number:
 
-### A. Habits and Daily Routines
-Actions that occur repeatedly on a scheduled or predictable basis:
-- *"I drink two cups of black coffee every morning at 7:30 AM."*
-- *"Marcus rarely exercises on weekdays."*
-- Note the placement of frequency adverbs (*always, usually, often, sometimes, rarely, never*): they go **before** the main verb, but **after** the verb *to be* (*"She **always arrives** early"*, but *"She **is always** early"*).
+### A. Joined by "And" (Compound = Plural)
+When two or more distinct subjects are coordinated by *and*, they take a plural verb:
+- *"The CFO **and** the auditor **have finalized** the balance sheet."*
+- *Exception*: When the two nouns represent a single unified concept or title: *"Bacon and eggs **is** a classic breakfast."*, *"The founder and CEO **is** speaking."* (One person holding both titles).
 
-### B. Universal Truths and Scientific Facts
-Realities that do not change based on the clock:
-- *"Water freezes at 0 degrees Celsius."*
-- *"The Earth orbits the sun."*
+### B. Joined by "Or / Nor" (The Rule of Proximity)
+When subjects are linked by *either... or*, *neither... nor*, or *or*, the verb agrees with the **subject closest to it**:
+- *"Neither the manager **nor the supervisors were** informed."* (Supervisors is plural $\\to$ were).
+- *"Neither the supervisors **nor the manager was** informed."* (Manager is singular $\\to$ was).
 
-### C. Timetables and Official Schedules
-Public transportation, school calendars, and scheduled events:
-- *"The last train to London leaves at 11:15 PM tonight."*
-- *"The conference begins on Monday morning."*
+---
+
+## 3. Indefinite Pronouns: Singular, Plural, and SANAM
+
+Indefinite pronouns fall into three strict categories:
+
+1. **Always Singular**: *everyone, everybody, someone, somebody, no one, nobody, anyone, anybody, each, either, neither, one*.
+   - *"Everyone **has** submitted their quarterly review."*
+   - *"Each of the thirty algorithms **operates** independently."*
+2. **Always Plural**: *both, few, several, many*.
+   - *"Several **were** disqualified during the preliminary audit."*
+3. **Variable (The SANAM Pronouns)**: **S**ome, **A**ll, **N**one, **A**ny, **M**ost.
+   - For SANAM pronouns, look at the noun in the prepositional phrase (*object of the preposition*):
+   - Uncountable noun $\\to$ Singular verb: *"All of the **data is** verified."*, *"None of the **capital was** lost."*
+   - Plural noun $\\to$ Plural verb: *"All of the **servers are** operational."*, *"None of the **candidates were** certified."*
 
 :::vocab
-WORD: Habitual
-PHONETIC: /həˈbɪtʃ.u.əl/
-MEANING: Done constantly or as a habit; regular and usual.
-EXAMPLE: Her habitual morning walk around the park keeps her energized and focused for the day.
-DIFFICULTY: Intermediate
-:::
-
----
-
-## 2. When to Use the Present Continuous
-
-Formed with **subject + am/is/are + verb-ing**, this tense is used for:
-
-### A. Actions Occurring at the Moment of Speech
-Events taking place right now:
-- *"Please speak quietly; the baby is sleeping in the next room."*
-- *"What are you doing? I am reviewing the budget spreadsheet."*
-
-### B. Temporary Situations and Projects
-Situations that are true this week, this month, or this quarter, but are not permanent:
-- *"I am staying with my sister until my new apartment is painted."*
-- *"He usually works from the Chicago office, but this month he is working in Tokyo."*
-
-### C. Confirmed Future Arrangements
-Plans that have already been finalized with other parties or booked on a calendar:
-- *"We are meeting with the venture capital partners on Thursday morning."*
-- *"She is flying to Berlin tomorrow evening."*
-
-:::grammar
-INCORRECT: She usually is walking to work, but today she drives.
-CORRECT: She usually walks to work, but today she is driving.
-EXPLANATION: "Usually" signals a permanent habit (Present Simple: walks), whereas "today" signals a temporary departure from the routine (Present Continuous: is driving).
-:::
-
----
-
-## 3. Stative Verbs: The Verbs That Reject "-ing"
-
-Certain English verbs describe **states of being, cognitive conditions, feelings, or relationships** rather than physical actions. These are known as **stative verbs**. As a fundamental rule, stative verbs are **not used in continuous tenses.**
-
-### The 4 Classes of Stative Verbs:
-1. **Thoughts & Opinions**: *know, believe, understand, recognize, remember, doubt, suppose, perceive*.
-2. **Emotions & Desires**: *love, hate, prefer, want, need, wish, appreciate*.
-3. **Perceptions & Senses**: *see, hear, smell, taste, seem, sound, appear*.
-4. **Possession & Measurement**: *have, own, belong, possess, weigh, contain, consist*.
-
-:::grammar
-INCORRECT: I am understanding your perspective now.
-CORRECT: I understand your perspective now.
-EXPLANATION: "Understand" is a stative verb of mental condition. Even though the understanding is occurring right now, it cannot take the continuous form.
-:::
-
----
-
-## 4. Verbs with Both Stative and Dynamic Meanings
-
-Several verbs shift their meaning depending on whether they are in simple or continuous form:
-
-| Verb | Stative Meaning (Simple Form) | Dynamic Meaning (Continuous Form) |
-| :--- | :--- | :--- |
-| **Think** | *I **think** the plan is great.* (Opinion) | *I **am thinking** about the offer.* (Mental process) |
-| **Have** | *She **has** a Tesla.* (Possession) | *She **is having** lunch right now.* (Consuming) |
-| **Taste** | *The soup **tastes** delicious.* (Quality) | *The chef **is tasting** the sauce.* (Physical act) |
-| **See** | *I **see** what you mean.* (Understand) | *He **is seeing** a specialist today.* (Consulting) |
-| **Be** | *He **is** rude.* (Permanent personality) | *He **is being** rude.* (Temporary misbehavior) |
-
----
-
-## 5. Emotional Nuance: "Always" with Continuous Tense
-
-When used with the **Present Continuous**, the adverb *always* expresses emotional exaggeration, irritation, or fond amusement:
-
-- *"He **always leaves** his desk clean."* (Neutral observation of habit - Present Simple).
-- *"He **is always leaving** his dirty coffee mugs in the conference room!"* (Expresses annoyance at repeated behavior - Present Continuous).
-
----
-
-## Executive Writing Tip: Presenting Data and Scientific Facts
-
-In corporate whitepapers, analytical reports, and academic essays:
-- Use the **Present Simple** to state findings, formulas, and timeless conclusions (*"The data demonstrates a correlation"*, *"Elasticity governs demand"*).
-- Use the **Present Continuous** only to describe current ongoing market trends (*"Consumer spending is contracting across retail"*).
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Which sentence correctly uses a stative verb in professional discourse?
-OPTION: The CEO is wanting to review the proposal before Friday.
-OPTION: We are having two office locations in Frankfurt.
-OPTION: The legal department doubts the enforceability of this clause.
-OPTION: I am knowing what the client expects from our design team.
-ANSWER: 2
-EXPLANATION: "Doubt" is a stative verb of cognition; it correctly stays in the Present Simple ("doubts"). "Want", "have" (for possession), and "know" cannot take continuous -ing.
-:::
-
-:::quiz
-QUESTION: What is the meaning of "The director is being cautious" compared to "The director is cautious"?
-OPTION: "Is being cautious" means caution is his permanent personality trait.
-OPTION: "Is being cautious" means he is acting cautiously in this specific circumstance.
-OPTION: Both sentences mean the exact same thing.
-OPTION: "Is being cautious" is grammatically incorrect.
-ANSWER: 1
-EXPLANATION: Using the continuous "is being + adjective" describes temporary behavior in a specific scenario, whereas "is cautious" describes a permanent personality trait.
-:::`,
-    category: 'Grammar',
-    tags: ['Grammar', 'Tenses', 'Present Simple', 'Present Continuous', 'Foundations'],
-    author: {
-      name: 'Sarah Jenkins',
-      role: 'Head of ESL Curriculum',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
-    publishedAt: '2026-09-24T18:00:00Z',
-    updatedAt: '2026-09-24T22:00:00Z',
-    readingTime: '11 min read',
-    status: 'published',
-    featured: false,
-  },
-
-  // 4. ADVANCED TENSES & ASPECTUAL HARMONY
-  {
-    title: 'Advanced English Tenses & Aspectual Harmony: The 12-Tense Grid, Perfect Aspects, and Narrative Framing',
-    slug: 'advanced-english-tenses-and-aspects-masterclass',
-    excerpt: 'Master the 12 English tense-aspect combinations, establish precise temporal sequencing with Past Perfect and Future Perfect, and maintain aspectual harmony in complex writing.',
-    content: `Many English learners memorize tense conjugation tables without ever understanding the underlying engine of English time: the interplay between **Tense** (When did it happen?) and **Aspect** (How does the speaker view the flow or completion of the action?).
-
-In English, there are strictly two morphological tenses (Past and Present, with Future expressed through modals like *will* or aspectual structures like *be going to*), combined with **four grammatical aspects**: Simple, Continuous, Perfect, and Perfect Continuous. This creates the famous **12-Tense Grid**.
-
-In this masterclass, we will unlock the full 12-tense matrix, demystify the Past Perfect and Future Perfect, and learn how to maintain **aspectual harmony** across multi-paragraph essays and executive briefings.
-
----
-
-## The 12 Tense-Aspect Architecture Matrix
-
-| Tense / Aspect | Simple Aspect (Factual / Routine) | Continuous Aspect (Progressive / Temporary) | Perfect Aspect (Prior / Completed with Relevance) | Perfect Continuous (Ongoing Prior Duration) |
-| :--- | :--- | :--- | :--- | :--- |
-| **Present** | *I analyze* | *I am analyzing* | *I have analyzed* | *I have been analyzing* |
-| **Past** | *I analyzed* | *I was analyzing* | *I had analyzed* | *I had been analyzing* |
-| **Future** | *I will analyze* | *I will be analyzing* | *I will have analyzed* | *I will have been analyzing* |
-
----
-
-## 1. Past Simple vs. Present Perfect: The Psychological Boundary
-
-The distinction between **Past Simple** and **Present Perfect** is not about how long ago an event occurred; it is about **temporal relevance to the present moment**:
-
-### Past Simple: Closed Historical Time Frame
-Use Past Simple when the event occurred in a **finished time period** (yesterday, last year, in 2022, five minutes ago):
-- *"We launched the software platform in March."* (March is finished).
-- *"Did you review the contract yesterday?"* (Yesterday is a closed frame).
-
-### Present Perfect: Open Frame & Present Consequence
-Use Present Perfect when the time frame remains **open** (*today, this week, this year, in my lifetime*), or when an action in the past has a **direct tangible impact right now**:
-- *"We have launched the software platform."* (Announcement; it is now active).
-- *"I have lost my security badge."* (Result now: I cannot enter the building).
-
-:::grammar
-INCORRECT: I have finished the report yesterday at 5:00 PM.
-CORRECT: I finished the report yesterday at 5:00 PM.
-EXPLANATION: "Yesterday at 5:00 PM" is a closed, specific temporal anchor. You must use Past Simple, never Present Perfect, with finished time expressions.
-:::
-
----
-
-## 2. Past Perfect: The "Past-Before-the-Past"
-
-The **Past Perfect** ($had + V3$) establishes **temporal priority**. When narrating past events, use the Past Perfect to signal that an event occurred *before* another past event.
-
-\`\`\`
-Timeline:
-----------------[Event 1: Had launched]-----[Event 2: Arrived]-----[NOW]--->
-\`\`\`
-
-- *"By the time the auditors **arrived** (Past Simple), the accounting team **had already reconciled** (Past Perfect) the ledger."*
-- *"She **had worked** at Goldman Sachs for a decade before she **founded** her venture firm."*
-
-:::vocab
-WORD: Retrospective
-PHONETIC: /ˌret.rəˈspek.tɪv/
-MEANING: Looking back on or dealing with past events or situations.
-EXAMPLE: The board held a retrospective evaluation of the product rollout.
+WORD: Proximity
+PHONETIC: /prɑːkˈsɪm.ə.t̬i/
+MEANING: Nearness in space, time, or syntactic relationship.
+EXAMPLE: Under the rule of proximity, the verb harmonizes with the immediately adjacent subject noun.
 DIFFICULTY: Advanced
 :::
 
 ---
 
-## 3. Future Perfect: Looking Back from Tomorrow
+## 4. Collective Nouns: Singular Unity vs. Plural Division
 
-Formed with **will have + Past Participle (V3)**, the Future Perfect projects the speaker into the future and looks back at an action that will be completed **prior to a future milestone**:
-
-- *"By the end of the fourth quarter, our enterprise **will have achieved** carbon neutrality."*
-- *"Do not call before 8:00 AM; I **will not have arrived** at the office yet."*
+Collective nouns (*team, committee, board, jury, faculty, audience, orchestra*) describe a singular entity composed of individuals:
+- **American English Standard**: Treats collective nouns as **singular** units acting in unison:
+  > *"The board **has ratified** the resolution unanimously."*
+  > *"The committee **is publishing** its recommendations."*
+- If the individual members are in conflict or acting separately, rephrase gracefully with "members":
+  > Stilted: *"The committee were arguing among themselves."*
+  > Executive & Clear: *"The committee **members were arguing** among themselves."*
 
 ---
 
-## Executive Writing Tip: Aspectual Harmony Across Multi-Paragraph Writing
+## 5. Inverted Sentences & Dummy Subjects (There / Here)
 
-One of the most glaring hallmarks of unpolished writing is **unintentional tense drifting**—switching between past and present without syntactic justification:
+In sentences opening with *There* or *Here*, *There* is merely an expletive (dummy subject). The true subject follows the verb:
+- *"There **is a critical bug** in the payment gateway."* (Bug is singular $\\to$ is).
+- *"There **are three critical bugs** in the payment gateway."* (Bugs is plural $\\to$ are).
+- Inverted: *"Behind the mainframe **sit** the cybersecurity engineers."* (Engineers is plural $\\to$ sit).
 
-\`\`\`
-Jolting & Ungrammatical Tense Drifting:
-"The economic team analyzed the Q3 metrics. They discover that inflation was cooling, 
-  and they recommend an immediate interest rate freeze." (Jumping from past to present)
+---
 
-Smooth & Harmonious:
-"The economic team analyzed the Q3 metrics. They discovered that inflation was cooling, 
-  and they recommended an immediate interest rate freeze." (Consistent past narrative)
-\`\`\`
+## 6. Sums, Periods of Time, Distances & Percentages
 
-### The Sequence of Tenses (Backshifting Rule):
-When the main reporting verb is in the past, subordinate clauses backshift accordingly:
-- Present Simple $\\to$ Past Simple: *"He said, 'I **am** ready'* $\\to$ *He said he **was** ready."*
-- Present Continuous $\\to$ Past Continuous: *"She said, 'We **are evaluating** bids'* $\\to$ *She said they **were evaluating** bids."*
-- Present Perfect $\\to$ Past Perfect: *"They reported, 'We **have finished**'* $\\to$ *They reported that they **had finished**."*
+When quantities of time, money, distance, or measurements represent a **single unified amount**, they take a singular verb:
+- *"Ten million dollars **is** a substantial venture investment."* (Not *are*).
+- *"Forty-five minutes **is** the maximum duration of the keynote."*
+- *"Five kilometers **is** an easy morning jog."*
+
+### Fractions & Percentages:
+Like SANAM pronouns, fractions and percentages take their verb number from the referenced noun:
+- *"Sixty percent of the **workforce is** remote."* (Workforce is singular).
+- *"Sixty percent of the **employees are** remote."* (Employees is plural).
 
 ---
 
 ## Interactive Knowledge Check
 
 :::quiz
-QUESTION: Which sentence properly coordinates the Past Perfect with the Past Simple?
-OPTION: When the CEO arrived, the keynote speech already began.
-OPTION: When the CEO arrived, the keynote speech had already begun.
-OPTION: When the CEO had arrived, the keynote speech had already begun.
-OPTION: When the CEO was arriving, the keynote speech has already begun.
+QUESTION: Which sentence demonstrates correct subject-verb agreement?
+OPTION: Either the marketing team or the lead designer are responsible for this mockup.
+OPTION: Either the marketing team or the lead designer is responsible for this mockup.
+OPTION: Either the lead designer or the marketing team is responsible for this mockup.
+OPTION: Each of the candidates have submitted their credentials.
 ANSWER: 1
-EXPLANATION: The keynote speech started before the CEO's arrival. Therefore, the earlier action takes the Past Perfect ("had already begun"), while the later anchor action takes the Past Simple ("arrived").
+EXPLANATION: By the Rule of Proximity with "either... or", the verb agrees with the closer subject ("lead designer" - singular), so "is responsible" is correct.
+:::
+
+:::quiz
+QUESTION: Identify the grammatically correct sentence involving indefinite pronouns:
+OPTION: None of the equipment were damaged during shipment.
+OPTION: None of the equipment was damaged during shipment.
+OPTION: Everyone in the departments are invited to the gala.
+OPTION: Each of the proposals were evaluated thoroughly.
+ANSWER: 1
+EXPLANATION: "Equipment" is an uncountable mass noun. Following the SANAM pronoun "None", an uncountable noun demands a singular verb: "was damaged".
 :::`,
     category: 'Grammar',
-    tags: ['Grammar', 'Tenses', 'Aspect', 'Past Perfect', 'Future Perfect', 'Writing Style'],
+    tags: ['Grammar', 'Subject Verb Agreement', 'Syntax', 'Writing Style', 'Foundations'],
     author: {
       name: 'Dr. Marcus Vance',
       role: 'Professor of English Linguistics',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
@@ -727,7 +568,7 @@ EXPLANATION: The keynote speech started before the CEO's arrival. Therefore, the
     featured: false,
   },
 
-  // 5. ARTICLES & COUNTABILITY (Repaired & Expanded)
+  // 4. ARTICLES & COUNTABILITY
   {
     title: 'Definite, Indefinite & Zero Articles: When to Use A, An, The, and Omission Rules',
     slug: 'when-to-use-a-an-and-the',
@@ -877,7 +718,7 @@ EXPLANATION: "Gold" is an uncountable noun used here as a general philosophical 
     featured: false,
   },
 
-  // 6. PREPOSITIONS MASTERCLASS
+  // 5. PREPOSITIONS MASTERCLASS
   {
     title: 'Prepositions of Time, Place, Movement & Collocations: The Complete Dimensional & Collocational Guide',
     slug: 'prepositions-of-time-place-movement-and-collocations',
@@ -984,11 +825,6 @@ Lean & Authoritative:
 "In October, the board of directors reviewed the audit..."
 \`\`\`
 
-### The Myth of the Stranded Preposition:
-Archaic 18th-century grammarians attempted to force Latin rules onto English by prohibiting ending a sentence with a preposition (*stranded preposition*). Modern style guides (Chicago, APA, Oxford) reject this myth:
-- Stilted & Archaic: *"This is the client **about whom** I spoke to you."*
-- Natural & Executive: *"This is the client I spoke to you **about**."*
-
 ---
 
 ## Interactive Knowledge Check
@@ -1009,7 +845,7 @@ EXPLANATION: Exact clock times take "at" (at 3:00 PM), while calendar months tak
       role: 'Head of ESL Curriculum',
       avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1524850011238-e3d235c7d4c9?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '11 min read',
@@ -1017,7 +853,572 @@ EXPLANATION: Exact clock times take "at" (at 3:00 PM), while calendar months tak
     featured: false,
   },
 
-  // 7. CLAUSES & COMPLEX SENTENCES
+  // 6. PRESENT SIMPLE VS PRESENT CONTINUOUS
+  {
+    title: 'Present Simple vs Present Continuous: Complete Guide with Real Examples & Stative Shifts',
+    slug: 'present-simple-vs-present-continuous',
+    excerpt: 'Understand the core differences between habits and actions happening right now, stative verbs that reject -ing, dynamic shifts, and workplace communication nuances.',
+    content: `Understanding when to use the **Present Simple** versus the **Present Continuous** (also called the Present Progressive) is one of the foundational milestones in mastering English grammar. While both describe the present, they view time from radically different psychological perspectives.
+
+Native English speakers choose between these tenses almost subconsciously. For language learners, however, relying on intuition often leads to unnatural phrasing like *"I am knowing the answer"* or *"Look, it rains outside!"*
+
+In this comprehensive guide, we will dismantle both tenses, explore the golden exception of stative verbs, examine emotional nuances, and analyze realistic workplace dialogues.
+
+---
+
+## The Core Difference: Permanent vs. Temporary
+
+At its heart, the difference comes down to **permanence versus temporary duration**:
+
+- The **Present Simple** is about **stability, repetition, timeless facts, and permanent realities.**
+- The **Present Continuous** is about **immediacy, progression, temporary windows of time, and active change.**
+
+\`\`\`
+Timeline Visualization:
+Present Simple (Routines/Truths):    ---[X]------[X]------[X]------[X]---> (Ongoing Habit)
+Present Continuous (Active Now):     ---------[====NOW====]-------------> (Temporary Window)
+\`\`\`
+
+:::grammar
+INCORRECT: Look outside! It rains heavily right now.
+CORRECT: Look outside! It is raining heavily right now.
+EXPLANATION: Because the rain is an active event happening at the exact moment of speech, you must use the Present Continuous ("is raining"), not the Present Simple.
+:::
+
+---
+
+## 1. When to Use the Present Simple
+
+Formed simply with the base verb (adding **-s** or **-es** for third-person singular *he/she/it*), use the Present Simple in four primary scenarios:
+
+### A. Habits and Daily Routines
+Actions that occur repeatedly on a scheduled or predictable basis:
+- *"I drink two cups of black coffee every morning at 7:30 AM."*
+- *"Marcus rarely exercises on weekdays."*
+- Note the placement of frequency adverbs (*always, usually, often, sometimes, rarely, never*): they go **before** the main verb, but **after** the verb *to be* (*"She **always arrives** early"*, but *"She **is always** early"*).
+
+### B. Universal Truths and Scientific Facts
+Realities that do not change based on the clock:
+- *"Water freezes at 0 degrees Celsius."*
+- *"The Earth orbits the sun."*
+
+### C. Timetables and Official Schedules
+Public transportation, school calendars, and scheduled events:
+- *"The last train to London leaves at 11:15 PM tonight."*
+- *"The conference begins on Monday morning."*
+
+:::vocab
+WORD: Habitual
+PHONETIC: /həˈbɪtʃ.u.əl/
+MEANING: Done constantly or as a habit; regular and usual.
+EXAMPLE: Her habitual morning walk around the park keeps her energized and focused for the day.
+DIFFICULTY: Intermediate
+:::
+
+---
+
+## 2. When to Use the Present Continuous
+
+Formed with **subject + am/is/are + verb-ing**, this tense is used for:
+
+### A. Actions Occurring at the Moment of Speech
+Events taking place right now:
+- *"Please speak quietly; the baby is sleeping in the next room."*
+- *"What are you doing? I am reviewing the budget spreadsheet."*
+
+### B. Temporary Situations and Projects
+Situations that are true this week, this month, or this quarter, but are not permanent:
+- *"I am staying with my sister until my new apartment is painted."*
+- *"He usually works from the Chicago office, but this month he is working in Tokyo."*
+
+### C. Confirmed Future Arrangements
+Plans that have already been finalized with other parties or booked on a calendar:
+- *"We are meeting with the venture capital partners on Thursday morning."*
+- *"She is flying to Berlin tomorrow evening."*
+
+:::grammar
+INCORRECT: She usually is walking to work, but today she drives.
+CORRECT: She usually walks to work, but today she is driving.
+EXPLANATION: "Usually" signals a permanent habit (Present Simple: walks), whereas "today" signals a temporary departure from the routine (Present Continuous: is driving).
+:::
+
+---
+
+## 3. Stative Verbs: The Verbs That Reject "-ing"
+
+Certain English verbs describe **states of being, cognitive conditions, feelings, or relationships** rather than physical actions. These are known as **stative verbs**. As a fundamental rule, stative verbs are **not used in continuous tenses.**
+
+### The 4 Classes of Stative Verbs:
+1. **Thoughts & Opinions**: *know, believe, understand, recognize, remember, doubt, suppose, perceive*.
+2. **Emotions & Desires**: *love, hate, prefer, want, need, wish, appreciate*.
+3. **Perceptions & Senses**: *see, hear, smell, taste, seem, sound, appear*.
+4. **Possession & Measurement**: *have, own, belong, possess, weigh, contain, consist*.
+
+:::grammar
+INCORRECT: I am understanding your perspective now.
+CORRECT: I understand your perspective now.
+EXPLANATION: "Understand" is a stative verb of mental condition. Even though the understanding is occurring right now, it cannot take the continuous form.
+:::
+
+---
+
+## 4. Verbs with Both Stative and Dynamic Meanings
+
+Several verbs shift their meaning depending on whether they are in simple or continuous form:
+
+| Verb | Stative Meaning (Simple Form) | Dynamic Meaning (Continuous Form) |
+| :--- | :--- | :--- |
+| **Think** | *I **think** the plan is great.* (Opinion) | *I **am thinking** about the offer.* (Mental process) |
+| **Have** | *She **has** a Tesla.* (Possession) | *She **is having** lunch right now.* (Consuming) |
+| **Taste** | *The soup **tastes** delicious.* (Quality) | *The chef **is tasting** the sauce.* (Physical act) |
+| **See** | *I **see** what you mean.* (Understand) | *He **is seeing** a specialist today.* (Consulting) |
+| **Be** | *He **is** rude.* (Permanent personality) | *He **is being** rude.* (Temporary misbehavior) |
+
+---
+
+## 5. Emotional Nuance: "Always" with Continuous Tense
+
+When used with the **Present Continuous**, the adverb *always* expresses emotional exaggeration, irritation, or fond amusement:
+
+- *"He **always leaves** his desk clean."* (Neutral observation of habit - Present Simple).
+- *"He **is always leaving** his dirty coffee mugs in the conference room!"* (Expresses annoyance at repeated behavior - Present Continuous).
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence correctly uses a stative verb in professional discourse?
+OPTION: The CEO is wanting to review the proposal before Friday.
+OPTION: We are having two office locations in Frankfurt.
+OPTION: The legal department doubts the enforceability of this clause.
+OPTION: I am knowing what the client expects from our design team.
+ANSWER: 2
+EXPLANATION: "Doubt" is a stative verb of cognition; it correctly stays in the Present Simple ("doubts"). "Want", "have" (for possession), and "know" cannot take continuous -ing.
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Tenses', 'Present Simple', 'Present Continuous', 'Foundations'],
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Head of ESL Curriculum',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1506784365847-bbad939e9335?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '11 min read',
+    status: 'published',
+    featured: false,
+  },
+
+  // 7. ADVANCED TENSES & ASPECTUAL HARMONY
+  {
+    title: 'Advanced English Tenses & Aspectual Harmony: The 12-Tense Grid, Perfect Aspects, and Narrative Framing',
+    slug: 'advanced-english-tenses-and-aspects-masterclass',
+    excerpt: 'Master the 12 English tense-aspect combinations, establish precise temporal sequencing with Past Perfect and Future Perfect, and maintain aspectual harmony in complex writing.',
+    content: `Many English learners memorize tense conjugation tables without ever understanding the underlying engine of English time: the interplay between **Tense** (When did it happen?) and **Aspect** (How does the speaker view the flow or completion of the action?).
+
+In English, there are strictly two morphological tenses (Past and Present, with Future expressed through modals like *will* or aspectual structures like *be going to*), combined with **four grammatical aspects**: Simple, Continuous, Perfect, and Perfect Continuous. This creates the famous **12-Tense Grid**.
+
+In this masterclass, we will unlock the full 12-tense matrix, demystify the Past Perfect and Future Perfect, and learn how to maintain **aspectual harmony** across multi-paragraph essays and executive briefings.
+
+---
+
+## The 12 Tense-Aspect Architecture Matrix
+
+| Tense / Aspect | Simple Aspect (Factual / Routine) | Continuous Aspect (Progressive / Temporary) | Perfect Aspect (Prior / Completed with Relevance) | Perfect Continuous (Ongoing Prior Duration) |
+| :--- | :--- | :--- | :--- | :--- |
+| **Present** | *I analyze* | *I am analyzing* | *I have analyzed* | *I have been analyzing* |
+| **Past** | *I analyzed* | *I was analyzing* | *I had analyzed* | *I had been analyzing* |
+| **Future** | *I will analyze* | *I will be analyzing* | *I will have analyzed* | *I will have been analyzing* |
+
+---
+
+## 1. Past Simple vs. Present Perfect: The Psychological Boundary
+
+The distinction between **Past Simple** and **Present Perfect** is not about how long ago an event occurred; it is about **temporal relevance to the present moment**:
+
+### Past Simple: Closed Historical Time Frame
+Use Past Simple when the event occurred in a **finished time period** (yesterday, last year, in 2022, five minutes ago):
+- *"We launched the software platform in March."* (March is finished).
+- *"Did you review the contract yesterday?"* (Yesterday is a closed frame).
+
+### Present Perfect: Open Frame & Present Consequence
+Use Present Perfect when the time frame remains **open** (*today, this week, this year, in my lifetime*), or when an action in the past has a **direct tangible impact right now**:
+- *"We have launched the software platform."* (Announcement; it is now active).
+- *"I have lost my security badge."* (Result now: I cannot enter the building).
+
+:::grammar
+INCORRECT: I have finished the report yesterday at 5:00 PM.
+CORRECT: I finished the report yesterday at 5:00 PM.
+EXPLANATION: "Yesterday at 5:00 PM" is a closed, specific temporal anchor. You must use Past Simple, never Present Perfect, with finished time expressions.
+:::
+
+---
+
+## 2. Past Perfect: The "Past-Before-the-Past"
+
+The **Past Perfect** ($had + V3$) establishes **temporal priority**. When narrating past events, use the Past Perfect to signal that an event occurred *before* another past event.
+
+\`\`\`
+Timeline:
+----------------[Event 1: Had launched]-----[Event 2: Arrived]-----[NOW]--->
+\`\`\`
+
+- *"By the time the auditors **arrived** (Past Simple), the accounting team **had already reconciled** (Past Perfect) the ledger."*
+- *"She **had worked** at Goldman Sachs for a decade before she **founded** her venture firm."*
+
+:::vocab
+WORD: Retrospective
+PHONETIC: /ˌret.rəˈspek.tɪv/
+MEANING: Looking back on or dealing with past events or situations.
+EXAMPLE: The board held a retrospective evaluation of the product rollout.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 3. Future Perfect: Looking Back from Tomorrow
+
+Formed with **will have + Past Participle (V3)**, the Future Perfect projects the speaker into the future and looks back at an action that will be completed **prior to a future milestone**:
+
+- *"By the end of the fourth quarter, our enterprise **will have achieved** carbon neutrality."*
+- *"Do not call before 8:00 AM; I **will not have arrived** at the office yet."*
+
+---
+
+## Executive Writing Tip: Aspectual Harmony Across Multi-Paragraph Writing
+
+One of the most glaring hallmarks of unpolished writing is **unintentional tense drifting**—switching between past and present without syntactic justification:
+
+\`\`\`
+Jolting & Ungrammatical Tense Drifting:
+"The economic team analyzed the Q3 metrics. They discover that inflation was cooling, 
+  and they recommend an immediate interest rate freeze." (Jumping from past to present)
+
+Smooth & Harmonious:
+"The economic team analyzed the Q3 metrics. They discovered that inflation was cooling, 
+  and they recommended an immediate interest rate freeze." (Consistent past narrative)
+\`\`\`
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence properly coordinates the Past Perfect with the Past Simple?
+OPTION: When the CEO arrived, the keynote speech already began.
+OPTION: When the CEO arrived, the keynote speech had already begun.
+OPTION: When the CEO had arrived, the keynote speech had already begun.
+OPTION: When the CEO was arriving, the keynote speech has already begun.
+ANSWER: 1
+EXPLANATION: The keynote speech started before the CEO's arrival. Therefore, the earlier action takes the Past Perfect ("had already begun"), while the later anchor action takes the Past Simple ("arrived").
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Tenses', 'Aspect', 'Past Perfect', 'Future Perfect', 'Writing Style'],
+    author: {
+      name: 'Dr. Marcus Vance',
+      role: 'Professor of English Linguistics',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1501139083538-0139583c060f?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '12 min read',
+    status: 'published',
+    featured: false,
+  },
+
+  // 8. GERUNDS VS INFINITIVES (NEW)
+  {
+    title: 'Gerunds vs Infinitives Mastery: Complementation Patterns, Meaning Shifts & Prepositional Traps',
+    slug: 'gerunds-vs-infinitives-mastery-guide',
+    excerpt: 'Master English verb complementation: verbs followed only by gerunds, verbs taking infinitives, critical verbs that alter meaning (stop, remember, try, regret), and prepositional gerund rules.',
+    content: `Few areas in English grammar confuse learners more consistently than **Verb Complementation**: deciding whether a verb should be followed by a **Gerund** (*-ing* functioning as a noun) or a **To-Infinitive** (*to + base verb*).
+
+Why do we say *"I **enjoy reading**"* (Gerund), but *"I **hope to read**"* (Infinitive)? Why is *"I suggested him to leave"* ungrammatical, while *"I advised him to leave"* is correct?
+
+In this masterclass, we will map the cognitive logic behind gerunds versus infinitives, classify verbs into rigid complementation groups, master the five famous verbs that dramatically change meaning based on complement choice, and conquer the dreaded "Preposition + Gerund" rule.
+
+---
+
+## The Underlying Cognitive Logic
+
+While complementation requires some memorization, there is a powerful semantic pattern:
+
+\`\`\`
+Cognitive Continuum:
+┌─────────────────────────────────┬─────────────────────────────────┐
+│     GERUND (-ING)               │     TO-INFINITIVE (TO + VERB)   │
+├─────────────────────────────────┼─────────────────────────────────┤
+│ • Focus on REALITY & EXPERIENCE │ • Focus on POTENTIAL & FUTURE   │
+│ • Ongoing or completed events   │ • Aim, purpose, commitment      │
+│ • "I enjoy investing in tech."  │ • "I plan to invest in tech."   │
+└─────────────────────────────────┴─────────────────────────────────┘
+\`\`\`
+
+---
+
+## 1. Verbs Followed Strictly by Gerunds
+
+These verbs describe continuing, postponing, anticipating, or rejecting experiences. They can **never** be followed by a to-infinitive:
+
+- **Admit**: *"The executive **admitted falsifying** the records."*
+- **Appreciate**: *"We **appreciate your assisting** us."*
+- **Avoid**: *"He **avoids making** impulsive commitments."*
+- **Consider**: *"We are **considering expanding** into EMEA."*
+- **Delay / Postpone**: *"They **delayed signing** the lease."*
+- **Deny**: *"The spokesperson **denied knowing** the breach."*
+- **Enjoy**: *"She **enjoys mentoring** junior analysts."*
+- **Recommend / Suggest**: *"I **recommend auditing** the database."* (Never *"recommend to audit"*).
+- **Risk**: *"Do not **risk losing** your proprietary license."*
+
+:::grammar
+INCORRECT: The consultant suggested to postpone the product rollout.
+CORRECT: The consultant suggested postponing the product rollout.
+EXPLANATION: "Suggest" and "recommend" strictly take a gerund complement ("suggested postponing") or a that-clause ("suggested that we postpone"). They never take a direct to-infinitive.
+:::
+
+---
+
+## 2. Verbs Followed Strictly by To-Infinitives
+
+These verbs express future goals, decisions, desires, promises, and attempts:
+
+- **Afford**: *"We cannot **afford to miss** this deadline."*
+- **Agree**: *"The partners **agreed to merge** operations."*
+- **Decide**: *"Management **decided to restructure** the board."*
+- **Demand**: *"They **demanded to inspect** the facility."*
+- **Expect**: *"We **expect to achieve** profitability by Q4."*
+- **Hesitate**: *"Do not **hesitate to contact** our team."*
+- **Manage**: *"They **managed to resolve** the latency spike."*
+- **Promise**: *"She **promised to deliver** the prototype."*
+- **Refuse**: *"The client **refused to sign** the waiver."*
+
+---
+
+## 3. The 5 Meaning-Shift Verbs: Choose with Care
+
+These five common verbs can be followed by *either* a gerund or an infinitive, but **the meaning changes completely**:
+
+### A. Remember
+- **+ Gerund (Looking Back at a Past Memory)**: *"I **remember meeting** the CEO in 2021."*
+- **+ Infinitive (Looking Forward to a Duty)**: *"Please **remember to lock** the server room."*
+
+### B. Forget
+- **+ Gerund (Past Memory - usually negative)**: *"I will never **forget closing** our first enterprise deal."*
+- **+ Infinitive (Failed Duty)**: *"He **forgot to attach** the financial spreadsheet."*
+
+### C. Stop
+- **+ Gerund (Ceasing an Activity Completely)**: *"The company **stopped manufacturing** diesel sedans."*
+- **+ Infinitive (Interrupting an Action in Order to Do Something Else)**: *"During the long drive, we **stopped to drink** coffee."*
+
+### D. Regret
+- **+ Gerund (Remorse Over a Past Action)**: *"I **regret expressing** frustration during the meeting."*
+- **+ Infinitive (Formal / Apologetic Announcement)**: *"We **regret to inform** you that your application was unsuccessful."*
+
+### E. Try
+- **+ Gerund (Experimenting with a Method to See if It Works)**: *"If your laptop is overheating, **try closing** background applications."*
+- **+ Infinitive (Exerting Effort against Difficulty)**: *"We **tried to access** the server, but the network was offline."*
+
+:::vocab
+WORD: Complementation
+PHONETIC: /ˌkɑːm.plə.menˈteɪ.ʃən/
+MEANING: The syntactic relationship between a head verb and the subordinate clauses or verbal phrases that complete its grammatical meaning.
+EXAMPLE: Non-native errors frequently stem from faulty verb complementation.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 4. The Golden Preposition Rule: Preposition + Gerund
+
+In English, **any verb that directly follows a preposition MUST take the Gerund form (-ing)**. There are zero exceptions:
+- *"Thank you **for reviewing** (Prep + Gerund) the draft."*
+- *"She succeeded **by negotiating** (Prep + Gerund) aggressively."*
+- *"He is interested **in joining** (Prep + Gerund) our team."*
+
+### The "To" as a Preposition Trap:
+Learners often confuse the infinitive particle *“to”* with the preposition *“to”*. When *“to”* is a preposition, it must take a gerund:
+- *"We look forward **to meeting** (Prep + Gerund) you."* (Not *to meet*).
+- *"She is dedicated **to improving** organizational culture."*
+- *"They are accustomed **to working** in agile sprints."*
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence uses verb complementation correctly?
+OPTION: The director suggested to launch the marketing campaign in November.
+OPTION: The director suggested launching the marketing campaign in November.
+OPTION: We look forward to meet you at the technology conference.
+OPTION: She stopped smoking to improve her health, and she stopped for smoke every hour.
+ANSWER: 1
+EXPLANATION: "Suggest" strictly requires a gerund complement ("suggested launching"). In option 3, "look forward to" contains a preposition, requiring "meeting".
+:::
+
+:::quiz
+QUESTION: What is the meaning of "He stopped to call his client"?
+OPTION: He ended his phone contract with the client permanently.
+OPTION: He ceased talking on the phone.
+OPTION: He paused his current activity in order to place a phone call to his client.
+OPTION: He forgot to dial the client's number.
+ANSWER: 2
+EXPLANATION: "Stop + to-infinitive" indicates interrupting an ongoing activity in order to accomplish a different objective.
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Gerunds', 'Infinitives', 'Verb Complementation', 'Advanced'],
+    author: {
+      name: 'Dr. Marcus Vance',
+      role: 'Professor of English Linguistics',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '13 min read',
+    status: 'published',
+    featured: false,
+  },
+
+  // 9. REPORTED SPEECH & MEETING MINUTES (NEW)
+  {
+    title: 'Reported Speech & Tense Backshifting Mastery: Executive Reporting, Meeting Minutes & Dialogue Paraphrasing',
+    slug: 'reported-speech-and-tense-backshifting-masterclass',
+    excerpt: 'Master the mechanics of indirect speech: the rules of tense backshifting, reporting questions and imperatives, shifting temporal/spatial deictics, and drafting precise meeting minutes.',
+    content: `In modern executive, legal, and academic environments, professionals rarely quote spoken words verbatim using quotation marks. Instead, they translate spoken discussions into **Reported (Indirect) Speech** to draft meeting minutes, summarize negotiations, synthesize client demands, and compile audit findings.
+
+Mastering reported speech requires command over **Tense Backshifting**, pronoun readjustment, question restructuring, and deictic shifts (words of time and place).
+
+In this masterclass, we will decode the backshifting algorithm, master reported questions without auxiliary inversions, and practice drafting professional corporate meeting minutes.
+
+---
+
+## Direct vs. Reported Speech: The Conceptual Shift
+
+- **Direct Speech**: Reproduces exact words within quotation marks:
+  > *Marcus said, "We **are reviewing** the cybersecurity architecture **today**."*
+- **Reported Speech**: Incorporates the meaning into a subordinate clause, usually introduced by a reporting verb in the past tense (*said, stated, confirmed, noted*):
+  > *Marcus stated that they **were reviewing** the cybersecurity architecture **that day**.*
+
+---
+
+## 1. The Tense Backshifting Master Algorithm
+
+When the reporting verb is in the **past tense** (*stated, explained, reported, asked*), the verb in the reported clause steps backward into a prior grammatical tense:
+
+| Direct Speech Tense | Reported Speech (Backshifted) | Direct Example | Reported Example |
+| :--- | :--- | :--- | :--- |
+| **Present Simple** | **Past Simple** | *"I **work** in Munich."* | *She said she **worked** in Munich.* |
+| **Present Continuous** | **Past Continuous** | *"We **are auditing** files."* | *He stated they **were auditing** files.* |
+| **Past Simple** | **Past Perfect** | *"We **signed** the lease."* | *They confirmed they **had signed** the lease.* |
+| **Present Perfect** | **Past Perfect** | *"I **have finished**."* | *She reported that she **had finished**.* |
+| **Future (Will)** | **Conditional (Would)** | *"We **will deploy** in July."* | *They announced they **would deploy** in July.* |
+| **Can** | **Could** | *"I **can approve** this."* | *He noted he **could approve** that.* |
+| **May** | **Might** | *"It **may cause** latency."* | *She warned it **might cause** latency.* |
+| **Must** | **Had to** | *"We **must comply**."* | *He emphasized they **had to comply**.* |
+
+### The Exception: Permanent Truths & Ongoing Facts
+You do **not** backshift if the reported statement describes a timeless scientific truth, or a reality that remains active at the moment of reporting:
+- Direct: *"The engineer said, 'Water freezes at 0°C.'"*
+- Reported: *"The engineer said that water **freezes** at 0°C."* (Scientific fact).
+- Direct: *"The CEO said, 'Our headquarters is in London.'"*
+- Reported: *"The CEO said that their headquarters **is** in London."* (Still true today).
+
+:::grammar
+INCORRECT: The legal counsel asked me where did I store the confidential files.
+CORRECT: The legal counsel asked me where I had stored the confidential files.
+EXPLANATION: In reported questions, do not use question word order (auxiliary did + subject). The clause becomes a declarative statement: subject + verb ("where I had stored").
+:::
+
+---
+
+## 2. Reporting Questions: Declarative Inversion
+
+When converting questions into reported speech:
+1. The question mark is replaced by a period.
+2. The question auxiliary (*do/does/did*) is eliminated.
+3. The clause shifts to normal **Subject + Verb** word order.
+
+### A. Wh-Questions:
+- Direct: *"Where **are you hosting** the database?"*
+- Reported: *"He inquired where **we were hosting** the database."* (Not *where were we hosting*).
+
+### B. Yes/No Questions (Use "If" or "Whether"):
+- Direct: *"Did the board approve the budget?"*
+- Reported: *"The CFO asked **whether the board had approved** the budget."*
+
+---
+
+## 3. Reporting Imperatives, Advice & Requests
+
+Do not use backshifted tenses for commands or recommendations. Use an **infinitive structure**:
+
+\`\`\`
+Formula:
+[Reporting Verb] + [Object] + [to / not to + Base Verb]
+\`\`\`
+
+- Direct: *"Submit the quarterly tax report by Friday."*
+  > Reported: *"The controller **instructed us to submit** the quarterly tax report by Friday."*
+- Direct: *"Please do not disclose proprietary source code."*
+  > Reported: *"The CTO **warned the developers not to disclose** proprietary source code."*
+
+---
+
+## 4. Deictic Shifts (Time and Place Adjustments)
+
+Because the location and time of reporting differ from the original utterance, spatial and temporal markers shift:
+
+- *Now* $\\to$ *then / at that time*
+- *Today* $\\to$ *that day*
+- *Yesterday* $\\to$ *the day before / the previous day*
+- *Tomorrow* $\\to$ *the next day / the following day*
+- *This / These* $\\to$ *that / those*
+- *Here* $\\to$ *there*
+
+---
+
+## Executive Writing Tip: Drafting Crisp Meeting Minutes
+
+In corporate minutes, avoid repetitive phrases like *"He said... Then she said... Then he said..."*. Use **nuanced reporting verbs** that convey stance and consensus:
+
+| Stance | Advanced Reporting Verbs | Example Application in Minutes |
+| :--- | :--- | :--- |
+| **Agreement** | *concurred, ratified, conceded* | *"The committee **concurred that** headcount expansion was justified."* |
+| **Recommendation** | *proposed, advocated, urged* | *"Dr. Vance **advocated restructuring** the onboarding pipeline."* |
+| **Caution** | *cautioned, highlighted, warned* | *"The risk officer **cautioned that** market volatility could delay closing."* |
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Convert this direct question to indirect speech: "The auditor asked: 'Have you reconciled the ledger?'"
+OPTION: The auditor asked had we reconciled the ledger?
+OPTION: The auditor asked whether we had reconciled the ledger.
+OPTION: The auditor asked if have we reconciled the ledger.
+OPTION: The auditor asked whether did we reconcile the ledger.
+ANSWER: 1
+EXPLANATION: "Whether" introduces the yes/no reported question, the auxiliary "have" backshifts to "had", and the sentence concludes with declarative subject-verb word order and a period.
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Reported Speech', 'Backshifting', 'Meeting Minutes', 'Writing Style'],
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Head of ESL Curriculum',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '12 min read',
+    status: 'published',
+    featured: false,
+  },
+
+  // 10. CLAUSES & COMPLEX SENTENCES
   {
     title: 'Noun Clauses, Relative Clauses & Adverbial Clauses: Complex Sentence Architecture & Punctuation',
     slug: 'clauses-noun-relative-and-adverbial-complex-sentences',
@@ -1139,7 +1540,7 @@ EXPLANATION: Because the author has only one eldest brother, his identity is alr
       role: 'Professor of English Linguistics',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
@@ -1147,104 +1548,7 @@ EXPLANATION: Because the author has only one eldest brother, his identity is alr
     featured: false,
   },
 
-  // 8. MODAL VERBS & EPISTEMIC HEDGING
-  {
-    title: 'Modal Verbs Mastery: Epistemic Deduction, Workplace Diplomacy & Academic Hedging',
-    slug: 'modal-verbs-mastery',
-    excerpt: 'Master primary and semi-modal verbs (Must, Should, Could, Would), navigate epistemic degrees of logical deduction, and apply academic hedging in executive communications.',
-    content: `Modal verbs are the subtlest instruments in English syntax. They do not express physical actions; instead, they color verbs with shades of **ability, obligation, permission, probability, and logical certainty**.
-
-In professional communication, choosing the wrong modal verb can make you sound overly aggressive (*"You must send this now"* instead of *"Could you please send this?"*), or dangerously uncertain (*"The server might crash"* instead of *"The server will crash unless patched"*).
-
-In this guide, we will analyze deontic versus epistemic modality, explore past modals of deduction, and learn the art of **academic and executive hedging**.
-
----
-
-## Deontic vs. Epistemic Modality
-
-Linguists divide modal verbs into two psychological registers:
-
-1. **Deontic (Intrinsic) Modality**: Relates to human control, duty, obligation, and permission (*"You **must** wear a safety helmet"*, *"You **may** proceed"*).
-2. **Epistemic (Extrinsic) Modality**: Relates to knowledge, evidence, and degrees of logical certainty (*"She **must** be in the laboratory; her car is parked outside"*).
-
----
-
-## The Spectrum of Logical Deduction (Epistemic Modality)
-
-When analyzing evidence, native speakers use modal verbs along a calibrated continuum:
-
-\`\`\`
-100% Certain (Direct Evidence):
-"The server is offline."
-
-95% Logical Deduction (Positive):
-"The server MUST be offline; no requests are resolving."
-
-50% Possibility / Probability:
-"The server COULD / MAY / MIGHT be offline due to scheduled maintenance."
-
-95% Logical Deduction (Negative):
-"The server CANNOT / COULDN'T be offline; the status dashboard is fully green."
-\`\`\`
-
-:::grammar
-INCORRECT: He hasn't answered three calls. He mustn't hear his phone.
-CORRECT: He hasn't answered three calls. He can't hear his phone.
-EXPLANATION: In standard American and British English, the negative logical deduction of "must" is "cannot" or "can't", not "mustn't" (which expresses deontic prohibition, e.g., "you mustn't touch that").
-:::
-
----
-
-## Past Modals of Deduction ($Modal + have + V3$)
-
-When evaluating past events with imperfect information:
-
-- **Must have + V3** (High confidence positive): *"They **must have missed** the flight; their luggage arrived alone."*
-- **Can't / Couldn't have + V3** (High confidence negative): *"He **couldn't have altered** the database; his account was disabled last week."*
-- **Might / May / Could have + V3** (Possibility): *"The parcel **might have been redirected** to the secondary warehouse."*
-- **Should have + V3** (Unfulfilled expectation / regret): *"We **should have audited** the code prior to deployment."*
-
----
-
-## Executive Writing Tip: Academic & Professional "Hedging"
-
-In research papers, executive risk memos, and legal briefs, making absolute, unqualified claims leaves authors vulnerable to disproof. **Hedging** is the intentional use of cautious, polite modal language:
-
-| Unhedged (Vulnerable & Over-Assertive) | Hedged (Professional & Nuanced) |
-| :--- | :--- |
-| *"This pricing model will fail in Europe."* | *"This pricing model **could encounter** consumer resistance in Europe."* |
-| *"The data proves that consumers demand AI."* | *"The data **would suggest** that consumers increasingly favor AI features."* |
-| *"You made an error on invoice #402."* | *"There **appears to be** a minor discrepancy on invoice #402."* |
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Which sentence represents the strongest negative logical deduction based on available evidence?
-OPTION: She might not know about the scheduled system outage.
-OPTION: She mustn't be aware of the system outage.
-OPTION: She cannot be aware of the system outage, as she only joined the company this morning.
-OPTION: She shouldn't be aware of the system outage.
-ANSWER: 2
-EXPLANATION: "Cannot be" expresses strong, evidence-backed negative deduction (impossibility).
-:::`,
-    category: 'Grammar',
-    tags: ['Grammar', 'Modal Verbs', 'Hedging', 'Writing Style', 'Workplace English'],
-    author: {
-      name: 'Sarah Jenkins',
-      role: 'Head of ESL Curriculum',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
-    publishedAt: '2026-09-24T18:00:00Z',
-    updatedAt: '2026-09-24T22:00:00Z',
-    readingTime: '11 min read',
-    status: 'published',
-    featured: false,
-  },
-
-  // 9. PASSIVE VOICE & CAUSATIVES (Repaired & Expanded)
+  // 11. PASSIVE VOICE & CAUSATIVES
   {
     title: 'Passive Voice Decoded: When, Why & How to Use It in Real Life and Executive Prose',
     slug: 'passive-voice-demystified',
@@ -1358,7 +1662,7 @@ EXPLANATION: In technical incident reports and compliance updates, passive voice
       role: 'Head of ESL Curriculum',
       avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '11 min read',
@@ -1366,7 +1670,104 @@ EXPLANATION: In technical incident reports and compliance updates, passive voice
     featured: false,
   },
 
-  // 10. CONDITIONALS & MIXED CONDITIONALS
+  // 12. MODAL VERBS & EPISTEMIC HEDGING
+  {
+    title: 'Modal Verbs Mastery: Epistemic Deduction, Workplace Diplomacy & Academic Hedging',
+    slug: 'modal-verbs-mastery',
+    excerpt: 'Master primary and semi-modal verbs (Must, Should, Could, Would), navigate epistemic degrees of logical deduction, and apply academic hedging in executive communications.',
+    content: `Modal verbs are the subtlest instruments in English syntax. They do not express physical actions; instead, they color verbs with shades of **ability, obligation, permission, probability, and logical certainty**.
+
+In professional communication, choosing the wrong modal verb can make you sound overly aggressive (*"You must send this now"* instead of *"Could you please send this?"*), or dangerously uncertain (*"The server might crash"* instead of *"The server will crash unless patched"*).
+
+In this guide, we will analyze deontic versus epistemic modality, explore past modals of deduction, and learn the art of **academic and executive hedging**.
+
+---
+
+## Deontic vs. Epistemic Modality
+
+Linguists divide modal verbs into two psychological registers:
+
+1. **Deontic (Intrinsic) Modality**: Relates to human control, duty, obligation, and permission (*"You **must** wear a safety helmet"*, *"You **may** proceed"*).
+2. **Epistemic (Extrinsic) Modality**: Relates to knowledge, evidence, and degrees of logical certainty (*"She **must** be in the laboratory; her car is parked outside"*).
+
+---
+
+## The Spectrum of Logical Deduction (Epistemic Modality)
+
+When analyzing evidence, native speakers use modal verbs along a calibrated continuum:
+
+\`\`\`
+100% Certain (Direct Evidence):
+"The server is offline."
+
+95% Logical Deduction (Positive):
+"The server MUST be offline; no requests are resolving."
+
+50% Possibility / Probability:
+"The server COULD / MAY / MIGHT be offline due to scheduled maintenance."
+
+95% Logical Deduction (Negative):
+"The server CANNOT / COULDN'T be offline; the status dashboard is fully green."
+\`\`\`
+
+:::grammar
+INCORRECT: He hasn't answered three calls. He mustn't hear his phone.
+CORRECT: He hasn't answered three calls. He can't hear his phone.
+EXPLANATION: In standard American and British English, the negative logical deduction of "must" is "cannot" or "can't", not "mustn't" (which expresses deontic prohibition, e.g., "you mustn't touch that").
+:::
+
+---
+
+## Past Modals of Deduction ($Modal + have + V3$)
+
+When evaluating past events with imperfect information:
+
+- **Must have + V3** (High confidence positive): *"They **must have missed** the flight; their luggage arrived alone."*
+- **Can't / Couldn't have + V3** (High confidence negative): *"He **couldn't have altered** the database; his account was disabled last week."*
+- **Might / May / Could have + V3** (Possibility): *"The parcel **might have been redirected** to the secondary warehouse."*
+- **Should have + V3** (Unfulfilled expectation / regret): *"We **should have audited** the code prior to deployment."*
+
+---
+
+## Executive Writing Tip: Academic & Professional "Hedging"
+
+In research papers, executive risk memos, and legal briefs, making absolute, unqualified claims leaves authors vulnerable to disproof. **Hedging** is the intentional use of cautious, polite modal language:
+
+| Unhedged (Vulnerable & Over-Assertive) | Hedged (Professional & Nuanced) |
+| :--- | :--- |
+| *"This pricing model will fail in Europe."* | *"This pricing model **could encounter** consumer resistance in Europe."* |
+| *"The data proves that consumers demand AI."* | *"The data **would suggest** that consumers increasingly favor AI features."* |
+| *"You made an error on invoice #402."* | *"There **appears to be** a minor discrepancy on invoice #402."* |
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence represents the strongest negative logical deduction based on available evidence?
+OPTION: She might not know about the scheduled system outage.
+OPTION: She mustn't be aware of the system outage.
+OPTION: She cannot be aware of the system outage, as she only joined the company this morning.
+OPTION: She shouldn't be aware of the system outage.
+ANSWER: 2
+EXPLANATION: "Cannot be" expresses strong, evidence-backed negative deduction (impossibility).
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Modal Verbs', 'Hedging', 'Writing Style', 'Workplace English'],
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Head of ESL Curriculum',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '11 min read',
+    status: 'published',
+    featured: false,
+  },
+
+  // 13. CONDITIONALS & MIXED CONDITIONALS
   {
     title: 'Mastering Conditional Sentences: Zero, First, Second, Third, and Mixed Conditionals',
     slug: 'mastering-conditional-sentences-zero-first-second-third',
@@ -1475,7 +1876,7 @@ EXPLANATION: "If she had accepted (Past Perfect) ... she would be managing (woul
       role: 'Head of ESL Curriculum',
       avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
@@ -1483,7 +1884,7 @@ EXPLANATION: "If she had accepted (Past Perfect) ... she would be managing (woul
     featured: false,
   },
 
-  // 11. ADVANCED INVERSION, SUBJUNCTIVE & RHETORICAL GRAMMAR
+  // 14. ADVANCED INVERSION, SUBJUNCTIVE & RHETORICAL GRAMMAR
   {
     title: 'Advanced Inversion, Subjunctive Mood & Cleft Sentences: The Rhetorical Grammar Masterclass',
     slug: 'advanced-inversion-subjunctive-and-rhetorical-grammar',
@@ -1507,7 +1908,7 @@ Inverted Order:   [Negative Adverbial] + [Auxiliary] + [Subject] + [Main Verb]
 \`\`\`
 
 ### Negative Adverbials That Trigger Inversion:
-- *Seldom, Rarely, Scarcely, Barely, Hardley*
+- *Seldom, Rarely, Scarcely, Barely, Hardly*
 - *Never before, Under no circumstances, In no way*
 - *Not only... but also*
 - *Little did [subject] know/realize*
@@ -1564,14 +1965,6 @@ A **cleft sentence** (from the verb *cleave*, meaning to split) takes a single p
 
 ---
 
-## Executive Writing Tip: Using Inversion Without Sounding Pompous
-
-Rhetorical inversion is like truffle oil in cooking: a couple of drops elevates the dish; an entire cup ruins it. 
-- Reserve negative inversion for **key turning points** in a proposal, the concluding paragraph of an essay, or the opening hook of a keynote address.
-- Never use three inverted sentences in consecutive paragraphs.
-
----
-
 ## Interactive Knowledge Check
 
 :::quiz
@@ -1590,7 +1983,7 @@ EXPLANATION: Following "recommended that", the subordinate verb must remain in t
       role: 'Professor of English Linguistics',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '13 min read',
@@ -1598,7 +1991,7 @@ EXPLANATION: Following "recommended that", the subordinate verb must remain in t
     featured: false,
   },
 
-  // 12. PUNCTUATION MECHANICS & PARALLEL STRUCTURE
+  // 15. PUNCTUATION MECHANICS & PARALLEL STRUCTURE
   {
     title: 'Punctuation Mechanics & Parallel Structure: The Architectural Guide to Flawless Professional Prose',
     slug: 'mastering-punctuation-mechanics-and-parallel-structure',
@@ -1671,24 +2064,6 @@ Elements connected by *not only... but also*, *either... or*, and *neither... no
 
 ---
 
-## Executive Writing Tip: Parallelism in Bulleted Lists
-
-In executive slide decks, resumes, and business proposals, mismatched bullet points destroy visual and logical coherence:
-
-\`\`\`
-Unprofessional (Mismatched):
-• Managed a team of 15 engineers
-• Responsible for budget oversight (Noun Phrase)
-• Improving customer satisfaction metrics (Gerund)
-
-Executive & Parallel:
-• Managed a team of 15 engineers (Past Verb)
-• Oversaw a $4M operating budget (Past Verb)
-• Improved customer satisfaction by 28% (Past Verb)
-\`\`\`
-
----
-
 ## Interactive Knowledge Check
 
 :::quiz
@@ -1707,11 +2082,154 @@ EXPLANATION: "The project concluded ahead of schedule, the team received bonuses
       role: 'Professor of English Linguistics',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
     },
-    featuredImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&auto=format&fit=crop&q=80',
+    featuredImage: 'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&auto=format&fit=crop&q=80',
     publishedAt: '2026-09-24T18:00:00Z',
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
     featured: false,
+  },
+
+  // 16. PROFESSIONAL & TECHNICAL REPORT WRITING SKILLS (NEW)
+  {
+    title: 'Professional & Technical Report Writing Mastery: Syntax, Structure, Data Commentary & Executive Recommendations',
+    slug: 'professional-and-technical-report-writing-skills',
+    excerpt: 'Master the definitive architectural syntax of executive and technical reports: structural sections, objective findings grammar, trend commentary verbs, and actionable recommendation formulas.',
+    content: `In the modern workplace, career trajectory is heavily dictated by your ability to synthesize raw data, evaluate business problems, and communicate strategic insights in written form: **The Professional Report**.
+
+Whether compiling an incident audit, a market feasibility study, a quarterly performance evaluation, or a technical architecture proposal, a report is fundamentally different from a casual blog or an email. It demands **rigid structural architecture**, an **objective grammatical register**, and **precise syntactic framing** that distinguishes verified empirical findings from strategic recommendations.
+
+In this masterclass, we will deconstruct the anatomy of professional reports, examine the grammar of data commentary, master the shift from findings to recommendations, and provide practical templates for executive excellence.
+
+---
+
+## The 5-Part Architectural Blueprint of a Professional Report
+
+Every formal business or technical report follows this recognized macro-structure:
+
+\`\`\`
+The Standard Report Hierarchy:
+1. EXECUTIVE SUMMARY (High-level abstract: Problem, Finding, Financial Impact, Core Action)
+2. TERMS OF REFERENCE & BACKGROUND (Scope, Objectives, Methodology, Limitations)
+3. FINDINGS & ANALYSIS (Objective facts, quantitative data, empirical observations)
+4. CONCLUSIONS (Logical deductions drawn strictly from the findings)
+5. RECOMMENDATIONS (Prescriptive, forward-looking, actionable initiatives)
+\`\`\`
+
+---
+
+## 1. Executive Summary: The Elevator Pitch
+
+Executives frequently read *only* the Executive Summary before deciding whether to commission a project or approve a budget.
+
+### Syntactic Requirements:
+- Write in concise, active, declarative sentences.
+- Include the **Problem statement**, the **Core metric / Finding**, and the **Primary recommendation with ROI**.
+- Length: 150 to 250 words maximum.
+
+> *"This report evaluates the operational downtime observed in our European logistics clusters during Q3. Automated monitoring identified a 14.2% latency spike caused by legacy server firmware. By upgrading to distributed edge architecture, the enterprise can reduce system failovers by 85% and achieve an annualized cost savings of €1.4M. Implementation should commence immediately under Phase 1 protocol."*
+
+---
+
+## 2. The Grammar of Data Commentary: Trends, Changes & Proportions
+
+When analyzing charts, metrics, and quantitative evidence in Section 3 (*Findings*), you must command the grammar of **trend movement**:
+
+### A. Verbs & Prepositions of Movement:
+- **Increase / Rise / Surge**: *"Revenues **increased by** 18% (amount of change) **to** $4.2M (final level)."*
+- **Decrease / Decline / Plummet**: *"Operating margins **fell from** 24% **to** 16%."*
+- **Fluctuate / Plateau**: *"Server latency **fluctuated between** 120ms and 180ms before **plateauing at** 135ms."*
+- **Account for**: *"Renewable contracts **accounted for** 42% of total procurement."*
+
+### B. Adverbial Calibration:
+Avoid emotional words like *"amazing"* or *"terrible"*. Use calibrated adverbs of scale:
+- *Dramatically, substantially, significantly, moderately, marginally, negligibly*.
+> *"Customer acquisition costs increased **marginally** (+1.2%), while organic traffic surged **substantially** (+44%)."*
+
+:::grammar
+INCORRECT: The sales increased with 20% in the last month.
+CORRECT: Sales increased by 20% over the last month.
+EXPLANATION: To express the margin of change, use the preposition "by" (increased by 20%), not "with". To express the destination level, use "to" (increased to $5M).
+:::
+
+---
+
+## 3. Findings vs. Recommendations: The Crucial Grammatical Shift
+
+The most critical syntactic skill in report writing is knowing when to use **objective past passive** and when to switch to **prescriptive modal subjunctive**:
+
+| Section | Grammatical Stance | Key Syntactic Structures | Concrete Example |
+| :--- | :--- | :--- | :--- |
+| **Findings** | Objective, retrospective, factual | Past Simple, Present Perfect, Impersonal Passive | *"A 14% deficit **was identified** in regional stockpiles."*, *"Client surveys **revealed** dissatisfaction."* |
+| **Conclusions** | Logical deduction, interpretive | Present Simple, Evaluative Adjectives | *"This deficiency **indicates** inadequate demand forecasting during seasonal peaks."* |
+| **Recommendations** | Prescriptive, future-actionable | Mandative Subjunctive, Strong Modals (*should, must, recommend that... be*) | *"It is recommended that management **allocate** €250K to predictive inventory modeling."* |
+
+:::vocab
+WORD: Prescriptive
+PHONETIC: /prɪˈskrɪp.tɪv/
+MEANING: Relating to the imposition or enforcement of a rule or method; directing what action should be taken.
+EXAMPLE: Recommendations in technical reports must be prescriptive and measurable, not vague or aspirational.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 4. Signposting & Cohesion: Navigating the Reader
+
+Reports use formal signposting devices to guide the reader through complex arguments:
+
+- **Introducing Methodology**: *"To ascertain the root cause of component degradation, a comparative stress test **was conducted**..."*
+- **Contrasting Data**: *"**In contrast to** the Q1 baseline, Q3 throughput contracted by 6.4%."*
+- **Sequencing Evidence**: *"The analysis reveals three interdependent bottlenecks: **first**, obsolete firmware; **second**, inadequate bandwidth; and **third**, fragmented API endpoints."*
+- **Concluding Cause**: *"**Consequently**, continuation of the legacy architecture poses unacceptable compliance exposure."*
+
+---
+
+## 5. Structuring Actionable Recommendations
+
+Weak reports conclude with vague suggestions like *"The company should improve communication."* Executive reports provide **SMART Action Tables**:
+
+| Action Item | Responsible Department | Timeline | Target Metric / Deliverable |
+| :--- | :--- | :--- | :--- |
+| Deploy distributed CDN caching | Infrastructure Engineering | Q1 2027 | Sub-50ms global API latency |
+| Revise vendor compliance SLA | Legal & Procurement | Dec 15 | Signed penalty clause for outages |
+| Train support tier on triage | Customer Operations | Nov 30 | 40% reduction in escalation tickets |
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence represents the most appropriate grammatical style for the "Recommendations" section of a formal report?
+OPTION: We found out that the software was having lots of glitches last month.
+OPTION: It is strongly recommended that the engineering team deploy automated integration tests prior to the Q1 release.
+OPTION: Our software is pretty bad and someone should probably fix the tests.
+OPTION: An investigation of software glitches was conducted by our team yesterday.
+ANSWER: 1
+EXPLANATION: Option 2 deploys the formal impersonal passive with the mandative subjunctive ("recommended that the team deploy..."), making it prescriptive, objective, and authoritative. Option 4 belongs in Findings, while 1 and 3 are colloquial.
+:::
+
+:::quiz
+QUESTION: Which sentence correctly describes a statistical trend using proper prepositions?
+OPTION: Operating costs decreased to $50,000 with a total drop from 12%.
+OPTION: Operating costs decreased by $50,000, falling to an all-time low of $1.2M.
+OPTION: Operating costs decreased at $50,000 to an all-time low.
+OPTION: Operating costs decreased by $1.2M to $50,000.
+ANSWER: 1
+EXPLANATION: "Decreased by $50,000" correctly specifies the margin/amount of change, while "falling to an all-time low of $1.2M" specifies the resulting final level.
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Report Writing', 'Business Writing', 'Data Commentary', 'Executive English'],
+    author: {
+      name: 'Dr. Marcus Vance',
+      role: 'Professor of English Linguistics',
+      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '13 min read',
+    status: 'published',
+    featured: true,
   },
 ];

@@ -6,7 +6,7 @@ export const CATEGORIES: Category[] = [
     slug: 'grammar',
     description: 'Master English sentence structures, tenses, prepositions, and rules without confusion.',
     icon: 'BookOpen',
-    postCount: 12,
+    postCount: 16,
     color: 'emerald',
   },
   {
