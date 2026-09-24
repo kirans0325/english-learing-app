@@ -131,6 +131,8 @@ EXPLANATION: Shadowing is a motor-skill conditioning drill that trains muscle me
     updatedAt: '2026-03-24T09:30:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
   {
@@ -229,6 +231,8 @@ EXPLANATION: Adding a descriptive detail gives your conversation partner an easy
     updatedAt: '2026-03-24T14:30:00Z',
     readingTime: '8 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
   {
@@ -328,6 +332,8 @@ EXPLANATION: Option 2 validates the colleague's perspective while introducing a 
     updatedAt: '2026-03-24T11:00:00Z',
     readingTime: '8 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
   {
@@ -415,6 +421,8 @@ EXPLANATION: "Anyway" is the classic native conversational bridge used to resume
     updatedAt: '2026-03-24T10:00:00Z',
     readingTime: '8 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
   {
@@ -561,6 +569,8 @@ EXPLANATION: Pivoting to the counter-argument ("On the flip side...", "Now, crit
     updatedAt: '2026-03-24T13:00:00Z',
     readingTime: '11 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: true,
   },
   {
@@ -713,6 +723,8 @@ Follow this protocol for 21 consecutive days, and your conversational fluidity, 
     updatedAt: '2026-03-24T14:00:00Z',
     readingTime: '13 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: true,
   },
 ];

@@ -93,6 +93,14 @@ export async function ensureIndexes(): Promise<void> {
     const pdfDownloadsCollection = db.collection('pdf_downloads');
     await pdfDownloadsCollection.createIndex({ userId: 1, downloadDate: 1 });
 
+    // Progressive curriculum ordering index
+    await postsCollection.createIndex({ category: 1, difficultyOrder: 1, publishedAt: 1 });
+
+    // Lightweight 30-day user history TTL collection (auto-purges after 30 days)
+    const userHistoryCollection = db.collection('user_history');
+    await userHistoryCollection.createIndex({ visitedAt: 1 }, { expireAfterSeconds: 30 * 86400, background: true });
+    await userHistoryCollection.createIndex({ userId: 1, slug: 1 }, { unique: true });
+
     indexesInitialized = true;
   } catch (err) {
     console.warn('Index initialization notice:', err);

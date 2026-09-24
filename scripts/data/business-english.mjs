@@ -1,6 +1,6 @@
 export const BUSINESS_ENGLISH_POSTS = [
   {
-    title: 'How to Write Clear and Professional Business Emails',
+title: 'How to Write Clear and Professional Business Emails',
     slug: 'how-to-write-professional-business-emails',
     excerpt: 'Transform your written communication with executive clarity, actionable subject lines, and 5 complete workplace email templates.',
     content: `In modern international business, email is the primary mirror of your professional competence. Long before colleagues or clients ever hear your voice or shake your hand, **they form judgments based on your emails.**
@@ -148,307 +148,12 @@ EXPLANATION: "Per my last email" is widely perceived in English workplace cultur
     updatedAt: '2026-03-24T08:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
-  {
-    title: 'Leading and Participating in Remote Business Meetings in English',
-    slug: 'business-meetings-in-english',
-    excerpt: 'Essential phrases for managing agendas, interrupting politely, resolving audio lag, and summarizing action items on Zoom and Teams.',
-    content: `Leading or contributing to a virtual business meeting in English can feel daunting when competing against fast-talking native speakers, background lag, and overlapping audio channels.
 
-In remote environments, informal physical cues (leaning forward, making eye contact) disappear. To make your voice heard without being rude, you must use **explicit verbal signposts.**
-
-In this lesson, you will master the exact phraseology needed to steer virtual meetings with authority.
-
-## 1. Technical Check & Opening the Meeting
-
-\`\`\`
-Opening Phrasings:
-- "Good morning everyone. Before we jump in, can everyone see my shared screen?"
-- "Let's give everyone another 60 seconds to connect, and then we'll get started."
-- "Thanks for hopping on. Our main objective today is to finalize the Q3 budget."
-\`\`\`
-
-:::vocab
-WORD: Agenda
-PHONETIC: /əˈdʒen.də/
-MEANING: A list of items to be discussed at a formal meeting.
-EXAMPLE: Let's stick closely to today's agenda so we can conclude ten minutes early.
-DIFFICULTY: Intermediate
-:::
-
----
-
-## 2. Interrupting Diplomatically on Virtual Calls
-
-When two people speak simultaneously on a video call, audio cuts out. To interject smoothly without sounding abrasive:
-
-- *"Sorry to cut in, but before we move on to the next slide, could I clarify one point regarding the API specifications?"*
-- *"If I could just interject for a moment..."*
-- *"Excuse me, Maria, while we're on the subject of pricing..."*
-
-:::grammar
-INCORRECT: Stop talking, I want to say something important!
-CORRECT: Sorry to jump in, but may I add a quick observation on that point?
-EXPLANATION: Polite modal interjections ("may I add", "sorry to jump in") acknowledge the speaker while claiming the speaking floor diplomatically.
-:::
-
----
-
-## 3. Dealing with Technical & Connectivity Glitches
-
-| Glitch | What to Say Professionally |
-| :--- | :--- |
-| **Audio frozen** | *"Marcus, you're breaking up slightly. Could you repeat the last sentence?"* |
-| **Accidental mute** | *"I think you might be on mute, Sarah."* |
-| **Audio echo** | *"There seems to be an echo on the line; could everyone double-check they're muted when not speaking?"* |
-| **Screen not loading** | *"It looks like your slide deck hasn't refreshed yet; it's still showing the title slide."* |
-
----
-
-## 4. Closing and Locking Down Accountability
-
-The worst meetings end with vague smiles and *"Great chat everyone, see you later!"* without assigned owners. Always conclude with a **Recap of Action Items**:
-
-\`\`\`markdown
-The 2-Minute Meeting Close:
-"To wrap things up and ensure everyone is aligned on next steps:
-1. Alex will deliver the revised wireframes by Wednesday at noon.
-2. Priya is coordinating with legal regarding the NDA by Thursday.
-3. I will circulate the consolidated notes and action items before 5:00 PM today.
-Thanks everyone for your time!"
-\`\`\`
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: You are on a Zoom call and a colleague's microphone is producing severe distortion and cutting out. What is the most professional response?
-OPTION: "Your internet is terrible, please fix it."
-OPTION: "Alex, you're breaking up slightly. Would you mind turning off your video camera to preserve bandwidth?"
-OPTION: "I cannot understand anything you are saying."
-OPTION: Leave the meeting quietly without saying anything.
-ANSWER: 1
-EXPLANATION: Option 2 identifies the issue constructively and offers a practical technical solution (turning off video) without embarrassment.
-:::
-
-## Key Takeaways
-
-- Establish the meeting objective in the first 90 seconds.
-- Use explicit verbal tags (*"May I jump in here?"*) to navigate audio lag.
-- Never end a meeting without naming who owns each deliverable and deadline.`,
-    category: 'Business English',
-    tags: ['Business English', 'Meetings', 'Remote Work', 'Zoom Teams', 'Workplace'],
-    author: {
-      name: 'Victoria Stone',
-      role: 'Corporate Communications Consultant',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-      bio: 'Executive advisor coaching multinationals on cross-border business writing and high-stakes negotiation.',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=1200&auto=format&fit=crop&q=80',
-    publishedAt: '2026-03-20T13:00:00Z',
-    updatedAt: '2026-03-24T13:00:00Z',
-    readingTime: '9 min read',
-    status: 'published',
-    featured: false,
-  },
-  {
-    title: 'Negotiation Phrases: How to Propose, Counter, and Seal the Deal',
-    slug: 'negotiation-phrases-business-english',
-    excerpt: 'Master the art of commercial bargaining in English. Learn conditional proposals, concession trading, and deal-closing scripts.',
-    content: `Negotiation is not an argument; it is **joint problem-solving under conditions of conflicting interest.**
-
-When negotiating in a second language, learners often struggle because they lack the linguistic nuance to make concessions without giving away the store, or to reject terms without offending the counterparty.
-
-In this lesson, you will master the strategic vocabulary of international commercial negotiations.
-
-## The Principle of Conditional Concessions
-
-The golden rule of commercial negotiation is: **Never give away a concession for free.** Always tie concessions to a conditional clause:
-
-\`\`\`
-The "If-Then" Concession Formula:
-"If you can [concession from counterparty], then we would be prepared to [concession from our side]."
-\`\`\`
-
-Examples:
-- *"If you can commit to a two-year enterprise license, then we would be willing to provide complimentary onboarding and training."*
-- *"If you can adjust payment terms to net-15, we can consider a 5% volume discount."*
-
-:::vocab
-WORD: Concession
-PHONETIC: /kənˈseʃ.ən/
-MEANING: A thing that is granted or yielded, especially in response to demands during a negotiation.
-EXAMPLE: We offered a modest price concession in exchange for exclusive distribution rights.
-DIFFICULTY: Advanced
-:::
-
----
-
-## 1. Softening Counter-Proposals
-
-If you reject an offer bluntly (*"That price is too high; we will only pay \$10,000"*), you create an adversarial dynamic. Soften your position while remaining commercially firm:
-
-:::grammar
-INCORRECT: No, we refuse your terms. Your payment window is impossible.
-CORRECT: We are enthusiastic about partnering with your team; however, the proposed 30-day payment turnaround poses cash-flow constraints for our procurement division. Would you consider net-60?
-EXPLANATION: Validate mutual enthusiasm first, explain the objective constraint, and frame the counter-offer as an exploratory question.
-:::
-
----
-
-## 2. Essential Negotiation Phrase Bank
-
-
-
- *"How flexible are you on the delivery schedule?"*
-- *"What are the primary deal-breakers from your executive board's standpoint?"*
-- *"Is there any wiggle room on the minimum order quantity?"*
-
-
-
- *"Unfortunately, that falls outside our authorized parameter."*
-- *"I'm afraid our risk committee would not permit that liability exposure."*
-- *"At that price point, we simply cannot guarantee the level of SLA support you require."*
-
-
-
- *"It sounds like we have found common ground on the deliverables and pricing."*
-- *"If you are agreeable to these terms, I will have our legal team draft the Master Services Agreement by tomorrow."*
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Why is the "If-Then" conditional concession formula so powerful in business negotiations?
-OPTION: Because it tricks the client into signing immediately.
-OPTION: Because it ensures that every concession you grant is matched by a valuable concession in return, protecting your margins.
-OPTION: Because it is shorter than other sentences.
-OPTION: Because it eliminates all need for legal contracts.
-ANSWER: 1
-EXPLANATION: The conditional concession formula ensures mutual exchange, preventing one-sided erosion of terms or profit margins.
-:::
-
-## Key Habits for Negotiation Success
-
-- Never accept the first offer immediately; always pause to consider trade-offs.
-- Always frame constraints around external factors (company policy, regulatory rules) rather than personal stubbornness.
-- Confirm every agreed term in writing within 24 hours of the verbal discussion.`,
-    category: 'Business English',
-    tags: ['Business English', 'Negotiation', 'Bargaining', 'Workplace', 'Contracts'],
-    author: {
-      name: 'Victoria Stone',
-      role: 'Corporate Communications Consultant',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-      bio: 'Executive advisor coaching multinationals on cross-border business writing and high-stakes negotiation.',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&auto=format&fit=crop&q=80',
-    publishedAt: '2026-03-19T15:00:00Z',
-    updatedAt: '2026-03-24T15:00:00Z',
-    readingTime: '9 min read',
-    status: 'published',
-    featured: false,
-  },
-  {
-    title: 'Presenting Data and Trends Confidently in English',
-    slug: 'presenting-data-and-trends',
-    excerpt: 'Move beyond "went up" and "went down." Master dynamic verbs, prepositions of change, and storytelling with charts and metrics.',
-    content: `When presenting charts, financial graphs, or quarterly telemetry in English, many non-native speakers rely repeatedly on two tired verbs: **"went up"** and **"went down."**
-- *"In Q1, sales went up. In Q2, expenses went up. In Q3, churn went down."*
-
-While understandable, this repetitive vocabulary fails to capture the **speed, scale, and strategic significance** of the data. Did sales rise gradually, or did they skyrocket? Did churn drop steadily, or did it plummet off a cliff?
-
-In this lesson, you will master the rich vocabulary of numerical trends and conquer the treacherous prepositions of data change.
-
-## 1. Upward Trends: Capturing Velocity and Scale
-
-| Degree of Rise | Verbs | Adverbs | Example |
-| :--- | :--- | :--- | :--- |
-| **Dramatically / Rapidly** | **Skyrocket, surge, soar, jump** | *Dramatically, exponentially, sharply* | *"Mobile traffic **surged by 45%** following the product launch."* |
-| **Moderate / Steady** | **Increase, rise, climb, expand** | *Steadily, moderately, consistently* | *"Subscription renewals **climbed steadily** throughout Q2."* |
-| **Slight / Marginal** | **Edge up, creep up, tick up** | *Slightly, marginally* | *"Customer churn **edged up slightly** by 0.3%."* |
-
-:::vocab
-WORD: Exponential
-PHONETIC: /ˌek.spəˈnen.ʃəl/
-MEANING: Becoming more and more rapid; exhibiting extremely fast geometric growth.
-EXAMPLE: Following the viral media campaign, user registrations experienced exponential growth.
-DIFFICULTY: Advanced
-:::
-
----
-
-## 2. Downward Trends: Precision in Decline
-
-| Degree of Fall | Verbs | Adverbs | Example |
-| :--- | :--- | :--- | :--- |
-| **Severe / Rapid** | **Plummet, plunge, crash, tumble** | *Precipitously, drastically* | *"Infrastructure server costs **plummeted by 60%** post-migration."* |
-| **Moderate / Steady** | **Decrease, decline, drop, contract** | *Gradually, consistently* | *"Support ticket backlogs **declined steadily** month-over-month."* |
-| **Reaching Bottom** | **Bottom out, hit a plateau** | *Eventually* | *"After three months of volatility, churn **bottomed out** at 1.8%."* |
-
----
-
-## 3. The Preposition Trap: "By", "To", "At", and "Of"
-
-Prepositions cause immense confusion when describing numbers. A single wrong preposition changes the financial reality completely:
-
-\`\`\`
-1. Rise TO [Final Destination]:
-   "Sales rose TO $5 million." (The new final revenue number is $5M.)
-
-2. Rise BY [Difference / Margin of Change]:
-   "Sales rose BY $5 million." (If previous sales were $10M, they are now $15M!)
-
-3. Stand AT [Current Level]:
-   "Our net margin currently stands AT 22%."
-
-4. An increase OF [Specific Amount]:
-   "We recorded an increase OF 15,000 active daily users."
-\`\`\`
-
-:::grammar
-INCORRECT: Our company profits increased at 25% last year.
-CORRECT: Our company profits increased by 25% last year.
-EXPLANATION: Use "by" to denote the margin of difference or percentage of growth.
-:::
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Last month, your customer acquisition cost was $100. This month, it is $70. Which sentence describes this change with mathematical and grammatical precision?
-OPTION: Customer acquisition cost fell to $30.
-OPTION: Customer acquisition cost fell by $30 to $70.
-OPTION: Customer acquisition cost fell at $70 by $30.
-OPTION: Customer acquisition cost decreased of $30.
-ANSWER: 1
-EXPLANATION: "Fell by $30" describes the margin of reduction, and "to $70" indicates the resulting destination number.
-:::
-
-## Key Takeaway Checklist
-
-- Ditch *"went up/down"*; use evocative verbs like *surge, climb, contract, and plummet*.
-- Double-check **by** (the change) vs **to** (the finish line).
-- Lead with the business insight behind the chart, not just the raw numbers.`,
-    category: 'Business English',
-    tags: ['Business English', 'Data Presentation', 'Trends', 'Charts', 'Metrics'],
-    author: {
-      name: 'Victoria Stone',
-      role: 'Corporate Communications Consultant',
-      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
-      bio: 'Executive advisor coaching multinationals on cross-border business writing and high-stakes negotiation.',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=80',
-    publishedAt: '2026-03-18T16:00:00Z',
-    updatedAt: '2026-03-24T16:00:00Z',
-    readingTime: '9 min read',
-    status: 'published',
-    featured: false,
-  },
-  {
+    {
     title: 'The Top 100 Most Common Words and Collocations in Modern Business & Workplace English',
     slug: 'top-100-business-and-workplace-english-words-and-collocations',
     excerpt: 'Master the 100 high-frequency vocabulary terms and executive collocations that drive modern global business. Includes domain breakdowns, real-world dialogues, and jargon replacements.',
@@ -623,7 +328,316 @@ EXPLANATION: Top-line represents total gross sales (the top line of an income st
     updatedAt: '2026-03-24T15:00:00Z',
     readingTime: '14 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
+  },
+
+    {
+    title: 'Leading and Participating in Remote Business Meetings in English',
+    slug: 'business-meetings-in-english',
+    excerpt: 'Essential phrases for managing agendas, interrupting politely, resolving audio lag, and summarizing action items on Zoom and Teams.',
+    content: `Leading or contributing to a virtual business meeting in English can feel daunting when competing against fast-talking native speakers, background lag, and overlapping audio channels.
+
+In remote environments, informal physical cues (leaning forward, making eye contact) disappear. To make your voice heard without being rude, you must use **explicit verbal signposts.**
+
+In this lesson, you will master the exact phraseology needed to steer virtual meetings with authority.
+
+## 1. Technical Check & Opening the Meeting
+
+\`\`\`
+Opening Phrasings:
+- "Good morning everyone. Before we jump in, can everyone see my shared screen?"
+- "Let's give everyone another 60 seconds to connect, and then we'll get started."
+- "Thanks for hopping on. Our main objective today is to finalize the Q3 budget."
+\`\`\`
+
+:::vocab
+WORD: Agenda
+PHONETIC: /əˈdʒen.də/
+MEANING: A list of items to be discussed at a formal meeting.
+EXAMPLE: Let's stick closely to today's agenda so we can conclude ten minutes early.
+DIFFICULTY: Intermediate
+:::
+
+---
+
+## 2. Interrupting Diplomatically on Virtual Calls
+
+When two people speak simultaneously on a video call, audio cuts out. To interject smoothly without sounding abrasive:
+
+- *"Sorry to cut in, but before we move on to the next slide, could I clarify one point regarding the API specifications?"*
+- *"If I could just interject for a moment..."*
+- *"Excuse me, Maria, while we're on the subject of pricing..."*
+
+:::grammar
+INCORRECT: Stop talking, I want to say something important!
+CORRECT: Sorry to jump in, but may I add a quick observation on that point?
+EXPLANATION: Polite modal interjections ("may I add", "sorry to jump in") acknowledge the speaker while claiming the speaking floor diplomatically.
+:::
+
+---
+
+## 3. Dealing with Technical & Connectivity Glitches
+
+| Glitch | What to Say Professionally |
+| :--- | :--- |
+| **Audio frozen** | *"Marcus, you're breaking up slightly. Could you repeat the last sentence?"* |
+| **Accidental mute** | *"I think you might be on mute, Sarah."* |
+| **Audio echo** | *"There seems to be an echo on the line; could everyone double-check they're muted when not speaking?"* |
+| **Screen not loading** | *"It looks like your slide deck hasn't refreshed yet; it's still showing the title slide."* |
+
+---
+
+## 4. Closing and Locking Down Accountability
+
+The worst meetings end with vague smiles and *"Great chat everyone, see you later!"* without assigned owners. Always conclude with a **Recap of Action Items**:
+
+\`\`\`markdown
+The 2-Minute Meeting Close:
+"To wrap things up and ensure everyone is aligned on next steps:
+1. Alex will deliver the revised wireframes by Wednesday at noon.
+2. Priya is coordinating with legal regarding the NDA by Thursday.
+3. I will circulate the consolidated notes and action items before 5:00 PM today.
+Thanks everyone for your time!"
+\`\`\`
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: You are on a Zoom call and a colleague's microphone is producing severe distortion and cutting out. What is the most professional response?
+OPTION: "Your internet is terrible, please fix it."
+OPTION: "Alex, you're breaking up slightly. Would you mind turning off your video camera to preserve bandwidth?"
+OPTION: "I cannot understand anything you are saying."
+OPTION: Leave the meeting quietly without saying anything.
+ANSWER: 1
+EXPLANATION: Option 2 identifies the issue constructively and offers a practical technical solution (turning off video) without embarrassment.
+:::
+
+## Key Takeaways
+
+- Establish the meeting objective in the first 90 seconds.
+- Use explicit verbal tags (*"May I jump in here?"*) to navigate audio lag.
+- Never end a meeting without naming who owns each deliverable and deadline.`,
+    category: 'Business English',
+    tags: ['Business English', 'Meetings', 'Remote Work', 'Zoom Teams', 'Workplace'],
+    author: {
+      name: 'Victoria Stone',
+      role: 'Corporate Communications Consultant',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      bio: 'Executive advisor coaching multinationals on cross-border business writing and high-stakes negotiation.',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?w=1200&auto=format&fit=crop&q=80',
+    publishedAt: '2026-03-20T13:00:00Z',
+    updatedAt: '2026-03-24T13:00:00Z',
+    readingTime: '9 min read',
+    status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
+    featured: false,
+  },
+
+    {
+    title: 'Presenting Data and Trends Confidently in English',
+    slug: 'presenting-data-and-trends',
+    excerpt: 'Move beyond "went up" and "went down." Master dynamic verbs, prepositions of change, and storytelling with charts and metrics.',
+    content: `When presenting charts, financial graphs, or quarterly telemetry in English, many non-native speakers rely repeatedly on two tired verbs: **"went up"** and **"went down."**
+- *"In Q1, sales went up. In Q2, expenses went up. In Q3, churn went down."*
+
+While understandable, this repetitive vocabulary fails to capture the **speed, scale, and strategic significance** of the data. Did sales rise gradually, or did they skyrocket? Did churn drop steadily, or did it plummet off a cliff?
+
+In this lesson, you will master the rich vocabulary of numerical trends and conquer the treacherous prepositions of data change.
+
+## 1. Upward Trends: Capturing Velocity and Scale
+
+| Degree of Rise | Verbs | Adverbs | Example |
+| :--- | :--- | :--- | :--- |
+| **Dramatically / Rapidly** | **Skyrocket, surge, soar, jump** | *Dramatically, exponentially, sharply* | *"Mobile traffic **surged by 45%** following the product launch."* |
+| **Moderate / Steady** | **Increase, rise, climb, expand** | *Steadily, moderately, consistently* | *"Subscription renewals **climbed steadily** throughout Q2."* |
+| **Slight / Marginal** | **Edge up, creep up, tick up** | *Slightly, marginally* | *"Customer churn **edged up slightly** by 0.3%."* |
+
+:::vocab
+WORD: Exponential
+PHONETIC: /ˌek.spəˈnen.ʃəl/
+MEANING: Becoming more and more rapid; exhibiting extremely fast geometric growth.
+EXAMPLE: Following the viral media campaign, user registrations experienced exponential growth.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 2. Downward Trends: Precision in Decline
+
+| Degree of Fall | Verbs | Adverbs | Example |
+| :--- | :--- | :--- | :--- |
+| **Severe / Rapid** | **Plummet, plunge, crash, tumble** | *Precipitously, drastically* | *"Infrastructure server costs **plummeted by 60%** post-migration."* |
+| **Moderate / Steady** | **Decrease, decline, drop, contract** | *Gradually, consistently* | *"Support ticket backlogs **declined steadily** month-over-month."* |
+| **Reaching Bottom** | **Bottom out, hit a plateau** | *Eventually* | *"After three months of volatility, churn **bottomed out** at 1.8%."* |
+
+---
+
+## 3. The Preposition Trap: "By", "To", "At", and "Of"
+
+Prepositions cause immense confusion when describing numbers. A single wrong preposition changes the financial reality completely:
+
+\`\`\`
+1. Rise TO [Final Destination]:
+   "Sales rose TO $5 million." (The new final revenue number is $5M.)
+
+2. Rise BY [Difference / Margin of Change]:
+   "Sales rose BY $5 million." (If previous sales were $10M, they are now $15M!)
+
+3. Stand AT [Current Level]:
+   "Our net margin currently stands AT 22%."
+
+4. An increase OF [Specific Amount]:
+   "We recorded an increase OF 15,000 active daily users."
+\`\`\`
+
+:::grammar
+INCORRECT: Our company profits increased at 25% last year.
+CORRECT: Our company profits increased by 25% last year.
+EXPLANATION: Use "by" to denote the margin of difference or percentage of growth.
+:::
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Last month, your customer acquisition cost was $100. This month, it is $70. Which sentence describes this change with mathematical and grammatical precision?
+OPTION: Customer acquisition cost fell to $30.
+OPTION: Customer acquisition cost fell by $30 to $70.
+OPTION: Customer acquisition cost fell at $70 by $30.
+OPTION: Customer acquisition cost decreased of $30.
+ANSWER: 1
+EXPLANATION: "Fell by $30" describes the margin of reduction, and "to $70" indicates the resulting destination number.
+:::
+
+## Key Takeaway Checklist
+
+- Ditch *"went up/down"*; use evocative verbs like *surge, climb, contract, and plummet*.
+- Double-check **by** (the change) vs **to** (the finish line).
+- Lead with the business insight behind the chart, not just the raw numbers.`,
+    category: 'Business English',
+    tags: ['Business English', 'Data Presentation', 'Trends', 'Charts', 'Metrics'],
+    author: {
+      name: 'Victoria Stone',
+      role: 'Corporate Communications Consultant',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      bio: 'Executive advisor coaching multinationals on cross-border business writing and high-stakes negotiation.',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&auto=format&fit=crop&q=80',
+    publishedAt: '2026-03-18T16:00:00Z',
+    updatedAt: '2026-03-24T16:00:00Z',
+    readingTime: '9 min read',
+    status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
+    featured: false,
+  },
+
+    {
+    title: 'Negotiation Phrases: How to Propose, Counter, and Seal the Deal',
+    slug: 'negotiation-phrases-business-english',
+    excerpt: 'Master the art of commercial bargaining in English. Learn conditional proposals, concession trading, and deal-closing scripts.',
+    content: `Negotiation is not an argument; it is **joint problem-solving under conditions of conflicting interest.**
+
+When negotiating in a second language, learners often struggle because they lack the linguistic nuance to make concessions without giving away the store, or to reject terms without offending the counterparty.
+
+In this lesson, you will master the strategic vocabulary of international commercial negotiations.
+
+## The Principle of Conditional Concessions
+
+The golden rule of commercial negotiation is: **Never give away a concession for free.** Always tie concessions to a conditional clause:
+
+\`\`\`
+The "If-Then" Concession Formula:
+"If you can [concession from counterparty], then we would be prepared to [concession from our side]."
+\`\`\`
+
+Examples:
+- *"If you can commit to a two-year enterprise license, then we would be willing to provide complimentary onboarding and training."*
+- *"If you can adjust payment terms to net-15, we can consider a 5% volume discount."*
+
+:::vocab
+WORD: Concession
+PHONETIC: /kənˈseʃ.ən/
+MEANING: A thing that is granted or yielded, especially in response to demands during a negotiation.
+EXAMPLE: We offered a modest price concession in exchange for exclusive distribution rights.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 1. Softening Counter-Proposals
+
+If you reject an offer bluntly (*"That price is too high; we will only pay \$10,000"*), you create an adversarial dynamic. Soften your position while remaining commercially firm:
+
+:::grammar
+INCORRECT: No, we refuse your terms. Your payment window is impossible.
+CORRECT: We are enthusiastic about partnering with your team; however, the proposed 30-day payment turnaround poses cash-flow constraints for our procurement division. Would you consider net-60?
+EXPLANATION: Validate mutual enthusiasm first, explain the objective constraint, and frame the counter-offer as an exploratory question.
+:::
+
+---
+
+## 2. Essential Negotiation Phrase Bank
+
+
+
+ *"How flexible are you on the delivery schedule?"*
+- *"What are the primary deal-breakers from your executive board's standpoint?"*
+- *"Is there any wiggle room on the minimum order quantity?"*
+
+
+
+ *"Unfortunately, that falls outside our authorized parameter."*
+- *"I'm afraid our risk committee would not permit that liability exposure."*
+- *"At that price point, we simply cannot guarantee the level of SLA support you require."*
+
+
+
+ *"It sounds like we have found common ground on the deliverables and pricing."*
+- *"If you are agreeable to these terms, I will have our legal team draft the Master Services Agreement by tomorrow."*
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Why is the "If-Then" conditional concession formula so powerful in business negotiations?
+OPTION: Because it tricks the client into signing immediately.
+OPTION: Because it ensures that every concession you grant is matched by a valuable concession in return, protecting your margins.
+OPTION: Because it is shorter than other sentences.
+OPTION: Because it eliminates all need for legal contracts.
+ANSWER: 1
+EXPLANATION: The conditional concession formula ensures mutual exchange, preventing one-sided erosion of terms or profit margins.
+:::
+
+## Key Habits for Negotiation Success
+
+- Never accept the first offer immediately; always pause to consider trade-offs.
+- Always frame constraints around external factors (company policy, regulatory rules) rather than personal stubbornness.
+- Confirm every agreed term in writing within 24 hours of the verbal discussion.`,
+    category: 'Business English',
+    tags: ['Business English', 'Negotiation', 'Bargaining', 'Workplace', 'Contracts'],
+    author: {
+      name: 'Victoria Stone',
+      role: 'Corporate Communications Consultant',
+      avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80',
+      bio: 'Executive advisor coaching multinationals on cross-border business writing and high-stakes negotiation.',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&auto=format&fit=crop&q=80',
+    publishedAt: '2026-03-19T15:00:00Z',
+    updatedAt: '2026-03-24T15:00:00Z',
+    readingTime: '9 min read',
+    status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
+    featured: false,
   },
 ];
 

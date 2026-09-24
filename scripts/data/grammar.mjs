@@ -1,7 +1,6 @@
 export const GRAMMAR_POSTS = [
-  // 1. PARTS OF SPEECH MASTERCLASS
   {
-    title: 'The 8 Parts of Speech: Complete Functional Syntax, Word Derivation & Sentence Construction Guide',
+title: 'The 8 Parts of Speech: Complete Functional Syntax, Word Derivation & Sentence Construction Guide',
     slug: 'mastering-the-8-parts-of-speech-guide',
     excerpt: 'Master the fundamental building blocks of the English language: functional syntax, open vs. closed classes, word-form derivation, and high-impact writing strategies to eliminate nominalizations.',
     content: `Every sentence in the English language, from a two-word nursery rhyme to a 500-page legal constitution, is constructed from eight fundamental categories of words: **The 8 Parts of Speech**. 
@@ -219,11 +218,12 @@ EXPLANATION: "We examined the budget and reached consensus" converts the bloated
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
 
-  // 2. SENTENCE PATTERNS GUIDE
-  {
+    {
     title: 'Mastering the 7 Essential English Sentence Patterns: From Basic Structures to Complex Workplace Fluency',
     slug: 'english-sentence-patterns-mastery-guide',
     excerpt: 'Comprehensive masterclass on the 7 core English sentence patterns (SV, SVO, SVC, SVOO, SVOC, SVA, SVOA), clause combinations, and stylistic transformations for confident professional writing.',
@@ -414,11 +414,12 @@ EXPLANATION: "Marcus" is the direct object receiving the appointment, and "inter
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '13 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
 
-  // 3. SUBJECT-VERB AGREEMENT MASTERCLASS (NEW)
-  {
+    {
     title: 'Subject-Verb Agreement Mastery: Tricky Collective Nouns, Inversions, Indefinite Pronouns & Proximity Rules',
     slug: 'subject-verb-agreement-mastery-guide',
     excerpt: 'Master the intricate rules of subject-verb agreement: navigating intervening prepositional phrases, collective nouns, the Rule of Proximity, inverted word order, and fractional quantities.',
@@ -565,11 +566,12 @@ EXPLANATION: "Equipment" is an uncountable mass noun. Following the SANAM pronou
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
 
-  // 4. ARTICLES & COUNTABILITY
-  {
+    {
     title: 'Definite, Indefinite & Zero Articles: When to Use A, An, The, and Omission Rules',
     slug: 'when-to-use-a-an-and-the',
     excerpt: 'Master English articles (A, An, The, and Zero Article) with clear cognitive decision trees, pronunciation phonetic guides, geographical rules, and business writing tips.',
@@ -715,11 +717,12 @@ EXPLANATION: "Gold" is an uncountable noun used here as a general philosophical 
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '10 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
 
-  // 5. PREPOSITIONS MASTERCLASS
-  {
+    {
     title: 'Prepositions of Time, Place, Movement & Collocations: The Complete Dimensional & Collocational Guide',
     slug: 'prepositions-of-time-place-movement-and-collocations',
     excerpt: 'Master English prepositions (In, On, At) using spatial dimensions and temporal hierarchy, eliminate prepositional pile-ups, and master dependent prepositional verbs.',
@@ -850,11 +853,12 @@ EXPLANATION: Exact clock times take "at" (at 3:00 PM), while calendar months tak
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '11 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
 
-  // 6. PRESENT SIMPLE VS PRESENT CONTINUOUS
-  {
+    {
     title: 'Present Simple vs Present Continuous: Complete Guide with Real Examples & Stative Shifts',
     slug: 'present-simple-vs-present-continuous',
     excerpt: 'Understand the core differences between habits and actions happening right now, stative verbs that reject -ing, dynamic shifts, and workplace communication nuances.',
@@ -1008,11 +1012,12 @@ EXPLANATION: "Doubt" is a stative verb of cognition; it correctly stays in the P
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '11 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
 
-  // 7. ADVANCED TENSES & ASPECTUAL HARMONY
-  {
+    {
     title: 'Advanced English Tenses & Aspectual Harmony: The 12-Tense Grid, Perfect Aspects, and Narrative Framing',
     slug: 'advanced-english-tenses-and-aspects-masterclass',
     excerpt: 'Master the 12 English tense-aspect combinations, establish precise temporal sequencing with Past Perfect and Future Perfect, and maintain aspectual harmony in complex writing.',
@@ -1126,11 +1131,12 @@ EXPLANATION: The keynote speech started before the CEO's arrival. Therefore, the
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
 
-  // 8. GERUNDS VS INFINITIVES (NEW)
-  {
+    {
     title: 'Gerunds vs Infinitives Mastery: Complementation Patterns, Meaning Shifts & Prepositional Traps',
     slug: 'gerunds-vs-infinitives-mastery-guide',
     excerpt: 'Master English verb complementation: verbs followed only by gerunds, verbs taking infinitives, critical verbs that alter meaning (stop, remember, try, regret), and prepositional gerund rules.',
@@ -1279,11 +1285,12 @@ EXPLANATION: "Stop + to-infinitive" indicates interrupting an ongoing activity i
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '13 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
 
-  // 9. REPORTED SPEECH & MEETING MINUTES (NEW)
-  {
+    {
     title: 'Reported Speech & Tense Backshifting Mastery: Executive Reporting, Meeting Minutes & Dialogue Paraphrasing',
     slug: 'reported-speech-and-tense-backshifting-masterclass',
     excerpt: 'Master the mechanics of indirect speech: the rules of tense backshifting, reporting questions and imperatives, shifting temporal/spatial deictics, and drafting precise meeting minutes.',
@@ -1415,11 +1422,351 @@ EXPLANATION: "Whether" introduces the yes/no reported question, the auxiliary "h
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
 
-  // 10. CLAUSES & COMPLEX SENTENCES
-  {
+    {
+    title: 'Passive Voice Decoded: When, Why & How to Use It in Real Life and Executive Prose',
+    slug: 'passive-voice-demystified',
+    excerpt: 'Master active vs. passive voice across all 12 tenses, understand the 4 legitimate reasons to use passive voice, avoid bureaucratic obscurity, and master causative structures.',
+    content: `Few topics in English grammar spark as much debate as the **Passive Voice**. Writing tools and word processors routinely flag passive sentences with warning squiggles, leading many learners to believe passive voice is an outright grammatical error.
+
+It is not. Passive voice is a legitimate, indispensable syntactic tool that exists in every major language. The question is never *“Is passive voice wrong?”* but rather **“Does passive voice serve a strategic communicative purpose here?”**
+
+In this comprehensive guide, we will examine the anatomical structure of the passive across all tenses, analyze the four legitimate scenarios where passive voice is superior to active voice, identify bureaucratic abuse, and explore causative structures.
+
+---
+
+## Active vs. Passive Anatomy
+
+In an **Active** sentence, the subject performs the action:
+> **The engineer (Subject/Agent)** repaired **the server (Object)**.
+
+In a **Passive** sentence, the receiver of the action becomes the grammatical subject:
+> **The server (Subject)** was repaired by **the engineer (Agent)**.
+
+\`\`\`
+Active:   [Subject / Doer] + [Action Verb] + [Receiver / Direct Object]
+Passive:  [Receiver / Object] + [BE + Past Participle (V3)] + (optional: by [Doer])
+\`\`\`
+
+---
+
+## The 4 Legitimate Reasons to Use Passive Voice
+
+Never use passive voice accidentally. Use it intentionally in these four scenarios:
+
+### 1. The Actor is Unknown or Obvious
+- *"My bicycle **was stolen** last night."* (The thief's identity is completely unknown).
+- *"The fugitive **was apprehended** at the border."* (It is obvious that law enforcement made the arrest).
+
+### 2. Scientific, Technical & Objective Focus
+In laboratory reports and technical breakthroughs, the process matters far more than the specific human holding the pipette:
+- *"Penicillin **was discovered** in 1928."*
+- *"The payload **was successfully deployed** into low Earth orbit."*
+
+### 3. Diplomatic Tact & De-escalation
+Passive voice allows professionals to address errors **without assigning aggressive personal blame**:
+- Active (Confrontational): *"You made an error on the quarterly tax filing."*
+- Passive (Diplomatic): *"An error **was made** on the quarterly tax filing."*
+
+### 4. Regulatory Rules & Universal Notices
+- *"Safety goggles **must be worn** at all times in the workshop."*
+- *"Visitors **are required** to sign in at the front desk."*
+
+:::vocab
+WORD: Depersonalize
+PHONETIC: /diːˈpɝː.sən.əl.aɪz/
+MEANING: To divest of personal characteristics; to make impersonal or objective.
+EXAMPLE: Passive voice is utilized in clinical trials to depersonalize experimental observations.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## When Passive Voice Weakens Your Writing
+
+Passive voice becomes problematic when used indiscriminately in sales pitches, executive summaries, or leadership memos. It creates **sluggish, bureaucratic wordiness**:
+
+:::grammar
+INCORRECT: A decision was reached by our executive committee that an evaluation of your proposal will be conducted by our technical team.
+CORRECT: Our executive committee decided to evaluate your proposal.
+EXPLANATION: The passive construction adds unnecessary padding. Active voice reduces the sentence from 23 words to 7 words while dramatically improving clarity.
+:::
+
+---
+
+## Passive Voice Verb Tense Matrix
+
+| Tense | Active Form | Passive Form (Be + V3) |
+| :--- | :--- | :--- |
+| **Present Simple** | *They test the code.* | *The code **is tested**.* |
+| **Present Continuous** | *They are testing the code.* | *The code **is being tested**.* |
+| **Past Simple** | *They tested the code.* | *The code **was tested**.* |
+| **Past Continuous** | *They were testing the code.* | *The code **was being tested**.* |
+| **Present Perfect** | *They have tested the code.* | *The code **has been tested**.* |
+| **Past Perfect** | *They had tested the code.* | *The code **had been tested**.* |
+| **Future (Will)** | *They will test the code.* | *The code **will be tested**.* |
+| **Modal Verbs** | *They must test the code.* | *The code **must be tested**.* |
+
+---
+
+## The Causative: Have & Get Something Done
+
+When you arrange for someone else to perform a service on your behalf, use the **Causative Passive**:
+- Formula: **Subject + have/get + object + Past Participle (V3)**
+- *"We **had our headquarters renovated** last summer."* (We didn't paint the walls; contractors did).
+- *"The legal team **got the contract finalized** before the deadline."*
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence represents the most effective professional use of passive voice?
+OPTION: In a product pitch: "A revolutionary mobile phone was launched by our company."
+OPTION: In a compliance incident report: "A critical vulnerability was identified during our automated security scan."
+OPTION: In a sales meeting: "A presentation will be given by me."
+OPTION: In a job application: "A promotion was earned by me last quarter."
+ANSWER: 1
+EXPLANATION: In technical incident reports and compliance updates, passive voice emphasizes the objective finding without personal bias or unnecessary self-reference.
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Passive Voice', 'Writing Style', 'Clarity', 'Intermediate'],
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Head of ESL Curriculum',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '11 min read',
+    status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
+    featured: false,
+  },
+
+    {
+    title: 'Modal Verbs Mastery: Epistemic Deduction, Workplace Diplomacy & Academic Hedging',
+    slug: 'modal-verbs-mastery',
+    excerpt: 'Master primary and semi-modal verbs (Must, Should, Could, Would), navigate epistemic degrees of logical deduction, and apply academic hedging in executive communications.',
+    content: `Modal verbs are the subtlest instruments in English syntax. They do not express physical actions; instead, they color verbs with shades of **ability, obligation, permission, probability, and logical certainty**.
+
+In professional communication, choosing the wrong modal verb can make you sound overly aggressive (*"You must send this now"* instead of *"Could you please send this?"*), or dangerously uncertain (*"The server might crash"* instead of *"The server will crash unless patched"*).
+
+In this guide, we will analyze deontic versus epistemic modality, explore past modals of deduction, and learn the art of **academic and executive hedging**.
+
+---
+
+## Deontic vs. Epistemic Modality
+
+Linguists divide modal verbs into two psychological registers:
+
+1. **Deontic (Intrinsic) Modality**: Relates to human control, duty, obligation, and permission (*"You **must** wear a safety helmet"*, *"You **may** proceed"*).
+2. **Epistemic (Extrinsic) Modality**: Relates to knowledge, evidence, and degrees of logical certainty (*"She **must** be in the laboratory; her car is parked outside"*).
+
+---
+
+## The Spectrum of Logical Deduction (Epistemic Modality)
+
+When analyzing evidence, native speakers use modal verbs along a calibrated continuum:
+
+\`\`\`
+100% Certain (Direct Evidence):
+"The server is offline."
+
+95% Logical Deduction (Positive):
+"The server MUST be offline; no requests are resolving."
+
+50% Possibility / Probability:
+"The server COULD / MAY / MIGHT be offline due to scheduled maintenance."
+
+95% Logical Deduction (Negative):
+"The server CANNOT / COULDN'T be offline; the status dashboard is fully green."
+\`\`\`
+
+:::grammar
+INCORRECT: He hasn't answered three calls. He mustn't hear his phone.
+CORRECT: He hasn't answered three calls. He can't hear his phone.
+EXPLANATION: In standard American and British English, the negative logical deduction of "must" is "cannot" or "can't", not "mustn't" (which expresses deontic prohibition, e.g., "you mustn't touch that").
+:::
+
+---
+
+## Past Modals of Deduction ($Modal + have + V3$)
+
+When evaluating past events with imperfect information:
+
+- **Must have + V3** (High confidence positive): *"They **must have missed** the flight; their luggage arrived alone."*
+- **Can't / Couldn't have + V3** (High confidence negative): *"He **couldn't have altered** the database; his account was disabled last week."*
+- **Might / May / Could have + V3** (Possibility): *"The parcel **might have been redirected** to the secondary warehouse."*
+- **Should have + V3** (Unfulfilled expectation / regret): *"We **should have audited** the code prior to deployment."*
+
+---
+
+## Executive Writing Tip: Academic & Professional "Hedging"
+
+In research papers, executive risk memos, and legal briefs, making absolute, unqualified claims leaves authors vulnerable to disproof. **Hedging** is the intentional use of cautious, polite modal language:
+
+| Unhedged (Vulnerable & Over-Assertive) | Hedged (Professional & Nuanced) |
+| :--- | :--- |
+| *"This pricing model will fail in Europe."* | *"This pricing model **could encounter** consumer resistance in Europe."* |
+| *"The data proves that consumers demand AI."* | *"The data **would suggest** that consumers increasingly favor AI features."* |
+| *"You made an error on invoice #402."* | *"There **appears to be** a minor discrepancy on invoice #402."* |
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence represents the strongest negative logical deduction based on available evidence?
+OPTION: She might not know about the scheduled system outage.
+OPTION: She mustn't be aware of the system outage.
+OPTION: She cannot be aware of the system outage, as she only joined the company this morning.
+OPTION: She shouldn't be aware of the system outage.
+ANSWER: 2
+EXPLANATION: "Cannot be" expresses strong, evidence-backed negative deduction (impossibility).
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Modal Verbs', 'Hedging', 'Writing Style', 'Workplace English'],
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Head of ESL Curriculum',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '11 min read',
+    status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
+    featured: false,
+  },
+
+    {
+    title: 'Mastering Conditional Sentences: Zero, First, Second, Third, and Mixed Conditionals',
+    slug: 'mastering-conditional-sentences-zero-first-second-third',
+    excerpt: 'Master real, hypothetical, and counterfactual English conditionals (Zero through Third), navigate complex mixed conditionals, and write executive contingency plans.',
+    content: `Conditional sentences express **cause-and-effect scenarios**: *If condition X occurs, outcome Y follows*. While textbook curricula often reduce conditionals to four rigid templates, real-world professional English relies heavily on **mixed conditionals**, inverted conditional clauses, and alternative conjunctions.
+
+In this masterclass, we will review the four classic conditionals, master mixed conditionals, and explore contingency planning in executive communications.
+
+---
+
+## The 4 Classic Conditionals Summary Matrix
+
+| Type | Time Reference | Condition Clause (If...) | Main Clause (Result...) | Real-World Application |
+| :--- | :--- | :--- | :--- | :--- |
+| **Zero** | Universal / Present | Present Simple | Present Simple | Scientific laws, inevitable facts |
+| **First** | Future Real | Present Simple | Will + Base Verb | Actionable plans, probable events |
+| **Second** | Present/Future Unreal | Past Simple | Would + Base Verb | Hypothetical dreams, advice |
+| **Third** | Past Counterfactual | Past Perfect ($had + V3$) | Would have + V3 | Regrets, post-mortems, history |
+
+---
+
+## 1. Zero & First Conditionals: Real Scenarios
+
+### Zero Conditional (Scientific & Inevitable Truths)
+- *"If you **heat** water to 100°C at sea level, it **boils**."*
+- *"If a server **overheats**, the safety sensor **shuts** it down automatically."*
+
+### First Conditional (Probable Future Plans & Warnings)
+- *"If our team **secures** this contract, we **will expand** into the Singapore market."*
+- *"If you **do not submit** the expense report by Friday, finance **will delay** reimbursement."*
+
+:::grammar
+INCORRECT: If it will rain tomorrow, we will postpone the outdoor workshop.
+CORRECT: If it rains tomorrow, we will postpone the outdoor workshop.
+EXPLANATION: In English conditional clauses introduced by "if" or "when", future meaning is expressed using the Present Simple, never "will".
+:::
+
+---
+
+## 2. Second & Third Conditionals: Hypothetical Scenarios
+
+### Second Conditional (Present/Future Unreal)
+Describes situations that are counter to present reality, or highly improbable:
+- *"If I **were** the CEO, I **would allocate** 20% of revenue to R&D."* (Note: Formal English uses subjunctive *were* for all persons: *If I were, If he were*).
+- *"If they **offered** me a 50% equity stake, I **would accept** without hesitation."*
+
+### Third Conditional (Past Counterfactuals)
+Describes past events that did *not* happen, analyzing alternative outcomes:
+- *"If we **had audited** the supplier earlier, we **would have prevented** the recall."*
+- *"If she **had caught** the express train, she **would have arrived** before the vote."*
+
+---
+
+## 3. Mixed Conditionals: Blending Past and Present
+
+Real life rarely confines causes and results to the same historical time bucket. Mixed conditionals bridge this gap:
+
+### Pattern A: Past Action $\\to$ Present Result
+An action in the past impacts the speaker's present state:
+- Formula: **If + Past Perfect, would + Base Verb**
+- *"If I **had completed** my MBA in Boston (Past Cause), I **would be leading** the New York division today (Present Result)."*
+
+### Pattern B: Permanent Present Condition $\\to$ Past Result
+A permanent personal trait or enduring condition influenced a specific past action:
+- Formula: **If + Past Simple, would have + V3**
+- *"If Marcus **were not** so meticulous (Permanent Trait), he **would have overlooked** the accounting discrepancy last month (Past Action)."*
+
+:::vocab
+WORD: Counterfactual
+PHONETIC: /ˌkaʊn.t̬ɚˈfæk.tʃu.əl/
+MEANING: Expressing what has not happened but could, would, or might have occurred under different conditions.
+EXAMPLE: Scenario planning requires analyzing counterfactual economic models.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 4. Inverted Conditionals (Omitting "If")
+
+In formal executive English, you can drop the word *“if”* by inverting the auxiliary verb to the front of the clause:
+
+- First Conditional Inversion:
+  > *"**Should you require** further documentation, please contact our office."* (Replaces *"If you should require..."*).
+- Second Conditional Inversion:
+  > *"**Were the board to approve** the acquisition, we would proceed."* (Replaces *"If the board were to approve..."*).
+- Third Conditional Inversion:
+  > *"**Had we known** about the tariff revisions, we would have restructured the supply contract."* (Replaces *"If we had known..."*).
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: Which sentence represents a grammatically sound Mixed Conditional (Past Cause with Present Result)?
+OPTION: If she studied harder, she would pass the exam yesterday.
+OPTION: If she had accepted the promotion last year, she would be managing the London office today.
+OPTION: If she would have accepted the promotion, she was managing the office today.
+OPTION: If she accepts the promotion, she would have been in London.
+ANSWER: 1
+EXPLANATION: "If she had accepted (Past Perfect) ... she would be managing (would + base verb)" links a past decision to a present consequence.
+:::`,
+    category: 'Grammar',
+    tags: ['Grammar', 'Conditionals', 'Mixed Conditionals', 'Inversion', 'Advanced'],
+    author: {
+      name: 'Sarah Jenkins',
+      role: 'Head of ESL Curriculum',
+      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80',
+    publishedAt: '2026-09-24T18:00:00Z',
+    updatedAt: '2026-09-24T22:00:00Z',
+    readingTime: '12 min read',
+    status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
+    featured: false,
+  },
+
+    {
     title: 'Noun Clauses, Relative Clauses & Adverbial Clauses: Complex Sentence Architecture & Punctuation',
     slug: 'clauses-noun-relative-and-adverbial-complex-sentences',
     excerpt: 'Master complex sentence architecture: restrictive vs. non-restrictive relative clauses, who vs. whom, noun clauses, reduced participle clauses, and dangling modifier prevention.',
@@ -1545,347 +1892,12 @@ EXPLANATION: Because the author has only one eldest brother, his identity is alr
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 
-  // 11. PASSIVE VOICE & CAUSATIVES
-  {
-    title: 'Passive Voice Decoded: When, Why & How to Use It in Real Life and Executive Prose',
-    slug: 'passive-voice-demystified',
-    excerpt: 'Master active vs. passive voice across all 12 tenses, understand the 4 legitimate reasons to use passive voice, avoid bureaucratic obscurity, and master causative structures.',
-    content: `Few topics in English grammar spark as much debate as the **Passive Voice**. Writing tools and word processors routinely flag passive sentences with warning squiggles, leading many learners to believe passive voice is an outright grammatical error.
-
-It is not. Passive voice is a legitimate, indispensable syntactic tool that exists in every major language. The question is never *“Is passive voice wrong?”* but rather **“Does passive voice serve a strategic communicative purpose here?”**
-
-In this comprehensive guide, we will examine the anatomical structure of the passive across all tenses, analyze the four legitimate scenarios where passive voice is superior to active voice, identify bureaucratic abuse, and explore causative structures.
-
----
-
-## Active vs. Passive Anatomy
-
-In an **Active** sentence, the subject performs the action:
-> **The engineer (Subject/Agent)** repaired **the server (Object)**.
-
-In a **Passive** sentence, the receiver of the action becomes the grammatical subject:
-> **The server (Subject)** was repaired by **the engineer (Agent)**.
-
-\`\`\`
-Active:   [Subject / Doer] + [Action Verb] + [Receiver / Direct Object]
-Passive:  [Receiver / Object] + [BE + Past Participle (V3)] + (optional: by [Doer])
-\`\`\`
-
----
-
-## The 4 Legitimate Reasons to Use Passive Voice
-
-Never use passive voice accidentally. Use it intentionally in these four scenarios:
-
-### 1. The Actor is Unknown or Obvious
-- *"My bicycle **was stolen** last night."* (The thief's identity is completely unknown).
-- *"The fugitive **was apprehended** at the border."* (It is obvious that law enforcement made the arrest).
-
-### 2. Scientific, Technical & Objective Focus
-In laboratory reports and technical breakthroughs, the process matters far more than the specific human holding the pipette:
-- *"Penicillin **was discovered** in 1928."*
-- *"The payload **was successfully deployed** into low Earth orbit."*
-
-### 3. Diplomatic Tact & De-escalation
-Passive voice allows professionals to address errors **without assigning aggressive personal blame**:
-- Active (Confrontational): *"You made an error on the quarterly tax filing."*
-- Passive (Diplomatic): *"An error **was made** on the quarterly tax filing."*
-
-### 4. Regulatory Rules & Universal Notices
-- *"Safety goggles **must be worn** at all times in the workshop."*
-- *"Visitors **are required** to sign in at the front desk."*
-
-:::vocab
-WORD: Depersonalize
-PHONETIC: /diːˈpɝː.sən.əl.aɪz/
-MEANING: To divest of personal characteristics; to make impersonal or objective.
-EXAMPLE: Passive voice is utilized in clinical trials to depersonalize experimental observations.
-DIFFICULTY: Advanced
-:::
-
----
-
-## When Passive Voice Weakens Your Writing
-
-Passive voice becomes problematic when used indiscriminately in sales pitches, executive summaries, or leadership memos. It creates **sluggish, bureaucratic wordiness**:
-
-:::grammar
-INCORRECT: A decision was reached by our executive committee that an evaluation of your proposal will be conducted by our technical team.
-CORRECT: Our executive committee decided to evaluate your proposal.
-EXPLANATION: The passive construction adds unnecessary padding. Active voice reduces the sentence from 23 words to 7 words while dramatically improving clarity.
-:::
-
----
-
-## Passive Voice Verb Tense Matrix
-
-| Tense | Active Form | Passive Form (Be + V3) |
-| :--- | :--- | :--- |
-| **Present Simple** | *They test the code.* | *The code **is tested**.* |
-| **Present Continuous** | *They are testing the code.* | *The code **is being tested**.* |
-| **Past Simple** | *They tested the code.* | *The code **was tested**.* |
-| **Past Continuous** | *They were testing the code.* | *The code **was being tested**.* |
-| **Present Perfect** | *They have tested the code.* | *The code **has been tested**.* |
-| **Past Perfect** | *They had tested the code.* | *The code **had been tested**.* |
-| **Future (Will)** | *They will test the code.* | *The code **will be tested**.* |
-| **Modal Verbs** | *They must test the code.* | *The code **must be tested**.* |
-
----
-
-## The Causative: Have & Get Something Done
-
-When you arrange for someone else to perform a service on your behalf, use the **Causative Passive**:
-- Formula: **Subject + have/get + object + Past Participle (V3)**
-- *"We **had our headquarters renovated** last summer."* (We didn't paint the walls; contractors did).
-- *"The legal team **got the contract finalized** before the deadline."*
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Which sentence represents the most effective professional use of passive voice?
-OPTION: In a product pitch: "A revolutionary mobile phone was launched by our company."
-OPTION: In a compliance incident report: "A critical vulnerability was identified during our automated security scan."
-OPTION: In a sales meeting: "A presentation will be given by me."
-OPTION: In a job application: "A promotion was earned by me last quarter."
-ANSWER: 1
-EXPLANATION: In technical incident reports and compliance updates, passive voice emphasizes the objective finding without personal bias or unnecessary self-reference.
-:::`,
-    category: 'Grammar',
-    tags: ['Grammar', 'Passive Voice', 'Writing Style', 'Clarity', 'Intermediate'],
-    author: {
-      name: 'Sarah Jenkins',
-      role: 'Head of ESL Curriculum',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&auto=format&fit=crop&q=80',
-    publishedAt: '2026-09-24T18:00:00Z',
-    updatedAt: '2026-09-24T22:00:00Z',
-    readingTime: '11 min read',
-    status: 'published',
-    featured: false,
-  },
-
-  // 12. MODAL VERBS & EPISTEMIC HEDGING
-  {
-    title: 'Modal Verbs Mastery: Epistemic Deduction, Workplace Diplomacy & Academic Hedging',
-    slug: 'modal-verbs-mastery',
-    excerpt: 'Master primary and semi-modal verbs (Must, Should, Could, Would), navigate epistemic degrees of logical deduction, and apply academic hedging in executive communications.',
-    content: `Modal verbs are the subtlest instruments in English syntax. They do not express physical actions; instead, they color verbs with shades of **ability, obligation, permission, probability, and logical certainty**.
-
-In professional communication, choosing the wrong modal verb can make you sound overly aggressive (*"You must send this now"* instead of *"Could you please send this?"*), or dangerously uncertain (*"The server might crash"* instead of *"The server will crash unless patched"*).
-
-In this guide, we will analyze deontic versus epistemic modality, explore past modals of deduction, and learn the art of **academic and executive hedging**.
-
----
-
-## Deontic vs. Epistemic Modality
-
-Linguists divide modal verbs into two psychological registers:
-
-1. **Deontic (Intrinsic) Modality**: Relates to human control, duty, obligation, and permission (*"You **must** wear a safety helmet"*, *"You **may** proceed"*).
-2. **Epistemic (Extrinsic) Modality**: Relates to knowledge, evidence, and degrees of logical certainty (*"She **must** be in the laboratory; her car is parked outside"*).
-
----
-
-## The Spectrum of Logical Deduction (Epistemic Modality)
-
-When analyzing evidence, native speakers use modal verbs along a calibrated continuum:
-
-\`\`\`
-100% Certain (Direct Evidence):
-"The server is offline."
-
-95% Logical Deduction (Positive):
-"The server MUST be offline; no requests are resolving."
-
-50% Possibility / Probability:
-"The server COULD / MAY / MIGHT be offline due to scheduled maintenance."
-
-95% Logical Deduction (Negative):
-"The server CANNOT / COULDN'T be offline; the status dashboard is fully green."
-\`\`\`
-
-:::grammar
-INCORRECT: He hasn't answered three calls. He mustn't hear his phone.
-CORRECT: He hasn't answered three calls. He can't hear his phone.
-EXPLANATION: In standard American and British English, the negative logical deduction of "must" is "cannot" or "can't", not "mustn't" (which expresses deontic prohibition, e.g., "you mustn't touch that").
-:::
-
----
-
-## Past Modals of Deduction ($Modal + have + V3$)
-
-When evaluating past events with imperfect information:
-
-- **Must have + V3** (High confidence positive): *"They **must have missed** the flight; their luggage arrived alone."*
-- **Can't / Couldn't have + V3** (High confidence negative): *"He **couldn't have altered** the database; his account was disabled last week."*
-- **Might / May / Could have + V3** (Possibility): *"The parcel **might have been redirected** to the secondary warehouse."*
-- **Should have + V3** (Unfulfilled expectation / regret): *"We **should have audited** the code prior to deployment."*
-
----
-
-## Executive Writing Tip: Academic & Professional "Hedging"
-
-In research papers, executive risk memos, and legal briefs, making absolute, unqualified claims leaves authors vulnerable to disproof. **Hedging** is the intentional use of cautious, polite modal language:
-
-| Unhedged (Vulnerable & Over-Assertive) | Hedged (Professional & Nuanced) |
-| :--- | :--- |
-| *"This pricing model will fail in Europe."* | *"This pricing model **could encounter** consumer resistance in Europe."* |
-| *"The data proves that consumers demand AI."* | *"The data **would suggest** that consumers increasingly favor AI features."* |
-| *"You made an error on invoice #402."* | *"There **appears to be** a minor discrepancy on invoice #402."* |
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Which sentence represents the strongest negative logical deduction based on available evidence?
-OPTION: She might not know about the scheduled system outage.
-OPTION: She mustn't be aware of the system outage.
-OPTION: She cannot be aware of the system outage, as she only joined the company this morning.
-OPTION: She shouldn't be aware of the system outage.
-ANSWER: 2
-EXPLANATION: "Cannot be" expresses strong, evidence-backed negative deduction (impossibility).
-:::`,
-    category: 'Grammar',
-    tags: ['Grammar', 'Modal Verbs', 'Hedging', 'Writing Style', 'Workplace English'],
-    author: {
-      name: 'Sarah Jenkins',
-      role: 'Head of ESL Curriculum',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&auto=format&fit=crop&q=80',
-    publishedAt: '2026-09-24T18:00:00Z',
-    updatedAt: '2026-09-24T22:00:00Z',
-    readingTime: '11 min read',
-    status: 'published',
-    featured: false,
-  },
-
-  // 13. CONDITIONALS & MIXED CONDITIONALS
-  {
-    title: 'Mastering Conditional Sentences: Zero, First, Second, Third, and Mixed Conditionals',
-    slug: 'mastering-conditional-sentences-zero-first-second-third',
-    excerpt: 'Master real, hypothetical, and counterfactual English conditionals (Zero through Third), navigate complex mixed conditionals, and write executive contingency plans.',
-    content: `Conditional sentences express **cause-and-effect scenarios**: *If condition X occurs, outcome Y follows*. While textbook curricula often reduce conditionals to four rigid templates, real-world professional English relies heavily on **mixed conditionals**, inverted conditional clauses, and alternative conjunctions.
-
-In this masterclass, we will review the four classic conditionals, master mixed conditionals, and explore contingency planning in executive communications.
-
----
-
-## The 4 Classic Conditionals Summary Matrix
-
-| Type | Time Reference | Condition Clause (If...) | Main Clause (Result...) | Real-World Application |
-| :--- | :--- | :--- | :--- | :--- |
-| **Zero** | Universal / Present | Present Simple | Present Simple | Scientific laws, inevitable facts |
-| **First** | Future Real | Present Simple | Will + Base Verb | Actionable plans, probable events |
-| **Second** | Present/Future Unreal | Past Simple | Would + Base Verb | Hypothetical dreams, advice |
-| **Third** | Past Counterfactual | Past Perfect ($had + V3$) | Would have + V3 | Regrets, post-mortems, history |
-
----
-
-## 1. Zero & First Conditionals: Real Scenarios
-
-### Zero Conditional (Scientific & Inevitable Truths)
-- *"If you **heat** water to 100°C at sea level, it **boils**."*
-- *"If a server **overheats**, the safety sensor **shuts** it down automatically."*
-
-### First Conditional (Probable Future Plans & Warnings)
-- *"If our team **secures** this contract, we **will expand** into the Singapore market."*
-- *"If you **do not submit** the expense report by Friday, finance **will delay** reimbursement."*
-
-:::grammar
-INCORRECT: If it will rain tomorrow, we will postpone the outdoor workshop.
-CORRECT: If it rains tomorrow, we will postpone the outdoor workshop.
-EXPLANATION: In English conditional clauses introduced by "if" or "when", future meaning is expressed using the Present Simple, never "will".
-:::
-
----
-
-## 2. Second & Third Conditionals: Hypothetical Scenarios
-
-### Second Conditional (Present/Future Unreal)
-Describes situations that are counter to present reality, or highly improbable:
-- *"If I **were** the CEO, I **would allocate** 20% of revenue to R&D."* (Note: Formal English uses subjunctive *were* for all persons: *If I were, If he were*).
-- *"If they **offered** me a 50% equity stake, I **would accept** without hesitation."*
-
-### Third Conditional (Past Counterfactuals)
-Describes past events that did *not* happen, analyzing alternative outcomes:
-- *"If we **had audited** the supplier earlier, we **would have prevented** the recall."*
-- *"If she **had caught** the express train, she **would have arrived** before the vote."*
-
----
-
-## 3. Mixed Conditionals: Blending Past and Present
-
-Real life rarely confines causes and results to the same historical time bucket. Mixed conditionals bridge this gap:
-
-### Pattern A: Past Action $\\to$ Present Result
-An action in the past impacts the speaker's present state:
-- Formula: **If + Past Perfect, would + Base Verb**
-- *"If I **had completed** my MBA in Boston (Past Cause), I **would be leading** the New York division today (Present Result)."*
-
-### Pattern B: Permanent Present Condition $\\to$ Past Result
-A permanent personal trait or enduring condition influenced a specific past action:
-- Formula: **If + Past Simple, would have + V3**
-- *"If Marcus **were not** so meticulous (Permanent Trait), he **would have overlooked** the accounting discrepancy last month (Past Action)."*
-
-:::vocab
-WORD: Counterfactual
-PHONETIC: /ˌkaʊn.t̬ɚˈfæk.tʃu.əl/
-MEANING: Expressing what has not happened but could, would, or might have occurred under different conditions.
-EXAMPLE: Scenario planning requires analyzing counterfactual economic models.
-DIFFICULTY: Advanced
-:::
-
----
-
-## 4. Inverted Conditionals (Omitting "If")
-
-In formal executive English, you can drop the word *“if”* by inverting the auxiliary verb to the front of the clause:
-
-- First Conditional Inversion:
-  > *"**Should you require** further documentation, please contact our office."* (Replaces *"If you should require..."*).
-- Second Conditional Inversion:
-  > *"**Were the board to approve** the acquisition, we would proceed."* (Replaces *"If the board were to approve..."*).
-- Third Conditional Inversion:
-  > *"**Had we known** about the tariff revisions, we would have restructured the supply contract."* (Replaces *"If we had known..."*).
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: Which sentence represents a grammatically sound Mixed Conditional (Past Cause with Present Result)?
-OPTION: If she studied harder, she would pass the exam yesterday.
-OPTION: If she had accepted the promotion last year, she would be managing the London office today.
-OPTION: If she would have accepted the promotion, she was managing the office today.
-OPTION: If she accepts the promotion, she would have been in London.
-ANSWER: 1
-EXPLANATION: "If she had accepted (Past Perfect) ... she would be managing (would + base verb)" links a past decision to a present consequence.
-:::`,
-    category: 'Grammar',
-    tags: ['Grammar', 'Conditionals', 'Mixed Conditionals', 'Inversion', 'Advanced'],
-    author: {
-      name: 'Sarah Jenkins',
-      role: 'Head of ESL Curriculum',
-      avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&auto=format&fit=crop&q=80',
-    publishedAt: '2026-09-24T18:00:00Z',
-    updatedAt: '2026-09-24T22:00:00Z',
-    readingTime: '12 min read',
-    status: 'published',
-    featured: false,
-  },
-
-  // 14. ADVANCED INVERSION, SUBJUNCTIVE & RHETORICAL GRAMMAR
-  {
+    {
     title: 'Advanced Inversion, Subjunctive Mood & Cleft Sentences: The Rhetorical Grammar Masterclass',
     slug: 'advanced-inversion-subjunctive-and-rhetorical-grammar',
     excerpt: 'Master advanced rhetorical English syntax: negative inversion, the mandative subjunctive in corporate resolutions, cleft sentences for emphasis, and fronting for dramatic flow.',
@@ -1988,11 +2000,12 @@ EXPLANATION: Following "recommended that", the subordinate verb must remain in t
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '13 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 
-  // 15. PUNCTUATION MECHANICS & PARALLEL STRUCTURE
-  {
+    {
     title: 'Punctuation Mechanics & Parallel Structure: The Architectural Guide to Flawless Professional Prose',
     slug: 'mastering-punctuation-mechanics-and-parallel-structure',
     excerpt: 'Master the syntactic mechanics of semicolons, colons, em-dashes, and commas, eliminate comma splices and run-ons, and master grammatical parallelism across complex writing.',
@@ -2087,11 +2100,12 @@ EXPLANATION: "The project concluded ahead of schedule, the team received bonuses
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 
-  // 16. PROFESSIONAL & TECHNICAL REPORT WRITING SKILLS (NEW)
-  {
+    {
     title: 'Professional & Technical Report Writing Mastery: Syntax, Structure, Data Commentary & Executive Recommendations',
     slug: 'professional-and-technical-report-writing-skills',
     excerpt: 'Master the definitive architectural syntax of executive and technical reports: structural sections, objective findings grammar, trend commentary verbs, and actionable recommendation formulas.',
@@ -2230,6 +2244,8 @@ EXPLANATION: "Decreased by $50,000" correctly specifies the margin/amount of cha
     updatedAt: '2026-09-24T22:00:00Z',
     readingTime: '13 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: true,
   },
 ];

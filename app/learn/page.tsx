@@ -5,6 +5,7 @@ import { getCategories } from '@/lib/db/categories';
 import { getPosts } from '@/lib/db/posts';
 import { CategoryCard } from '@/components/learning/CategoryCard';
 import { DailyWordCard } from '@/components/learning/DailyWordCard';
+import { LearningHistoryWidget } from '@/components/learning/LearningHistoryWidget';
 import { SAMPLE_DAILY_WORD } from '@/lib/db/seed-data';
 import {
   GraduationCap,
@@ -71,6 +72,11 @@ export default async function LearnPage() {
         {/* Daily Word Feature */}
         <div className="mt-12">
           <DailyWordCard data={SAMPLE_DAILY_WORD} />
+        </div>
+
+        {/* 30-Day Learning History Feature */}
+        <div className="mt-12">
+          <LearningHistoryWidget />
         </div>
 
         {/* All Learning Tracks */}

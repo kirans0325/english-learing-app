@@ -23,6 +23,8 @@ export interface Post {
   readingTime: string;
   status: PostStatus;
   featured: boolean;
+  difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
+  difficultyOrder?: number;
   seoTitle?: string;
   seoDescription?: string;
 }
@@ -130,4 +132,16 @@ export interface DailyTrendingDigest {
   createdAt: string;
   expiresAt?: Date | string;
 }
+
+export interface UserHistoryItem {
+  slug: string;
+  title: string;
+  category: string;
+  difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
+  visitedAt: string; // ISO-8601 string
+  readingTime?: string;
+  completed?: boolean;
+  completedAt?: string;
+}
+
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 import { getCategoryBySlug, getCategories } from '@/lib/db/categories';
 import { getPosts } from '@/lib/db/posts';
-import { ArticleCard } from '@/components/blog/ArticleCard';
+import { CategoryLessonList } from '@/components/category/CategoryLessonList';
 import { NewsletterCTA } from '@/components/blog/NewsletterCTA';
 import { TongueTwisterStudio } from '@/components/speaking/TongueTwisterStudio';
 import { JamTopicStudio } from '@/components/speaking/JamTopicStudio';
@@ -57,8 +57,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   const { posts } = await getPosts({
     category: category.name,
-    limit: 20,
+    limit: 100,
     status: 'published',
+    sortBy: 'difficulty',
   });
 
   const breadcrumbItems = [
@@ -121,33 +122,27 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             </div>
           )}
 
-          {/* Lessons Grid */}
+          {/* Progressive Curriculum Section */}
           <div className="mt-10">
-            <div className="flex items-center justify-between">
-              <h2 className="text-xl font-bold text-slate-900">
-                All {category.name} Lessons
-              </h2>
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-700">
+                  Step-by-Step Curriculum
+                </span>
+                <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
+                  {category.name} Curriculum (Basic $\to$ Advanced)
+                </h2>
+              </div>
               <Link
-                href="/blog"
+                href="/learn"
                 className="inline-flex items-center gap-1 text-xs font-semibold text-emerald-700 hover:underline"
               >
                 <ArrowLeft className="h-3.5 w-3.5" />
-                <span>All Categories</span>
+                <span>All Learning Tracks</span>
               </Link>
             </div>
 
-            {posts.length > 0 ? (
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                {posts.map((post) => (
-                  <ArticleCard key={post.slug} post={post} />
-                ))}
-              </div>
-            ) : (
-              <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-12 text-center text-slate-500">
-                <BookOpen className="mx-auto h-8 w-8 text-slate-300" />
-                <p className="mt-2 text-sm">No lessons published yet in this category.</p>
-              </div>
-            )}
+            <CategoryLessonList posts={posts} categoryName={category.name} />
           </div>
 
           {/* Newsletter */}

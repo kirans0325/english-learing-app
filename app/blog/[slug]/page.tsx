@@ -17,6 +17,7 @@ import { ShareButtons } from '@/components/blog/ShareButtons';
 import { PrintPdfButton } from '@/components/blog/PrintPdfButton';
 import { ArticleCard } from '@/components/blog/ArticleCard';
 import { NewsletterCTA } from '@/components/blog/NewsletterCTA';
+import { LessonHistoryTracker } from '@/components/learning/LessonHistoryTracker';
 import { ArticleJsonLd, BreadcrumbJsonLd } from '@/lib/seo/json-ld';
 import {
   Clock,
@@ -206,6 +207,23 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
                 <Clock className="h-3.5 w-3.5" />
                 <span>{post.readingTime}</span>
               </div>
+
+              {post.difficulty && (
+                <>
+                  <span className="text-slate-300 dark:text-slate-700">•</span>
+                  <span
+                    className={`rounded-full px-2.5 py-0.5 font-bold uppercase tracking-wider text-[10px] ${
+                      post.difficulty === 'Beginner'
+                        ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
+                        : post.difficulty === 'Intermediate'
+                        ? 'bg-sky-100 text-sky-800 dark:bg-sky-950/60 dark:text-sky-300'
+                        : 'bg-purple-100 text-purple-800 dark:bg-purple-950/60 dark:text-purple-300'
+                    }`}
+                  >
+                    Level: {post.difficulty}
+                  </span>
+                </>
+              )}
             </div>
           </header>
 
@@ -218,6 +236,19 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
               priority
               sizes="(max-width: 1200px) 100vw, 1200px"
               className="object-cover"
+            />
+          </div>
+
+          {/* 30-Day Lightweight Learning Tracker */}
+          <div className="mx-auto max-w-5xl mt-6">
+            <LessonHistoryTracker
+              post={{
+                slug: post.slug,
+                title: post.title,
+                category: post.category,
+                difficulty: post.difficulty,
+                readingTime: post.readingTime,
+              }}
             />
           </div>
 

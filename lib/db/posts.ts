@@ -19,6 +19,8 @@ export const CARD_PROJECTION = {
   readingTime: 1,
   status: 1,
   featured: 1,
+  difficulty: 1,
+  difficultyOrder: 1,
 };
 
 export interface PostQueryOptions {
@@ -26,9 +28,11 @@ export interface PostQueryOptions {
   limit?: number;
   category?: string;
   tag?: string;
+  difficulty?: 'Beginner' | 'Intermediate' | 'Advanced';
   status?: 'published' | 'draft' | 'all';
   search?: string;
   featuredOnly?: boolean;
+  sortBy?: 'difficulty' | 'publishedAt' | 'latest';
 }
 
 export async function getPosts(options: PostQueryOptions = {}): Promise<{
@@ -42,9 +46,11 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
     limit = 6,
     category,
     tag,
+    difficulty,
     status = 'published',
     search,
     featuredOnly,
+    sortBy,
   } = options;
 
   const db = await getDatabase();
@@ -73,6 +79,10 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
         filter.tags = tag;
       }
 
+      if (difficulty) {
+        filter.difficulty = difficulty;
+      }
+
       if (search && search.trim()) {
         filter.$text = { $search: search.trim() };
       }
@@ -80,9 +90,14 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
       const total = await collection.countDocuments(filter);
       const skip = (page - 1) * limit;
 
+      const sortOptions: Record<string, any> =
+        sortBy === 'difficulty' || (!sortBy && category)
+          ? { difficultyOrder: 1, publishedAt: 1 }
+          : { publishedAt: -1 };
+
       const cursor = collection
         .find(filter, { projection: CARD_PROJECTION })
-        .sort({ publishedAt: -1 })
+        .sort(sortOptions)
         .skip(skip)
         .limit(limit);
 
@@ -107,6 +122,7 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
   let filtered = memoryPosts.filter((p) => {
     if (status !== 'all' && p.status !== status) return false;
     if (featuredOnly && !p.featured) return false;
+    if (difficulty && p.difficulty !== difficulty) return false;
     if (
       category &&
       p.category.toLowerCase().replace(/[-\s]+/g, '-') !==
@@ -126,7 +142,16 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
     return true;
   });
 
-  filtered.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  if (sortBy === 'difficulty' || (!sortBy && category)) {
+    filtered.sort((a, b) => {
+      const orderA = a.difficultyOrder ?? (a.difficulty === 'Beginner' ? 1 : a.difficulty === 'Advanced' ? 3 : 2);
+      const orderB = b.difficultyOrder ?? (b.difficulty === 'Beginner' ? 1 : b.difficulty === 'Advanced' ? 3 : 2);
+      if (orderA !== orderB) return orderA - orderB;
+      return new Date(a.publishedAt).getTime() - new Date(b.publishedAt).getTime();
+    });
+  } else {
+    filtered.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+  }
 
   const total = filtered.length;
   const skip = (page - 1) * limit;

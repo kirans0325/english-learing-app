@@ -1,6 +1,6 @@
 export const PRONUNCIATION_POSTS = [
   {
-    title: 'Mastering the Unstressed Schwa Sound: The Key to Natural English Rhythm',
+title: 'Mastering the Unstressed Schwa Sound: The Key to Natural English Rhythm',
     slug: 'mastering-the-schwa-sound',
     excerpt: 'The single most common sound in the English language. Understand how unstressed vowels reduce to /ə/ and transform your spoken cadence.',
     content: `If you opened the Oxford English Dictionary and counted every single phoneme in the English language, one sound would dwarf all others: **the Schwa sound /ə/.**
@@ -108,9 +108,12 @@ Read these sentences aloud, deliberately compressing the underlined words into s
     updatedAt: '2026-03-24T12:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
-  {
+
+    {
     title: 'Voiced vs. Voiceless TH Sounds: /θ/ and /ð/ Demystified',
     slug: 'voiced-vs-voiceless-th-sounds',
     excerpt: 'Stop substituting S, Z, or D for the English TH. Master tongue placement, airflow, and vocal cord vibration for flawless articulation.',
@@ -225,108 +228,12 @@ Say this sentence three times, exaggerating the buzzing vibration on the voiced 
     updatedAt: '2026-03-24T16:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
-  {
-    title: 'Connected Speech in English: Linking, Elision, and Assimilation',
-    slug: 'connected-speech-linking-elision',
-    excerpt: 'Understand why native speakers do not pause between words. Master consonant-to-vowel linking, twin consonants, and intrusive sounds.',
-    content: `When learners listen to native English speech, they often complain: *"Native speakers speak too fast!"* or *"They swallow their words!"*
 
-In reality, native speakers are rarely speaking faster than anyone else. Instead, they are utilizing **Connected Speech.**
-
-In spoken English, words are not pronounced as isolated islands separated by neat little pauses. Words blend into continuous acoustic waves. When a word ends with a consonant and the next begins with a vowel, the consonant literally jumps across the boundary to become the first sound of the next word.
-
-Once you understand the four mechanical rules of connected speech, native audio will suddenly sound crystal clear.
-
-## 1. Consonant to Vowel Linking (C -> V)
-
-This is the most fundamental linking rule in English:
-> If Word A ends in a consonant sound and Word B begins with a vowel sound, link them smoothly with no break.
-
-\`\`\`
-Written Form:            How It Sounds in Connected Speech:
-Hold on                  -> "Hol-don"        /həʊlˈdɒn/
-Turn off                 -> "Tur-noff"       /tɜːˈnɒf/
-First of all             -> "Firs-tə-vall"   /ˌfɜːst.əvˈɔːl/
-An apple                 -> "A-napple"       /əˈnæp.əl/
-Pick it up               -> "Pi-ki-tup"      /pɪ.kɪ.tʌp/
-\`\`\`
-
-:::vocab
-WORD: Liaison
-PHONETIC: /liˈeɪ.zɒn/
-MEANING: The smooth connection or linking between words in spoken language, especially when a final consonant links to an initial vowel.
-EXAMPLE: Proper phonological liaison eliminates chopped, robotic phrasing in conversational speech.
-DIFFICULTY: Advanced
-:::
-
----
-
-## 2. Twin Consonant Linking (C -> Same C)
-
-When Word A ends with the exact same consonant sound that begins Word B, **do NOT pronounce the sound twice.** Simply elongate the consonant sound across both words without opening your mouth:
-
-\`\`\`
-Written:             Wrong (Choppy):        Correct (Connected):
-Red dress            "Red... dress"         "Re-ddress" (Hold the 'D')
-Black coffee         "Black... coffee"      "Bla-ccoffee" (Hold the 'K')
-Best time            "Best... time"         "Bes-ttime" (Hold the 'T')
-Social life          "Social... life"       "Socia-llife"
-\`\`\`
-
-:::grammar
-INCORRECT: I stopped... the car and walked... to school. (Inserting artificial pauses between plosive consonants)
-CORRECT: I stoppe[t]he car and walke[t]o school.
-EXPLANATION: In connected speech, overlapping stop consonants merge into a single prolonged closure rather than two separate releases.
-:::
-
----
-
-## 3. Elision: Dropping Sounds for Efficiency
-
-In rapid speech, difficult consonant clusters naturally drop middle sounds to maintain vocal flow. The sounds most frequently dropped are **/t/** and **/d/** when sandwiched between other consonants:
-
-- **Last night** -> Sounds like: *"Las' night"*
-- **Next door** -> Sounds like: *"Nex' door"*
-- **Hold tight** -> Sounds like: *"Hol' tight"*
-- **Sandwich** -> Sounds like: *"San'wich"*
-
----
-
-## Interactive Knowledge Check
-
-:::quiz
-QUESTION: How would a native English speaker link the phrase "Check it out" in connected speech?
-OPTION: Check... it... out.
-OPTION: Che-ki-tout.
-OPTION: Checkit... out.
-OPTION: Che-ckitou-t.
-ANSWER: 1
-EXPLANATION: Consonant-to-vowel linking causes the final /k/ of "check" to link to "it", and the final /t/ (flapped in American English) to link to "out": "Che-ki-tout".
-:::
-
-## Daily Connected Speech Exercise
-
-Practice reading this sentence in one continuous breath, linking the bold transitions:
-> *"She **put on a** **red dress** **and ran out** the door."*  
-> (Pronounce: *"She pu-to-na re-ddress an-ra-nout the door."*)*`,
-    category: 'Pronunciation',
-    tags: ['Pronunciation', 'Connected Speech', 'Linking', 'Elision', 'Listening Skills'],
-    author: {
-      name: 'Julian Hayes',
-      role: 'Voice & Dialect Coach, Accent Specialist',
-      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
-      bio: 'Speech pathologist and dialect coach training international actors and executives in General American phonology.',
-    },
-    featuredImage: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&auto=format&fit=crop&q=80',
-    publishedAt: '2026-03-19T13:00:00Z',
-    updatedAt: '2026-03-24T13:00:00Z',
-    readingTime: '9 min read',
-    status: 'published',
-    featured: false,
-  },
-  {
+    {
     title: 'Word Stress Patterns: How Pitch and Duration Define Meaning',
     slug: 'word-stress-patterns-guide',
     excerpt: 'Shifting stress from the first to second syllable can turn a noun into a verb. Master the two-syllable noun/verb shift and prefix rules.',
@@ -430,6 +337,110 @@ EXPLANATION: Because "present" is functioning as an action verb ("to show or dis
     updatedAt: '2026-03-24T14:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
+    featured: false,
+  },
+
+    {
+    title: 'Connected Speech in English: Linking, Elision, and Assimilation',
+    slug: 'connected-speech-linking-elision',
+    excerpt: 'Understand why native speakers do not pause between words. Master consonant-to-vowel linking, twin consonants, and intrusive sounds.',
+    content: `When learners listen to native English speech, they often complain: *"Native speakers speak too fast!"* or *"They swallow their words!"*
+
+In reality, native speakers are rarely speaking faster than anyone else. Instead, they are utilizing **Connected Speech.**
+
+In spoken English, words are not pronounced as isolated islands separated by neat little pauses. Words blend into continuous acoustic waves. When a word ends with a consonant and the next begins with a vowel, the consonant literally jumps across the boundary to become the first sound of the next word.
+
+Once you understand the four mechanical rules of connected speech, native audio will suddenly sound crystal clear.
+
+## 1. Consonant to Vowel Linking (C -> V)
+
+This is the most fundamental linking rule in English:
+> If Word A ends in a consonant sound and Word B begins with a vowel sound, link them smoothly with no break.
+
+\`\`\`
+Written Form:            How It Sounds in Connected Speech:
+Hold on                  -> "Hol-don"        /həʊlˈdɒn/
+Turn off                 -> "Tur-noff"       /tɜːˈnɒf/
+First of all             -> "Firs-tə-vall"   /ˌfɜːst.əvˈɔːl/
+An apple                 -> "A-napple"       /əˈnæp.əl/
+Pick it up               -> "Pi-ki-tup"      /pɪ.kɪ.tʌp/
+\`\`\`
+
+:::vocab
+WORD: Liaison
+PHONETIC: /liˈeɪ.zɒn/
+MEANING: The smooth connection or linking between words in spoken language, especially when a final consonant links to an initial vowel.
+EXAMPLE: Proper phonological liaison eliminates chopped, robotic phrasing in conversational speech.
+DIFFICULTY: Advanced
+:::
+
+---
+
+## 2. Twin Consonant Linking (C -> Same C)
+
+When Word A ends with the exact same consonant sound that begins Word B, **do NOT pronounce the sound twice.** Simply elongate the consonant sound across both words without opening your mouth:
+
+\`\`\`
+Written:             Wrong (Choppy):        Correct (Connected):
+Red dress            "Red... dress"         "Re-ddress" (Hold the 'D')
+Black coffee         "Black... coffee"      "Bla-ccoffee" (Hold the 'K')
+Best time            "Best... time"         "Bes-ttime" (Hold the 'T')
+Social life          "Social... life"       "Socia-llife"
+\`\`\`
+
+:::grammar
+INCORRECT: I stopped... the car and walked... to school. (Inserting artificial pauses between plosive consonants)
+CORRECT: I stoppe[t]he car and walke[t]o school.
+EXPLANATION: In connected speech, overlapping stop consonants merge into a single prolonged closure rather than two separate releases.
+:::
+
+---
+
+## 3. Elision: Dropping Sounds for Efficiency
+
+In rapid speech, difficult consonant clusters naturally drop middle sounds to maintain vocal flow. The sounds most frequently dropped are **/t/** and **/d/** when sandwiched between other consonants:
+
+- **Last night** -> Sounds like: *"Las' night"*
+- **Next door** -> Sounds like: *"Nex' door"*
+- **Hold tight** -> Sounds like: *"Hol' tight"*
+- **Sandwich** -> Sounds like: *"San'wich"*
+
+---
+
+## Interactive Knowledge Check
+
+:::quiz
+QUESTION: How would a native English speaker link the phrase "Check it out" in connected speech?
+OPTION: Check... it... out.
+OPTION: Che-ki-tout.
+OPTION: Checkit... out.
+OPTION: Che-ckitou-t.
+ANSWER: 1
+EXPLANATION: Consonant-to-vowel linking causes the final /k/ of "check" to link to "it", and the final /t/ (flapped in American English) to link to "out": "Che-ki-tout".
+:::
+
+## Daily Connected Speech Exercise
+
+Practice reading this sentence in one continuous breath, linking the bold transitions:
+> *"She **put on a** **red dress** **and ran out** the door."*  
+> (Pronounce: *"She pu-to-na re-ddress an-ra-nout the door."*)*`,
+    category: 'Pronunciation',
+    tags: ['Pronunciation', 'Connected Speech', 'Linking', 'Elision', 'Listening Skills'],
+    author: {
+      name: 'Julian Hayes',
+      role: 'Voice & Dialect Coach, Accent Specialist',
+      avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80',
+      bio: 'Speech pathologist and dialect coach training international actors and executives in General American phonology.',
+    },
+    featuredImage: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=1200&auto=format&fit=crop&q=80',
+    publishedAt: '2026-03-19T13:00:00Z',
+    updatedAt: '2026-03-24T13:00:00Z',
+    readingTime: '9 min read',
+    status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 ];

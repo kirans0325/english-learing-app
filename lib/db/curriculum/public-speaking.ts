@@ -161,6 +161,8 @@ EXPLANATION: Option 2 executes the PREP/What-So What model: stating the objectiv
     updatedAt: '2026-03-24T09:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
   {
@@ -328,6 +330,8 @@ EXPLANATION: The Sparkline creates psychological tension and emotional release b
     updatedAt: '2026-03-23T11:00:00Z',
     readingTime: '10 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
   {
@@ -473,6 +477,8 @@ EXPLANATION: Option 2 acknowledges the executive's valid constraint (Ethos), ref
     updatedAt: '2026-03-22T14:30:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 ];

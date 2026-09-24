@@ -112,6 +112,20 @@ async function seed() {
       await postsCol.updateOne({ slug: post.slug }, { $set: post }, { upsert: true });
     }
 
+    // Prune stale / legacy placeholder posts so Atlas contains only the 49 active masterclasses
+    const activeSlugs = POSTS.map((p) => p.slug);
+    const deleteResult = await postsCol.deleteMany({ slug: { $nin: activeSlugs } });
+    if (deleteResult.deletedCount > 0) {
+      console.log(`✓ Pruned ${deleteResult.deletedCount} legacy/stale posts.`);
+    }
+
+    await postsCol.createIndex({ category: 1, difficultyOrder: 1, publishedAt: 1 });
+
+    // Lightweight 30-day user history TTL collection (auto-purges after 30 days)
+    const userHistoryCol = db.collection('user_history');
+    await userHistoryCol.createIndex({ visitedAt: 1 }, { expireAfterSeconds: 30 * 86400, background: true });
+    await userHistoryCol.createIndex({ userId: 1, slug: 1 }, { unique: true });
+
     // Seed Quizzes
     console.log(`Seeding ${QUIZZES.length} interactive practice quizzes...`);
     for (const quiz of QUIZZES) {

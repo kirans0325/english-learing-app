@@ -43,16 +43,29 @@ export function ArticleCard({ post, priority = false }: ArticleCardProps) {
           priority={priority}
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
-        <div className="absolute top-3 left-3">
+        <div className="absolute top-3 left-3 flex items-center gap-1.5 flex-wrap">
           <Badge variant={badgeVariant}>{post.category}</Badge>
+          {post.difficulty && (
+            <span
+              className={`rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider shadow-xs backdrop-blur-md ${
+                post.difficulty === 'Beginner'
+                  ? 'bg-emerald-600/90 text-white'
+                  : post.difficulty === 'Intermediate'
+                  ? 'bg-sky-600/90 text-white'
+                  : 'bg-purple-700/90 text-white'
+              }`}
+            >
+              {post.difficulty}
+            </span>
+          )}
         </div>
       </Link>
 
       {/* Card Content */}
       <div className="flex flex-1 flex-col justify-between p-5 sm:p-6">
         <div>
-          {/* Metadata: Date and Reading Time */}
-          <div className="flex items-center gap-3 text-xs font-medium text-slate-500">
+          {/* Metadata: Date, Reading Time, Difficulty */}
+          <div className="flex items-center flex-wrap gap-2 text-xs font-medium text-slate-500">
             <span className="flex items-center gap-1">
               <Calendar className="h-3.5 w-3.5" />
               <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
@@ -62,6 +75,22 @@ export function ArticleCard({ post, priority = false }: ArticleCardProps) {
               <Clock className="h-3.5 w-3.5" />
               <span>{post.readingTime}</span>
             </span>
+            {post.difficulty && (
+              <>
+                <span>•</span>
+                <span
+                  className={`font-semibold ${
+                    post.difficulty === 'Beginner'
+                      ? 'text-emerald-700'
+                      : post.difficulty === 'Intermediate'
+                      ? 'text-sky-700'
+                      : 'text-purple-700'
+                  }`}
+                >
+                  {post.difficulty}
+                </span>
+              </>
+            )}
           </div>
 
           {/* Title */}

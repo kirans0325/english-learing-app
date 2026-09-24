@@ -163,6 +163,8 @@ EXPLANATION: Option 3 states the exact action, timeline, operational metric impr
     updatedAt: '2026-03-24T10:00:00Z',
     readingTime: '10 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
   {
@@ -310,6 +312,8 @@ EXPLANATION: Language shapes perception. Framing pricing as an investment aligns
     updatedAt: '2026-03-23T15:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
   {
@@ -477,6 +481,8 @@ EXPLANATION: A neutral buffer acknowledges common goals or appreciation, ensurin
     updatedAt: '2026-03-22T08:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 ];

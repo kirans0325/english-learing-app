@@ -186,6 +186,8 @@ EXPLANATION: "Affected" is the correct past-tense transitive verb meaning "to pr
     updatedAt: '2026-03-24T06:00:00Z',
     readingTime: '12 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: true,
   },
   {
@@ -268,6 +270,8 @@ EXPLANATION: "Five months" is a duration requiring "for", and "know" is a stativ
     updatedAt: '2026-03-24T10:00:00Z',
     readingTime: '8 min read',
     status: 'published',
+    difficulty: 'Beginner',
+    difficultyOrder: 1,
     featured: false,
   },
   {
@@ -352,6 +356,8 @@ EXPLANATION: The subject is "Every one" (singular), requiring the singular verb 
     updatedAt: '2026-03-24T08:00:00Z',
     readingTime: '9 min read',
     status: 'published',
+    difficulty: 'Intermediate',
+    difficultyOrder: 2,
     featured: false,
   },
   {
@@ -443,6 +449,8 @@ EXPLANATION: "Sensible" in English means having or showing good sense and practi
     updatedAt: '2026-03-24T08:00:00Z',
     readingTime: '8 min read',
     status: 'published',
+    difficulty: 'Advanced',
+    difficultyOrder: 3,
     featured: false,
   },
 ];

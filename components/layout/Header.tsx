@@ -11,6 +11,7 @@ import {
   ArrowRight,
   User,
   GraduationCap,
+  History,
 } from 'lucide-react';
 import { SearchModal } from '@/components/search/SearchModal';
 import { ThemeToggle } from '@/components/theme/ThemeToggle';
@@ -114,7 +115,17 @@ export function Header() {
           </nav>
 
           {/* Right side actions - Clean & Spacious */}
-          <div className="flex items-center gap-3 sm:gap-4">
+          <div className="flex items-center gap-2.5 sm:gap-3">
+            {/* 30-Day Learning History Link */}
+            <Link
+              href="/learn"
+              className="flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200/90 text-slate-600 transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700 dark:border-slate-800 dark:text-slate-300 dark:hover:bg-slate-800"
+              title="Your 30-Day Learning Journey"
+              aria-label="30-Day Learning History"
+            >
+              <History className="h-4 w-4" />
+            </Link>
+
             {/* Dark Mode Toggle */}
             <ThemeToggle />
 
