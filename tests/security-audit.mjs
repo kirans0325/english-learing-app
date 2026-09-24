@@ -389,14 +389,14 @@ for (const file of curriculumFiles) {
 
     // Verify ordering is monotonically non-decreasing (Basic 1 <= Intermediate 2 <= Advanced 3)
     const orders = posts.map((p) => parseInt(p[2], 10));
-    const isSorted = orders.slice(1).every((val, i) => val >= orders[i] || orders[i] - val <= 1);
+    const isSorted = orders.slice(1).every((val, i) => val >= orders[i]);
     if (isSorted) sortedCorrectlyCount++;
   }
 }
 
 assert(
-  totalLessonsVerified === 49,
-  `All 49 curriculum lessons across 9 tracks possess difficulty & difficultyOrder attributes (${totalLessonsVerified}/49)`
+  totalLessonsVerified === 60,
+  `All 60 curriculum lessons across 9 tracks possess difficulty & difficultyOrder attributes (${totalLessonsVerified}/60)`
 );
 
 assert(

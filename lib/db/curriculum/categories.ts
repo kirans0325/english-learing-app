@@ -14,7 +14,7 @@ export const CATEGORIES: Category[] = [
     slug: 'vocabulary',
     description: 'Expand your active lexicon with high-impact words, idioms, collocations, and memory tricks.',
     icon: 'Sparkles',
-    postCount: 5,
+    postCount: 16,
     color: 'indigo',
   },
   {
