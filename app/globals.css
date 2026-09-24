@@ -1,26 +1,247 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --background: #090d16;
+  --foreground: #f8fafc;
+  color-scheme: dark;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-sans: var(--font-sans), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-body), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
+
+/* Global Dark Mode Styling for Smooth Contrast */
+.dark body {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+}
+
+.dark header {
+  background-color: rgba(11, 15, 25, 0.88) !important;
+  border-color: #1e293b !important;
+}
+
+.dark footer {
+  background-color: #070a12 !important;
+  border-color: #1e293b !important;
+}
+
+/* Background & Card dark adaptations */
+.dark .bg-white {
+  background-color: #111827;
+}
+
+.dark .bg-slate-50 {
+  background-color: #0b1120;
+}
+
+.dark .bg-slate-100 {
+  background-color: #1e293b;
+}
+
+.dark .border-slate-100,
+.dark .border-slate-200,
+.dark .border-slate-200\/80,
+.dark .border-slate-200\/90 {
+  border-color: #1e293b;
+}
+
+.dark .border-slate-300 {
+  border-color: #334155;
+}
+
+/* Text dark adaptations */
+.dark .text-slate-900 {
+  color: #f8fafc;
+}
+
+.dark .text-slate-800 {
+  color: #f1f5f9;
+}
+
+.dark .text-slate-700 {
+  color: #cbd5e1;
+}
+
+.dark .text-slate-600 {
+  color: #94a3b8;
+}
+
+.dark .text-slate-500 {
+  color: #64748b;
+}
+
+/* Hover state adaptations */
+.dark .hover\:bg-slate-50:hover {
+  background-color: #1e293b;
+}
+
+.dark .hover\:bg-slate-100:hover,
+.dark .hover\:bg-slate-100\/70:hover {
+  background-color: #1e293b;
+}
+
+.dark .hover\:text-slate-900:hover {
+  color: #ffffff;
+}
+
+/* Input & Modal dark adaptations */
+.dark input,
+.dark textarea,
+.dark select {
+  background-color: #0f172a;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #64748b;
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Focus outline accessibility */
+:focus-visible {
+  outline: 2px solid #059669;
+  outline-offset: 2px;
+}
+
+/* Print-to-PDF Styling with EnglishFlow Site Watermark */
+@media print {
+  @page {
+    margin: 18mm 16mm 18mm 16mm;
+    size: A4 portrait;
+  }
+
+  /* Hide navigation, footers, action buttons, modals, chatbot */
+  header,
+  footer,
+  aside,
+  nav,
+  .no-print,
+  .chatbot-widget,
+  [data-no-print="true"] {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Make lesson container full width and clean */
+  #lesson-print-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+  }
+
+  /* Diagonal EnglishFlow Watermark across printed pages */
+  .print-watermark-overlay {
+    display: block !important;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    font-size: 54pt;
+    font-weight: 900;
+    color: rgba(5, 150, 105, 0.08) !important; /* Soft emerald watermark */
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    user-select: none;
+    font-family: var(--font-sans);
+  }
+
+  /* Printable Header Banner */
+  .print-header-banner {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #059669;
+    padding-bottom: 8pt;
+    margin-bottom: 18pt;
+    font-size: 9pt;
+    color: #475569;
+  }
+
+  .print-header-banner .brand {
+    font-weight: 800;
+    font-size: 13pt;
+    color: #059669;
+    letter-spacing: -0.02em;
+  }
+
+  /* Printable Footer Banner */
+  .print-footer-banner {
+    display: block !important;
+    margin-top: 24pt;
+    border-top: 1px solid #cbd5e1;
+    padding-top: 8pt;
+    font-size: 8pt;
+    color: #64748b;
+    text-align: center;
+  }
+
+  /* Avoid page breaks inside headings and table rows */
+  h1, h2, h3, h4, table, blockquote, pre {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* Hide print banners in screen view */
+@media screen {
+  .print-watermark-overlay,
+  .print-header-banner,
+  .print-footer-banner {
+    display: none !important;
+  }
+}
+
