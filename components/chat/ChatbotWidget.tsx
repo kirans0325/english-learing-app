@@ -14,6 +14,8 @@ import {
   Minimize2,
   Volume2,
   VolumeX,
+  Copy,
+  Check,
 } from 'lucide-react';
 import { speakWithPhilosopherVoice, stopSpeech } from '@/lib/utils/speech';
 
@@ -26,9 +28,13 @@ interface ChatMessage {
 
 const QUICK_PROMPTS = [
   '⏳ Past Perfect vs Simple Past',
-  '🇺🇸 Flap T rule in American accent',
-  '📝 "I am agree" — is this correct?',
-  '💼 Business email follow-up phrases',
+  '⚖️ Affect vs Effect',
+  '🔀 3rd Conditional',
+  '📝 "I am agree" — fix error',
+  '🎙️ JAM speaking topic',
+  '🧠 Quick grammar quiz',
+  '💼 Business email phrases',
+  '🇺🇸 American Flap T rule',
   '💡 Daily idiom with example',
 ];
 
@@ -45,6 +51,7 @@ export function ChatbotWidget() {
   const [inputValue, setInputValue] = useState('');
   const [loading, setLoading] = useState(false);
   const [speakingMsgId, setSpeakingMsgId] = useState<string | null>(null);
+  const [copiedMsgId, setCopiedMsgId] = useState<string | null>(null);
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -128,67 +135,159 @@ export function ChatbotWidget() {
     }
   };
 
-  // Render markdown text simply (bolding, headers, lists)
+  const handleCopyMessage = async (msgId: string, text: string) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopiedMsgId(msgId);
+      setTimeout(() => setCopiedMsgId(null), 2000);
+    } catch {
+      // Fallback if clipboard API is blocked in browser
+    }
+  };
+
+  // Render markdown text (bolding, headers, lists, and comparison tables)
   const renderMessageContent = (text: string) => {
-    const lines = text.split('\n');
-    return (
-      <div className="space-y-1.5 text-xs leading-relaxed">
-        {lines.map((line, idx) => {
-          if (!line.trim()) return <div key={idx} className="h-1" />;
+    const rawLines = text.split('\n');
+    const elements: React.ReactNode[] = [];
+    let i = 0;
 
-          if (line.startsWith('### ')) {
-            return (
-              <h4 key={idx} className="font-bold text-slate-900 text-sm mt-1 mb-0.5">
-                {line.replace(/^###\s+/, '')}
-              </h4>
-            );
-          }
-          if (line.startsWith('#### ')) {
-            return (
-              <h5 key={idx} className="font-semibold text-slate-800 text-xs mt-1 mb-0.5">
-                {line.replace(/^####\s+/, '')}
-              </h5>
-            );
-          }
-          if (line.startsWith('> ')) {
-            return (
-              <blockquote
-                key={idx}
-                className="border-l-2 border-emerald-500 pl-2 text-slate-700 italic my-1 bg-emerald-50/50 py-0.5 rounded-r"
-              >
-                {line.replace(/^>\s+/, '')}
-              </blockquote>
-            );
-          }
-          if (line.startsWith('- ') || line.startsWith('* ')) {
-            const content = line.replace(/^[-*]\s+/, '');
-            return (
-              <li key={idx} className="ml-3 list-disc">
-                <span dangerouslySetInnerHTML={{ __html: formatInline(content) }} />
-              </li>
-            );
-          }
-          if (/^\d+\.\s+/.test(line)) {
-            const num = line.match(/^(\d+)\.\s+/)?.[1] || '';
-            const content = line.replace(/^\d+\.\s+/, '');
-            return (
-              <div key={idx} className="flex items-start gap-1.5 ml-1">
-                <span className="font-bold text-emerald-700">{num}.</span>
-                <span dangerouslySetInnerHTML={{ __html: formatInline(content) }} />
-              </div>
-            );
-          }
+    while (i < rawLines.length) {
+      const line = rawLines[i];
 
-          return (
-            <p
-              key={idx}
-              dangerouslySetInnerHTML={{ __html: formatInline(line) }}
-              className="text-slate-700"
-            />
+      // Empty line spacer
+      if (!line.trim()) {
+        elements.push(<div key={`space-${i}`} className="h-1" />);
+        i++;
+        continue;
+      }
+
+      // Markdown Table detection: lines enclosed in pipes
+      if (line.trim().startsWith('|') && line.trim().endsWith('|')) {
+        const tableLines: string[] = [];
+        while (i < rawLines.length && rawLines[i].trim().startsWith('|') && rawLines[i].trim().endsWith('|')) {
+          tableLines.push(rawLines[i].trim());
+          i++;
+        }
+
+        if (tableLines.length >= 2) {
+          const parseRow = (r: string) =>
+            r
+              .split('|')
+              .slice(1, -1)
+              .map((c) => c.trim());
+
+          const headerCells = parseRow(tableLines[0]);
+          const isDelimiter = /^\|(\s*:?-+:?\s*\|)+$/.test(tableLines[1]);
+          const dataRows = (isDelimiter ? tableLines.slice(2) : tableLines.slice(1)).map(parseRow);
+
+          elements.push(
+            <div key={`table-${i}`} className="overflow-x-auto my-2 rounded-lg border border-slate-200 bg-white">
+              <table className="min-w-full text-[11px] divide-y divide-slate-200">
+                <thead className="bg-emerald-50/90 text-emerald-950 font-semibold">
+                  <tr>
+                    {headerCells.map((cell, cIdx) => (
+                      <th
+                        key={cIdx}
+                        className="px-2 py-1 text-left font-bold"
+                        dangerouslySetInnerHTML={{ __html: formatInline(cell) }}
+                      />
+                    ))}
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-100 text-slate-700">
+                  {dataRows.map((row, rIdx) => (
+                    <tr key={rIdx} className={rIdx % 2 === 1 ? 'bg-slate-50/60' : ''}>
+                      {row.map((cell, cIdx) => (
+                        <td
+                          key={cIdx}
+                          className="px-2 py-1 align-top"
+                          dangerouslySetInnerHTML={{ __html: formatInline(cell) }}
+                        />
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           );
-        })}
-      </div>
-    );
+          continue;
+        }
+      }
+
+      // Heading 3
+      if (line.startsWith('### ')) {
+        elements.push(
+          <h4 key={`h3-${i}`} className="font-bold text-slate-900 text-sm mt-1 mb-0.5">
+            {line.replace(/^###\s+/, '')}
+          </h4>
+        );
+        i++;
+        continue;
+      }
+
+      // Heading 4
+      if (line.startsWith('#### ')) {
+        elements.push(
+          <h5 key={`h4-${i}`} className="font-semibold text-slate-800 text-xs mt-1 mb-0.5">
+            {line.replace(/^####\s+/, '')}
+          </h5>
+        );
+        i++;
+        continue;
+      }
+
+      // Blockquote
+      if (line.startsWith('> ')) {
+        elements.push(
+          <blockquote
+            key={`quote-${i}`}
+            className="border-l-2 border-emerald-500 pl-2 text-slate-700 italic my-1 bg-emerald-50/50 py-0.5 rounded-r"
+          >
+            {line.replace(/^>\s+/, '')}
+          </blockquote>
+        );
+        i++;
+        continue;
+      }
+
+      // Bullet lists
+      if (line.startsWith('- ') || line.startsWith('* ')) {
+        const content = line.replace(/^[-*]\s+/, '');
+        elements.push(
+          <li key={`li-${i}`} className="ml-3 list-disc">
+            <span dangerouslySetInnerHTML={{ __html: formatInline(content) }} />
+          </li>
+        );
+        i++;
+        continue;
+      }
+
+      // Numbered lists
+      if (/^\d+\.\s+/.test(line)) {
+        const num = line.match(/^(\d+)\.\s+/)?.[1] || '';
+        const content = line.replace(/^\d+\.\s+/, '');
+        elements.push(
+          <div key={`num-${i}`} className="flex items-start gap-1.5 ml-1">
+            <span className="font-bold text-emerald-700">{num}.</span>
+            <span dangerouslySetInnerHTML={{ __html: formatInline(content) }} />
+          </div>
+        );
+        i++;
+        continue;
+      }
+
+      // Default paragraph
+      elements.push(
+        <p
+          key={`p-${i}`}
+          dangerouslySetInnerHTML={{ __html: formatInline(line) }}
+          className="text-slate-700"
+        />
+      );
+      i++;
+    }
+
+    return <div className="space-y-1.5 text-xs leading-relaxed">{elements}</div>;
   };
 
   const formatInline = (str: string) => {
@@ -201,7 +300,15 @@ export function ChatbotWidget() {
     return escaped
       .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
       .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
-      .replace(/`([^`]+)`/g, '<code class="bg-slate-100 text-emerald-700 px-1 py-0.5 rounded text-[11px] font-mono">$1</code>');
+      .replace(/`([^`]+)`/g, '<code class="bg-slate-100 text-emerald-700 px-1 py-0.5 rounded text-[11px] font-mono">$1</code>')
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_match, text, url) => {
+        const cleanUrl = url.trim();
+        // Allow safe internal links and standard protocols
+        if (cleanUrl.startsWith('/') || cleanUrl.startsWith('http://') || cleanUrl.startsWith('https://')) {
+          return `<a href="${cleanUrl}" class="text-emerald-700 underline font-semibold hover:text-emerald-800 transition" target="_blank" rel="noopener noreferrer">${text}</a>`;
+        }
+        return text;
+      });
   };
 
   return (
@@ -305,28 +412,49 @@ export function ChatbotWidget() {
                   )}
                   {msg.sender === 'bot' ? (
                     <div className="mt-2 pt-1.5 border-t border-slate-100 flex items-center justify-between gap-2 text-[10px]">
-                      <button
-                        type="button"
-                        onClick={() => toggleSpeakMessage(msg.id, msg.text)}
-                        className={`inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 font-medium transition active:scale-95 ${
-                          speakingMsgId === msg.id
-                            ? 'bg-emerald-100 text-emerald-800 font-semibold'
-                            : 'hover:bg-slate-100 text-slate-600'
-                        }`}
-                        title={speakingMsgId === msg.id ? 'Stop audio' : 'Listen with The Philosopher Android AI voice'}
-                      >
-                        {speakingMsgId === msg.id ? (
-                          <>
-                            <VolumeX className="h-3 w-3 text-emerald-700 animate-pulse" />
-                            <span>Stop Audio</span>
-                          </>
-                        ) : (
-                          <>
-                            <Volume2 className="h-3 w-3 text-emerald-600" />
-                            <span>Listen (Philosopher AI)</span>
-                          </>
-                        )}
-                      </button>
+                      <div className="flex items-center gap-1.5">
+                        <button
+                          type="button"
+                          onClick={() => toggleSpeakMessage(msg.id, msg.text)}
+                          className={`inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 font-medium transition active:scale-95 ${
+                            speakingMsgId === msg.id
+                              ? 'bg-emerald-100 text-emerald-800 font-semibold'
+                              : 'hover:bg-slate-100 text-slate-600'
+                          }`}
+                          title={speakingMsgId === msg.id ? 'Stop audio' : 'Listen with The Philosopher Android AI voice'}
+                        >
+                          {speakingMsgId === msg.id ? (
+                            <>
+                              <VolumeX className="h-3 w-3 text-emerald-700 animate-pulse" />
+                              <span>Stop</span>
+                            </>
+                          ) : (
+                            <>
+                              <Volume2 className="h-3 w-3 text-emerald-600" />
+                              <span>Listen</span>
+                            </>
+                          )}
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => handleCopyMessage(msg.id, msg.text)}
+                          className="inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 font-medium text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition active:scale-95"
+                          title="Copy explanation"
+                        >
+                          {copiedMsgId === msg.id ? (
+                            <>
+                              <Check className="h-3 w-3 text-emerald-600" />
+                              <span className="text-emerald-700 font-semibold">Copied!</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy className="h-3 w-3" />
+                              <span>Copy</span>
+                            </>
+                          )}
+                        </button>
+                      </div>
                       <span className="text-slate-400">{msg.time}</span>
                     </div>
                   ) : (
