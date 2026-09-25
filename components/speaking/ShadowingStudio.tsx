@@ -15,6 +15,7 @@ import {
   CheckCircle,
   HelpCircle,
   Headphones,
+  Loader2,
 } from 'lucide-react';
 import { speakWithPhilosopherVoice, stopSpeech } from '@/lib/utils/speech';
 
@@ -128,12 +129,43 @@ export const SHADOWING_EXERCISES: ShadowingExercise[] = [
 ];
 
 export function ShadowingStudio() {
+  const [exercises, setExercises] = useState<ShadowingExercise[]>(SHADOWING_EXERCISES);
   const [activeExercise, setActiveExercise] = useState<ShadowingExercise>(SHADOWING_EXERCISES[0]);
   const [speed, setSpeed] = useState<number>(0.92);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [activeStep, setActiveStep] = useState<number>(1);
+  const [isGeneratingAi, setIsGeneratingAi] = useState<boolean>(false);
+  const [generationSource, setGenerationSource] = useState<'gemini' | 'curated' | null>(null);
 
   const cleanScript = activeExercise.transcript.replace(/[/]+/g, '');
+
+  const handleFetchAiShadowingExercise = async () => {
+    stopSpeech();
+    setIsPlaying(false);
+    setIsGeneratingAi(true);
+
+    try {
+      const res = await fetch('/api/speaking/generate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ type: 'shadowing' }),
+      });
+
+      if (res.ok) {
+        const data = await res.json();
+        if (data.exercise) {
+          setExercises((prev) => [data.exercise, ...prev.filter((e) => e.id !== data.exercise.id)]);
+          setActiveExercise(data.exercise);
+          setGenerationSource(data.source === 'gemini' ? 'gemini' : 'curated');
+          return;
+        }
+      }
+    } catch {
+      // Fallback
+    } finally {
+      setIsGeneratingAi(false);
+    }
+  };
 
   const handlePlayVoice = async (customRate?: number) => {
     const rateToUse = customRate ?? speed;
@@ -235,8 +267,8 @@ export function ShadowingStudio() {
       {/* Main Studio Body */}
       <div className="p-6 sm:p-8 space-y-6">
         {/* Exercise Selector */}
-        <div className="flex flex-wrap gap-2">
-          {SHADOWING_EXERCISES.map((ex) => (
+        <div className="flex flex-wrap items-center gap-2">
+          {exercises.map((ex) => (
             <button
               key={ex.id}
               onClick={() => {
@@ -253,15 +285,42 @@ export function ShadowingStudio() {
               {ex.title}
             </button>
           ))}
+
+          <button
+            onClick={handleFetchAiShadowingExercise}
+            disabled={isGeneratingAi}
+            className="rounded-xl px-3.5 py-2 text-xs font-bold transition flex items-center gap-1.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-xs hover:opacity-95 active:scale-95 disabled:opacity-50"
+            title="Generate a brand new shadowing speech script in real-time with Google Gemini AI"
+          >
+            {isGeneratingAi ? (
+              <>
+                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                <span>Generating Speech...</span>
+              </>
+            ) : (
+              <>
+                <Sparkles className="h-3.5 w-3.5 text-purple-200 animate-pulse" />
+                <span>🎲 AI Random (Gemini)</span>
+              </>
+            )}
+          </button>
         </div>
 
         {/* Active Exercise Card */}
         <div className="rounded-3xl border border-indigo-100 bg-white p-6 shadow-xs space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-3">
             <div>
-              <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-600">
-                {activeExercise.accent} • {activeExercise.difficulty}
-              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-600">
+                  {activeExercise.accent} • {activeExercise.difficulty}
+                </span>
+                {generationSource === 'gemini' && (
+                  <span className="rounded-full bg-purple-100 text-purple-800 border border-purple-300 px-2 py-0.5 text-[10px] font-bold flex items-center gap-1">
+                    <Sparkles className="h-2.5 w-2.5 text-purple-600" />
+                    <span>Gemini AI Speech</span>
+                  </span>
+                )}
+              </div>
               <h4 className="text-xl font-bold text-slate-900 mt-0.5">{activeExercise.title}</h4>
               <p className="text-xs text-slate-500 mt-0.5">{activeExercise.scenario}</p>
             </div>
