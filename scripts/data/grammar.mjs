@@ -365,19 +365,111 @@ Here, a transitive verb requires both a direct object and an adverbial of placem
 - *"The courier (S) **delivered** (V) the parcel ($O_d$) **to the front desk** (Obligatory A)."*
 - *"She (S) **put** (V) the keys ($O_d$) **on the counter** (Obligatory A)."*
 
+:::diagram
+TITLE: The 7 Core English Sentence Pattern Syntax Tree Blueprint
+SUBTITLE: Structural Hierarchy Dictated by Verb Transitivity
+CATEGORY: Syntax Architecture
+┌─────────────┬──────────────────────────┬────────────────────────────────────────────────────────┐
+│ Pattern     │ Formula Structure        │ Syntactic Parse Tree Diagram                           │
+├─────────────┼──────────────────────────┼────────────────────────────────────────────────────────┤
+│ 1. SV       │ [Subject] + [Vi]         │ [S: The client] ──────> [Vi: arrived]                  │
+│ 2. SVO      │ [Subject] + [Vt] + [Od]  │ [S: The board]  ──────> [Vt: ratified]  ──> [Od: pact] │
+│ 3. SVC      │ [Subject] + [Vlink] +[Cs]│ [S: Proposal]   ──────= [Vlink: seems]  ──= [Cs: viable]│
+│ 4. SVOO     │ [S] + [Vdi] + [Oi] + [Od]│ [S: Recruiter]  ───┬──> [Oi: candidate]                │
+│             │                          │                    └──> [Od: offer letter]             │
+│ 5. SVOC     │ [S] + [Vcx] + [Od] + [Co]│ [S: The auditor] ────> [Od: books] ───> [Co: flawless] │
+│ 6. SVA      │ [S] + [V] + [Adv_oblig]  │ [S: Headquarters] ───> [V: is situated] ──> [A: in NY] │
+│ 7. SVOA     │ [S] + [V] + [Od] + [Adv] │ [S: Courier] ───┬──> [Od: shipment]                    │
+│             │                          │                 └──> [A_oblig: to harbor warehouse]    │
+└─────────────┴──────────────────────────┴────────────────────────────────────────────────────────┘
+:::
+
 ---
 
-## The 7 Sentence Patterns Summary Matrix
+## The 4 Sentence Archetypes: Simple, Compound, Complex & Compound-Complex
 
-| Pattern | Verb Category | Minimal Formula | Concrete Example |
-| :--- | :--- | :--- | :--- |
-| **1. SV** | Intransitive | $S + V$ | *The market collapsed.* |
-| **2. SVO** | Monotransitive | $S + V + O_d$ | *The team closed the deal.* |
-| **3. SVC** | Copular / Linking | $S + V + C_s$ | *The terms remain acceptable.* |
-| **4. SVOO** | Ditransitive | $S + V + O_i + O_d$ | *She handed him the contract.* |
-| **5. SVOC** | Complex-Transitive | $S + V + O_d + C_o$ | *They considered the plan feasible.* |
-| **6. SVA** | Intransitive + Locative | $S + V + A$ | *The office resides in Tokyo.* |
-| **7. SVOA** | Transitive + Locative | $S + V + O_d + A$ | *He placed the document in the safe.* |
+Mastering the 7 basic patterns is step one; assembling them into dynamic sentence types is step two:
+
+:::diagram
+TITLE: The 4 Sentence Archetypes & Clause Combination Blueprint
+SUBTITLE: Simple vs Compound vs Complex vs Compound-Complex Architectures
+CATEGORY: Clause Hierarchy
+┌──────────────────┬──────────────────────────────────────────────────────────────────────────────┐
+│ 1. SIMPLE        │ [ INDEPENDENT CLAUSE ]                                                       │
+│                  │  └─ "The marketing team analyzed the customer conversion rates."             │
+├──────────────────┼──────────────────────────────────────────────────────────────────────────────┤
+│ 2. COMPOUND      │ [ INDEPENDENT CLAUSE 1 ]  +  [, COORDINATOR (FANBOYS)]  + [ INDEPENDENT 2 ]  │
+│                  │  └─ "Sales increased by 18%, BUT production bottlenecks delayed delivery."   │
+│                  │  OR [ INDEPENDENT 1 ]  +  [; CONJUNCTIVE ADVERB;]  +  [ INDEPENDENT 2 ]      │
+│                  │  └─ "Costs rose rapidly; CONSEQUENTLY, the executive committee paused hiring"│
+├──────────────────┼──────────────────────────────────────────────────────────────────────────────┤
+│ 3. COMPLEX       │ [ DEPENDENT SUBORDINATE CLAUSE ]  +  [,]  +  [ INDEPENDENT MATRIX CLAUSE ]   │
+│                  │  └─ "ALTHOUGH revenue grew in Q2, operating margins declined significantly." │
+│                  │  OR [ INDEPENDENT MATRIX CLAUSE ]  +  [ DEPENDENT SUBORDINATE CLAUSE ]       │
+│                  │  └─ "Margins declined significantly BECAUSE legacy servers increased energy."│
+├──────────────────┼──────────────────────────────────────────────────────────────────────────────┤
+│ 4. COMPOUND-     │ [ DEPENDENT CLAUSE ] + [,] + [ INDEP 1 ] + [, COORDINATOR] + [ INDEP 2 ]     │
+│    COMPLEX       │  └─ "When the audit concluded, the CFO approved the budget, AND the team     │
+│                  │     immediately initiated Phase 2 deployment."                               │
+└──────────────────┴──────────────────────────────────────────────────────────────────────────────┘
+:::
+
+---
+
+## Comma Splice & Run-On Emergency Surgery
+
+A **comma splice** occurs when two independent clauses are joined with only a comma. A **run-on (fused sentence)** joins them with no punctuation at all. Both are fatal in professional communication:
+
+:::diagram
+TITLE: Comma Splice & Run-On Sentence Emergency Surgery Protocol
+SUBTITLE: 3 Certified Grammatical Methods to Repair Fused Independent Clauses
+CATEGORY: Error Repair Protocol
+[ PROBLEM ]: [ Independent Clause 1 ]  ,  [ Independent Clause 2 ]  ❌ (FATAL COMMA SPLICE)
+             "The server crashed yesterday, we restored the database within an hour."
+
+                     ┌───────────────────────────┴───────────────────────────┐
+                     │           CHOOSE A SURGICAL REPAIR PROTOCOL           │
+                     ▼                                                       ▼
+┌─────────────────────────────────────────┐             ┌─────────────────────────────────────────┐
+│ PROTOCOL A: Period / Full Stop (Two S.) │             │ PROTOCOL B: Semicolon (Close Relation)  │
+├─────────────────────────────────────────┤             ├─────────────────────────────────────────┤
+│ [ Independent 1 ]. [ Independent 2 ].   │             │ [ Independent 1 ] ; [ Independent 2 ]   │
+│ "The server crashed yesterday. We       │             │ "The server crashed yesterday; we       │
+│ restored the database within an hour."  │             │ restored the database within an hour."  │
+└─────────────────────────────────────────┘             └─────────────────────────────────────────┘
+                     │                                                       │
+                     └───────────────────────────┬───────────────────────────┘
+                                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ PROTOCOL C: Coordinating Conjunction (FANBOYS) or Subordinating Conjunction                     │
+├─────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ • FANBOYS:    [ Independent 1 ]  , but  [ Independent 2 ]                                       │
+│               "The server crashed yesterday, BUT we restored the database within an hour."      │
+│ • SUBORDINATOR: Although [ Dependent Clause ] , [ Independent Matrix Clause ]                    │
+│               "ALTHOUGH the server crashed yesterday, we restored the database within an hour."  │
+└─────────────────────────────────────────────────────────────────────────────────────────────────┘
+:::
+
+---
+
+## Modifier Placement: Avoiding Dangling & Misplaced Modifiers
+
+A modifier must point directly and unmistakably to the noun it modifies:
+
+:::diagram
+TITLE: Modifier Placement Radar: Dangling vs. Corrected Syntax
+SUBTITLE: Ensuring Modifiers Attach to the Real Logical Agent
+CATEGORY: Syntactic Precision
+┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ ❌ DANGLING MODIFIER:                                                                           │
+│ "Having reviewed the financial logs, the discrepancy was immediately resolved."                 │
+│  └─ PROBLEM: Did "the discrepancy" review the financial logs? The real human agent is missing!   │
+├─────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ ✅ REPAIRED SYNTAX (AGENT RESTORED):                                                            │
+│ "Having reviewed the financial logs, THE AUDITOR immediately resolved the discrepancy."         │
+│  └─ FIX: "The auditor" is the logical agent performing the participial action.                  │
+└─────────────────────────────────────────────────────────────────────────────────────────────────┘
+:::
 
 ---
 
@@ -1031,6 +1123,26 @@ In this masterclass, we will unlock the full 12-tense matrix, demystify the Past
 
 ## The 12 Tense-Aspect Architecture Matrix
 
+:::diagram
+TITLE: The 12-Tense Chronological Timeline & Aspect Radar
+SUBTITLE: Visualizing Temporal Priority, Completion, and Ongoing Duration
+CATEGORY: Chronological Blueprint
+TIME AXIS: PAST ◄────────────────────────── NOW (PRESENT) ──────────────────────────► FUTURE
+                 │                                │                                │
+[ SIMPLE ]       │ • Event in closed past         │ • Universal / Routine truth    │ • Volition / Prediction
+                 │   "We launched in March."      │   "We deploy daily."           │   "We will launch in Q4."
+                 │                                │                                │
+[ CONTINUOUS ]   │ • In-progress during past frame│ • In-progress right now        │ • In-progress at future point
+                 │   "Server was rebooting."      │   "Server is rebooting."       │   "Server will be rebooting."
+                 │                                │                                │
+[ PERFECT ]      │ • Past-Before-The-Past ($had$) │ • Past event with PRESENT link │ • Completed by future deadline
+                 │   "Cluster had failed BEFORE   │   "We have patched the bug."   │   "By Friday, team will
+                 │    backup completed."          │   (Impact: site is up now)     │    have deployed v3.0."
+                 │                                │                                │
+[ PERF. CONT. ]  │ • Ongoing duration up to past  │ • Ongoing duration up to now   │ • Ongoing duration up to future
+                 │   "Had been auditing 3 weeks." │   "Have been coding 8 hours."  │   "Will have been testing 5 days"
+:::
+
 | Tense / Aspect | Simple Aspect (Factual / Routine) | Continuous Aspect (Progressive / Temporary) | Perfect Aspect (Prior / Completed with Relevance) | Perfect Continuous (Ongoing Prior Duration) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Present** | *I analyze* | *I am analyzing* | *I have analyzed* | *I have been analyzing* |
@@ -1658,6 +1770,36 @@ In this masterclass, we will review the four classic conditionals, master mixed 
 
 ---
 
+## The Conditional Probability & Time Dimension Framework
+
+:::diagram
+TITLE: The Conditional Probability & Time Dimension Decision Tree
+SUBTITLE: Choosing the Right Conditional (Zero, First, Second, Third, Mixed)
+CATEGORY: Logical Decision Tree
+                        [ EVALUATE THE SCENARIO'S TIME & REALITY ]
+                                            │
+               ┌────────────────────────────┴────────────────────────────┐
+               ▼                                                         ▼
+     [ REAL & PROBABLE WORLD ]                                [ UNREAL / HYPOTHETICAL WORLD ]
+               │                                                         │
+       ┌───────┴───────┐                                         ┌───────┴───────┐
+       ▼               ▼                                         ▼               ▼
+[ 100% INEVITABLE ]  [ > 70% PROBABLE FUTURE ]             [ PRESENT UNREAL ]  [ PAST COUNTERFACTUAL ]
+ ZERO CONDITIONAL     FIRST CONDITIONAL                     SECOND CONDITIONAL  THIRD CONDITIONAL
+ If + Pres, Pres      If + Pres, Will + Verb                If + Past, Would    If + Had V3, Would have V3
+ "If heat reaches     "If we hit targets,                   "If I had time,     "If we had secured data,
+  100°C, it boils"     we will expand."                      I would audit it."  we wouldn't have leaked."
+                                                                                 │
+                                                                                 ▼
+                                                                     [ PAST CAUSE ➔ PRESENT IMPACT ]
+                                                                      MIXED CONDITIONAL
+                                                                      If + Had V3, Would + Verb
+                                                                      "If she had taken the job in 2022,
+                                                                       she would be director today."
+:::
+
+---
+
 ## The 4 Classic Conditionals Summary Matrix
 
 | Type | Time Reference | Condition Clause (If...) | Main Clause (Result...) | Real-World Application |
@@ -1777,6 +1919,28 @@ At the core of complex sentences lies the **clause**—a syntactic unit containi
 2. **Dependent (Subordinate) Clauses**: Cannot stand alone; they depend on an independent clause to complete their semantic meaning.
 
 In this guide, we will explore the three types of dependent clauses (Relative, Noun, and Adverbial), master restrictive versus non-restrictive punctuation, decode *who* versus *whom*, and learn how to construct reduced participle clauses.
+
+---
+
+:::diagram
+TITLE: The Dependent Clause Taxonomy & Modification Architecture
+SUBTITLE: Three Structural Subordinates: Adjective, Noun & Adverbial Clauses
+CATEGORY: Clause Taxonomy
+                               [ MATRIX / INDEPENDENT SENTENCE ]
+                                              │
+                 ┌────────────────────────────┼────────────────────────────┐
+                 ▼                            ▼                            ▼
+      [ RELATIVE / ADJECTIVE ]         [ NOUN CLAUSE ]             [ ADVERBIAL CLAUSE ]
+      Modifies a Noun                  Acts as Subject or Object    Modifies the Main Verb
+      "The engineer WHO BUILT IT..."   "I know THAT WE WILL WIN."   "We paused AFTER IT BROKE."
+                 │
+      ┌──────────┴──────────┐
+      ▼                     ▼
+[ RESTRICTIVE ]      [ NON-RESTRICTIVE ]
+Essential meaning    Bonus detail
+NO commas            ENCLOSED in commas
+"Cars THAT stall..." "My car, WHICH stalls..."
+:::
 
 ---
 
@@ -2121,14 +2285,28 @@ In this masterclass, we will deconstruct the anatomy of professional reports, ex
 
 Every formal business or technical report follows this recognized macro-structure:
 
-\`\`\`
-The Standard Report Hierarchy:
-1. EXECUTIVE SUMMARY (High-level abstract: Problem, Finding, Financial Impact, Core Action)
-2. TERMS OF REFERENCE & BACKGROUND (Scope, Objectives, Methodology, Limitations)
-3. FINDINGS & ANALYSIS (Objective facts, quantitative data, empirical observations)
-4. CONCLUSIONS (Logical deductions drawn strictly from the findings)
-5. RECOMMENDATIONS (Prescriptive, forward-looking, actionable initiatives)
-\`\`\`
+:::diagram
+TITLE: The 5-Tier Executive & Technical Report Architecture Blueprint
+SUBTITLE: Structural Hierarchy, Target Reader Focus & Information Density
+CATEGORY: Executive Report Architecture
+▲ HIGH STRATEGY / LOW DENSITY (Read by Board & C-Suite)
+│
+├── [ TIER 1: EXECUTIVE SUMMARY (BLUF) ] ───────────────────────────────────────────┐
+│   • Problem Statement + Critical Metric Finding + Primary Action + ROI Target     │ (Target: C-Suite / VPs)
+│   • Length: 150–250 words maximum. Written LAST, read FIRST.                      │
+├── [ TIER 2: TERMS OF REFERENCE & METHODOLOGY ] ───────────────────────────────────┤
+│   • Scope, Regulatory Framework, Data Collection Protocols, Constraints           │ (Target: Directors / PMs)
+│   • Grammatical Register: Impersonal Passive ("Interviews were conducted...")     │
+├── [ TIER 3: EMPIRICAL FINDINGS & DATA COMMENTARY ] ───────────────────────────────┤
+│   • Raw Facts, Trends, Proportions, Statistical Variances, Root Causes            │ (Target: Technical Leads)
+│   • Trend Grammar: Direction ("surged to"), Velocity ("rapidly"), Benchmark      │
+├── [ TIER 4: LOGICAL CONCLUSIONS ] ────────────────────────────────────────────────┤
+│   • Deductive Interpretations Synthesizing Findings (NO new data permitted)      │ (Target: Decision Makers)
+│   • Modal Stance: Evaluative Present ("These findings indicate that...")         │
+└── [ TIER 5: ACTIONABLE RECOMMENDATIONS (SMART) ] ─────────────────────────────────┘
+    • Prescriptive Mandates (Action Item + Owner + Budget + Deadline + KPI)         (Target: Implementation Team)
+    • Mandative Subjunctive: "It is recommended that management allocate €300K..."  ▼ HIGH DENSITY / TACTICAL
+:::
 
 ---
 
@@ -2148,6 +2326,27 @@ Executives frequently read *only* the Executive Summary before deciding whether 
 ## 2. The Grammar of Data Commentary: Trends, Changes & Proportions
 
 When analyzing charts, metrics, and quantitative evidence in Section 3 (*Findings*), you must command the grammar of **trend movement**:
+
+:::diagram
+TITLE: The Data Commentary Vector Matrix: Movement, Velocity & Benchmarks
+SUBTITLE: Grammatical Formulas for Precision Statistical Reporting
+CATEGORY: Trend Analysis Grammar
+┌─────────────────┬──────────────────────────────────┬────────────────────────────────────────────┐
+│ Trend Vector    │ Strong Analytical Verbs          │ Precise Prepositional Placement            │
+├─────────────────┼──────────────────────────────────┼────────────────────────────────────────────┤
+│ Upward Surge    │ soar, surge, escalate, climb,    │ • increased BY 24% (amount of delta)       │
+│                 │ accelerate, rebound, outpace     │ • rose TO $8.4M (terminal ceiling)         │
+├─────────────────┼──────────────────────────────────┼────────────────────────────────────────────┤
+│ Downward Drop   │ plummet, plunge, contract, slump,│ • plummeted BY 38% (depth of loss)         │
+│                 │ deteriorate, diminish, erode     │ • contracted TO a baseline OF 1,200 units  │
+├─────────────────┼──────────────────────────────────┼────────────────────────────────────────────┤
+│ Stability       │ plateau, stabilize, level off,   │ • hovered AT roughly 45ms                  │
+│                 │ oscillate, fluctuate             │ • fluctuated BETWEEN 12% AND 16%           │
+├─────────────────┼──────────────────────────────────┼────────────────────────────────────────────┤
+│ Proportion      │ account for, represent, comprise,│ • accounted FOR 62% of energy spend        │
+│                 │ constitute, make up              │ • constituted a majority share (71%)       │
+└─────────────────┴──────────────────────────────────┴────────────────────────────────────────────┘
+:::
 
 ### A. Verbs & Prepositions of Movement:
 - **Increase / Rise / Surge**: *"Revenues **increased by** 18% (amount of change) **to** $4.2M (final level)."*
@@ -2188,7 +2387,94 @@ DIFFICULTY: Advanced
 
 ---
 
-## 4. Signposting & Cohesion: Navigating the Reader
+## 4. Voice Calibration: Active vs Passive in Technical Reports
+
+In casual writing, instructors often preach *"always use active voice."* In professional and scientific reporting, however, **strategic passive voice is mandatory**:
+
+:::diagram
+TITLE: Active vs. Passive Voice Decision Flowchart for Reports
+SUBTITLE: When to Emphasize the Finding vs. The Acting Agent
+CATEGORY: Syntactic Flowchart
+                     [ DO YOU NEED TO HIGHLIGHT THE AGENT OR THE OUTCOME? ]
+                                                │
+                 ┌──────────────────────────────┴──────────────────────────────┐
+                 ▼                                                             ▼
+     [ EMPHASIZE THE OUTCOME / FACT ]                              [ EMPHASIZE THE AGENT / OWNER ]
+                 │                                                             │
+                 ▼                                                             ▼
+   USE AGENTLESS IMPERSONAL PASSIVE                                USE ACTIVE DECLARATIVE VOICE
+  • When the actor is irrelevant or obvious                     • When fixing responsibility or ownership
+  • When describing tests, failures, audits                     • In recommendations & executive summaries
+  • "Data packets were intercepted at 14:00."                   • "DevOps team must deploy patch v4.2."
+  • "A 23% temperature spike was recorded."                     • "The audit committee recommends immediate audit."
+:::
+
+---
+
+## 5. End-to-End Executive Incident Audit Sample
+
+Examine how all five tiers converge into an authoritative workplace technical report:
+
+:::diagram
+TITLE: Full Annotated Executive Incident Audit Report
+SUBTITLE: End-to-End Production Blueprint with Section Callouts
+CATEGORY: Masterclass Sample
+=================================================================================================
+INCIDENT AUDIT REPORT: CLOUD PAYMENT GATEWAY OUTAGE OF SEPT 18
+Reference: SEC-AUD-2026-09 | Classification: Internal Restricted | Prepared by: SRE Audit Taskforce
+=================================================================================================
+
+1.0 EXECUTIVE SUMMARY
+---------------------
+On September 18, between 14:02 and 15:44 UTC (102 minutes), the core checkout payment cluster
+experienced complete service degradation, causing a failure of 14,820 customer checkout transactions
+and an estimated gross merchandise loss of $412,000. Root cause analysis identified a deadlocked
+connection pool in database proxy v2.1.8 following an unthrottled retry storm. System stability was
+restored by rolling back proxy containers to v2.1.6 and introducing exponential backoff with jitter.
+It is recommended that the infrastructure division deploy automated circuit breakers and allocate
+$60,000 to end-to-end chaos engineering tests before the Black Friday retail freeze.
+
+2.0 METHODOLOGY & SCOPE OF AUDIT
+--------------------------------
+The audit examined four discrete data streams:
+1. Distributed Jaeger tracing logs (1.2 billion telemetry events).
+2. Gateway ingress metrics collected by Prometheus at 1-second scrape intervals.
+3. PostgreSQL connection saturation logs.
+4. Post-incident interviews conducted with the on-call SRE lead and primary database architect.
+
+3.0 EMPIRICAL FINDINGS & DATA ANALYSIS
+--------------------------------------
+• Latency Degradation: P99 transaction latency surged by 1,420% from a baseline of 42ms to 640ms
+  within 180 seconds of the promotional email campaign launch.
+• Error Rates: HTTP 504 Gateway Timeout responses rose to 84.6% of all ingress requests, while HTTP 200
+  success responses plummeted from 99.98% to 15.4%.
+• Database Saturation: PostgreSQL active connections plateaued at the hard maximum limit of 500
+  connections, leaving 4,200 worker threads stranded in blocking I/O state.
+
+4.0 DEDUCTIVE CONCLUSIONS
+-------------------------
+1. The primary database cluster was structurally sound and sustained no hardware fault.
+2. The architectural failure was caused by the absence of an upstream rate limiter and the lack of
+   exponential backoff in customer client retries, resulting in a self-inflicted Distributed Denial
+   of Service (DDoS) storm.
+3. Automated rollback procedures failed to trigger because the health check endpoint returned HTTP 200
+   despite backend connection exhaustion.
+
+5.0 ACTIONABLE RECOMMENDATIONS & IMPLEMENTATION ROADMAP
+-------------------------------------------------------
+┌──────┬──────────────────────────────────────────┬────────────────────────┬──────────┬──────────────┐
+│ Ref  │ Strategic Initiative                     │ Owner                  │ Deadline │ Target KPI   │
+├──────┼──────────────────────────────────────────┼────────────────────────┼──────────┼──────────────┤
+│ R-01 │ Implement Envoy Proxy Circuit Breakers   │ Infrastructure (Aris)  │ Oct 15   │ Zero failover│
+│ R-02 │ Refactor Health Check to test DB pool    │ Core Backend (Siddiq)  │ Oct 20   │ P0 rollback  │
+│ R-03 │ Enforce client exponential backoff/jitter│ Mobile & Web Clients   │ Nov 01   │ 100% compliant│
+│ R-04 │ Commission External Chaos Simulation     │ VP Engineering (Chen)  │ Nov 10   │ Cert. signed │
+└──────┴──────────────────────────────────────────┴────────────────────────┴──────────┴──────────────┘
+:::
+
+---
+
+## 6. Signposting & Cohesion: Navigating the Reader
 
 Reports use formal signposting devices to guide the reader through complex arguments:
 
@@ -2196,18 +2482,6 @@ Reports use formal signposting devices to guide the reader through complex argum
 - **Contrasting Data**: *"**In contrast to** the Q1 baseline, Q3 throughput contracted by 6.4%."*
 - **Sequencing Evidence**: *"The analysis reveals three interdependent bottlenecks: **first**, obsolete firmware; **second**, inadequate bandwidth; and **third**, fragmented API endpoints."*
 - **Concluding Cause**: *"**Consequently**, continuation of the legacy architecture poses unacceptable compliance exposure."*
-
----
-
-## 5. Structuring Actionable Recommendations
-
-Weak reports conclude with vague suggestions like *"The company should improve communication."* Executive reports provide **SMART Action Tables**:
-
-| Action Item | Responsible Department | Timeline | Target Metric / Deliverable |
-| :--- | :--- | :--- | :--- |
-| Deploy distributed CDN caching | Infrastructure Engineering | Q1 2027 | Sub-50ms global API latency |
-| Revise vendor compliance SLA | Legal & Procurement | Dec 15 | Signed penalty clause for outages |
-| Train support tier on triage | Customer Operations | Nov 30 | 40% reduction in escalation tickets |
 
 ---
 
@@ -2231,6 +2505,7 @@ OPTION: Operating costs decreased at $50,000 to an all-time low.
 OPTION: Operating costs decreased by $1.2M to $50,000.
 ANSWER: 1
 EXPLANATION: "Decreased by $50,000" correctly specifies the margin/amount of change, while "falling to an all-time low of $1.2M" specifies the resulting final level.
+:::
 :::`,
     category: 'Grammar',
     tags: ['Grammar', 'Report Writing', 'Business Writing', 'Data Commentary', 'Executive English'],

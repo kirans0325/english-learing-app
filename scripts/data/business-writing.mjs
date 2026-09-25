@@ -31,16 +31,19 @@ DIFFICULTY: Intermediate
 
 Originating in the United States military and perfected in top management consulting firms (McKinsey, BCG), the **BLUF** principle dictates that **the conclusion, decision request, and impact must occupy the very first sentence.**
 
-\`\`\`
+:::diagram
+TITLE: The BLUF Architecture: Traditional Academic vs. Executive Synthesis
+SUBTITLE: Comparing Reading Time & Cognitive Load for Leaders
+CATEGORY: Business Writing Blueprint
 Traditional Academic Style:              Executive BLUF Architecture:
 ┌────────────────────────────┐         ┌────────────────────────────┐
-│ 1. Historical Background   │         │ 1. BLUF: Decision & Impact │ (Page 1 Top)
+│ 1. Historical Background   │         │ 1. BLUF: Decision & Impact │ (Page 1 Top - First 30s)
 │ 2. Methodology & Research  │         ├────────────────────────────┤
 │ 3. Data Analysis & Trials  │         │ 2. Key Supporting Reasons  │ (3 Bullet Points)
 │ 4. Evaluation of Options   │         ├────────────────────────────┤
-│ 5. FINAL CONCLUSION & ASK  │ (Page 5)│ 3. Risk Mitigation & Nexts │ (Actionable Step)
+│ 5. FINAL CONCLUSION & ASK  │ (Page 5)│ 3. Risk Mitigation & Nexts │ (Immediate Actionable Step)
 └────────────────────────────┘         └────────────────────────────┘
-\`\`\`
+:::
 
 ### Real-World Contrast: Proposal for Cloud Migration
 
@@ -57,6 +60,22 @@ EXPLANATION: The corrected version places the recommendation, timeline, financia
 ## Barbara Minto’s Pyramid Principle (SCQA Framework)
 
 Developed by Barbara Minto, the first female partner at McKinsey & Company, the **Pyramid Principle** states that ideas in writing should always form a pyramid under a single governing thought.
+
+:::diagram
+TITLE: The Minto Pyramid & SCQA Storytelling Framework
+SUBTITLE: Structuring Complex Proposals for Executive Buy-In
+CATEGORY: Persuasive Framework
+                           ▲
+                          / \
+                         / A \  ◄── CORE ANSWER / RECOMMENDATION
+                        /=====\
+                       / Q   Q \  ◄── STRATEGIC QUESTIONS ADDRESSED
+                      /=========\
+                     /  C     C  \  ◄── COMPLICATIONS / MARKET BOTTLENECKS
+                    /=============\
+                   / S   S   S   S \  ◄── MUTUALLY AGREED SITUATION BASELINE
+                  /─────────────────\
+:::
 
 To introduce any business report or proposal seamlessly, use the **SCQA** narrative model:
 

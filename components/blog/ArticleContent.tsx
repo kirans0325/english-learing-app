@@ -5,6 +5,7 @@ import { InlineQuizBlock } from '@/components/quiz/InlineQuizBlock';
 import { TongueTwisterCard } from '@/components/learning/TongueTwisterCard';
 import { JamTopicStudio } from '@/components/speaking/JamTopicStudio';
 import { ShadowingStudio } from '@/components/speaking/ShadowingStudio';
+import { DiagramCard } from '@/components/learning/DiagramCard';
 
 interface ArticleContentProps {
   content: string;
@@ -75,6 +76,18 @@ export function ArticleContent({ content }: ArticleContentProps) {
           return <ShadowingStudio key={index} />;
         }
 
+        if (part.type === 'diagram') {
+          return (
+            <DiagramCard
+              key={index}
+              title={part.data?.title}
+              subtitle={part.data?.subtitle}
+              category={part.data?.category}
+              content={part.data?.content || ''}
+            />
+          );
+        }
+
         return <MarkdownRenderer key={index} text={part.raw} />;
       })}
     </div>
@@ -83,12 +96,12 @@ export function ArticleContent({ content }: ArticleContentProps) {
 
 function splitCustomBlocks(raw: string) {
   const blocks: Array<{
-    type: 'markdown' | 'grammar' | 'vocab' | 'quiz' | 'twister' | 'jam' | 'shadowing';
+    type: 'markdown' | 'grammar' | 'vocab' | 'quiz' | 'twister' | 'jam' | 'shadowing' | 'diagram';
     raw: string;
     data?: any;
   }> = [];
 
-  const regex = /:::(grammar|vocab|quiz|twister|jam|shadowing)([\s\S]*?):::/g;
+  const regex = /:::(grammar|vocab|quiz|twister|jam|shadowing|diagram|illustration)([\s\S]*?):::/g;
   let lastIndex = 0;
   let match;
 
@@ -177,6 +190,31 @@ function splitCustomBlocks(raw: string) {
       blocks.push({
         type: 'shadowing',
         raw: match[0],
+      });
+    } else if (blockType === 'diagram' || blockType === 'illustration') {
+      const titleMatch = blockBody.match(/TITLE:\s*(.*)/i);
+      const subtitleMatch = blockBody.match(/SUBTITLE:\s*(.*)/i);
+      const categoryMatch = blockBody.match(/CATEGORY:\s*(.*)/i);
+
+      // Clean the body to isolate the diagram illustration content
+      let content = blockBody
+        .replace(/TITLE:\s*.*\n?/i, '')
+        .replace(/SUBTITLE:\s*.*\n?/i, '')
+        .replace(/CATEGORY:\s*.*\n?/i, '')
+        .trim();
+
+      // If wrapped in markdown code fences, unwrap them cleanly
+      content = content.replace(/^```[a-z]*\n([\s\S]*?)\n```$/i, '$1');
+
+      blocks.push({
+        type: 'diagram',
+        raw: match[0],
+        data: {
+          title: titleMatch ? titleMatch[1].trim() : 'Architectural Blueprint',
+          subtitle: subtitleMatch ? subtitleMatch[1].trim() : undefined,
+          category: categoryMatch ? categoryMatch[1].trim() : 'Visual Blueprint',
+          content,
+        },
       });
     }
 
