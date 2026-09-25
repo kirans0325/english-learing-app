@@ -122,6 +122,7 @@ export function JamTopicStudio() {
   const [showSample, setShowSample] = useState<boolean>(false);
   const [isGeneratingAi, setIsGeneratingAi] = useState<boolean>(false);
   const [generationSource, setGenerationSource] = useState<'gemini' | 'curated' | null>(null);
+  const [desiredTopicInput, setDesiredTopicInput] = useState<string>('');
   const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const categories = ['All', 'Workplace', 'Technology', 'Personal Growth', 'Society', 'Creative'];
@@ -168,7 +169,7 @@ export function JamTopicStudio() {
     setActiveTopic(pick);
   };
 
-  const handleFetchAiRandomTopic = async () => {
+  const handleFetchAiTopic = async (customTopicParam?: string) => {
     stopSpeech();
     setIsSpeakingSample(false);
     handleResetTimer();
@@ -182,6 +183,7 @@ export function JamTopicStudio() {
         body: JSON.stringify({
           type: 'jam',
           category: selectedCategory === 'All' ? undefined : selectedCategory,
+          customTopic: customTopicParam?.trim() || undefined,
         }),
       });
 
@@ -242,7 +244,7 @@ export function JamTopicStudio() {
           </div>
 
           <button
-            onClick={handleFetchAiRandomTopic}
+            onClick={() => handleFetchAiTopic()}
             disabled={isGeneratingAi}
             className="inline-flex items-center gap-1.5 rounded-xl bg-white/15 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-xs hover:bg-white/25 active:scale-95 transition disabled:opacity-50"
             title="Generate a brand new topic using Gemini API"
@@ -257,7 +259,7 @@ export function JamTopicStudio() {
         </div>
       </div>
 
-      {/* Category Tabs */}
+      {/* Category Tabs & Random Button */}
       <div className="flex items-center overflow-x-auto border-b border-slate-100 bg-slate-50/60 px-6 py-2.5 gap-2 scrollbar-none">
         {categories.map((cat) => (
           <button
@@ -280,7 +282,7 @@ export function JamTopicStudio() {
         ))}
 
         <button
-          onClick={handleFetchAiRandomTopic}
+          onClick={() => handleFetchAiTopic()}
           disabled={isGeneratingAi}
           className="rounded-lg px-3 py-1 text-xs font-bold transition flex items-center gap-1.5 bg-gradient-to-r from-emerald-600 via-teal-600 to-sky-600 text-white shadow-xs hover:opacity-95 active:scale-95 disabled:opacity-50 shrink-0 ml-auto sm:ml-2"
           title="Generate a brand new topic in real-time with Google Gemini AI"
@@ -297,6 +299,48 @@ export function JamTopicStudio() {
             </>
           )}
         </button>
+      </div>
+
+      {/* Desired Topic Custom Input & Explore Button (near random button) */}
+      <div className="border-b border-sky-100/70 bg-gradient-to-r from-sky-50/80 via-white to-teal-50/50 px-6 py-2.5">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (desiredTopicInput.trim()) {
+              handleFetchAiTopic(desiredTopicInput);
+            }
+          }}
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2"
+        >
+          <div className="relative flex-1">
+            <input
+              type="text"
+              value={desiredTopicInput}
+              onChange={(e) => setDesiredTopicInput(e.target.value)}
+              placeholder="Enter your desired topic (e.g. Climate change, Job interview, AI in medicine)..."
+              disabled={isGeneratingAi}
+              className="w-full rounded-xl border border-sky-200 bg-white px-3.5 py-1.5 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-200 transition shadow-2xs"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={isGeneratingAi || !desiredTopicInput.trim()}
+            className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-sky-600 to-teal-600 px-4 py-1.5 text-xs sm:text-sm font-bold text-white shadow-xs hover:opacity-95 active:scale-95 disabled:opacity-50 transition shrink-0"
+            title="Explore your desired topic using Gemini AI"
+          >
+            {isGeneratingAi ? (
+              <>
+                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                <span>Generating...</span>
+              </>
+            ) : (
+              <>
+                <Sparkles className="h-3.5 w-3.5 text-sky-200" />
+                <span>Explore Topic</span>
+              </>
+            )}
+          </button>
+        </form>
       </div>
 
       <div className="p-6 sm:p-8 space-y-6">

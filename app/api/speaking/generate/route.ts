@@ -191,6 +191,8 @@ export async function POST(req: NextRequest) {
     const body = await req.json().catch(() => ({}));
     const type = body.type || 'jam';
     const category = body.category && body.category !== 'All' ? body.category : undefined;
+    const customTopic =
+      typeof body.customTopic === 'string' && body.customTopic.trim() ? body.customTopic.trim() : undefined;
 
     const geminiKey = process.env.GEMINI_API_KEY;
 
@@ -200,7 +202,26 @@ export async function POST(req: NextRequest) {
           const controller = new AbortController();
           const timeoutId = setTimeout(() => controller.abort(), 6500);
 
-          const promptText = `You are a master English speech coach. Generate ONE fresh, intellectually engaging 60-Second JAM (Just-A-Minute) Speaking Topic.
+          const promptText = customTopic
+            ? `You are an elite master English speech coach. The user wants to practice a 60-Second JAM (Just-A-Minute) Speaking Challenge specifically on this DESIRED TOPIC: "${customTopic}".
+Generate ONE intellectually engaging 60-Second JAM Speaking Topic directly addressing "${customTopic}".
+${category ? `Category context: ${category}.` : ''}
+
+Respond ONLY with a valid JSON object strictly matching this schema with NO markdown code fences, NO preamble, and NO extra text:
+{
+  "category": "${category || 'Custom'}",
+  "title": "Engaging Title for ${customTopic} (4-7 words)",
+  "prompt": "Thought-provoking question for the speaker directly on ${customTopic}",
+  "keyVocabulary": ["power phrase 1", "vocabulary 2", "collocation 3", "idiom 4", "term 5"],
+  "framework": {
+    "point": "PEEL Point: 1 clear thesis sentence on ${customTopic} (approx 10-15 words)",
+    "evidence": "PEEL Evidence: 1 concrete factual or observational example",
+    "explanation": "PEEL Explanation: 1 analytical rationale",
+    "link": "PEEL Link: 1 concluding takeaway sentence"
+  },
+  "sampleResponse": "An articulate, spoken-English masterclass model response (110-135 words) delivered in a warm, dignified cadence suitable for audio playback."
+}`
+            : `You are a master English speech coach. Generate ONE fresh, intellectually engaging 60-Second JAM (Just-A-Minute) Speaking Topic.
 ${category ? `Category preferred: ${category}.` : 'Choose any compelling category: Workplace, Technology, Personal Growth, Society, or Creative.'}
 
 Respond ONLY with a valid JSON object strictly matching this schema with NO markdown code fences, NO preamble, and NO extra text:
@@ -261,6 +282,28 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
         }
       }
 
+      // Custom topic fallback if Gemini call missed
+      if (customTopic) {
+        return NextResponse.json({
+          success: true,
+          source: 'custom_fallback',
+          topic: {
+            id: `jam-ai-${Date.now()}`,
+            category: category || 'Custom Topic',
+            title: customTopic.length > 40 ? customTopic.slice(0, 40) : customTopic,
+            prompt: `Why is ${customTopic} one of the most critical topics in today's landscape, and how should we approach it?`,
+            keyVocabulary: ['strategic clarity', 'nuanced perspective', 'actionable implementation', 'paradigm shift', 'sustainable impact'],
+            framework: {
+              point: `Addressing ${customTopic} requires moving past superficial assumptions to foundational principles.`,
+              evidence: `Industry leaders who proactively innovate in ${customTopic} achieve significant strategic resilience.`,
+              explanation: `Failing to navigate the nuances of ${customTopic} creates systemic vulnerabilities over the long term.`,
+              link: `Ultimately, mastering our approach to ${customTopic} defines our capacity for forward-looking leadership.`,
+            },
+            sampleResponse: `When we examine ${customTopic}, the central challenge is not merely technical, but philosophical. In our rapidly evolving landscape, simplistic solutions fail to address underlying complexities. By cultivating disciplined critical analysis, rigorous stakeholder alignment, and transparent execution, we transform challenges surrounding ${customTopic} into lasting strategic advantages. True mastery begins with asking the right questions before rushing toward premature answers.`,
+          },
+        });
+      }
+
       // High-quality curated random fallback
       const filtered = category ? FALLBACK_JAM_TOPICS.filter((t) => t.category === category) : FALLBACK_JAM_TOPICS;
       const pool = filtered.length > 0 ? filtered : FALLBACK_JAM_TOPICS;
@@ -282,7 +325,31 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
           const controller = new AbortController();
           const timeoutId = setTimeout(() => controller.abort(), 6500);
 
-          const promptText = `You are an elite Hollywood & Executive English Accent Coach. Generate ONE original speech shadowing exercise for advanced spoken cadence.
+          const promptText = customTopic
+            ? `You are an elite Hollywood & Executive English Accent Coach. The user wants to practice speech shadowing specifically on this DESIRED TOPIC / SCENARIO: "${customTopic}".
+Generate ONE original speech shadowing exercise for advanced spoken cadence specifically about "${customTopic}".
+Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble, and NO extra text:
+{
+  "title": "Concise Descriptive Title for ${customTopic} (4-6 words)",
+  "scenario": "Speaking context: ${customTopic}",
+  "accent": "General American",
+  "durationSec": 15,
+  "difficulty": "Intermediate",
+  "transcript": "Natural spoken sentence with single slash / for brief pauses, double slash // for breath pauses, and triple slash /// for major emphatic pauses (40-60 words).",
+  "phoneticBreakdown": [
+    {
+      "phrase": "Short excerpt phrase",
+      "focus": "Exact accent mechanism (e.g. Flap T, Schwa reduction, Linked consonants, Pitch contour)",
+      "ipaNotes": "/IPA transcription/"
+    },
+    {
+      "phrase": "Second excerpt phrase",
+      "focus": "Intonation or stress guidance",
+      "ipaNotes": "/IPA transcription/"
+    }
+  ]
+}`
+            : `You are an elite Hollywood & Executive English Accent Coach. Generate ONE original speech shadowing exercise for advanced spoken cadence.
 Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble, and NO extra text:
 {
   "title": "Concise Descriptive Title (4-6 words)",
@@ -347,6 +414,34 @@ Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble,
         } catch {
           // Fall through to curated fallback
         }
+      }
+
+      if (customTopic) {
+        return NextResponse.json({
+          success: true,
+          source: 'custom_fallback',
+          exercise: {
+            id: `sh-ai-${Date.now()}`,
+            title: customTopic.length > 35 ? customTopic.slice(0, 35) : customTopic,
+            scenario: `Executive keynote & strategic reflection on ${customTopic}.`,
+            accent: 'General American' as const,
+            durationSec: 15,
+            difficulty: 'Intermediate' as const,
+            transcript: `When we evaluate ${customTopic}, / we must look beyond immediate surface metrics // to the fundamental architecture. /// Real, lasting transformation / happens through steady, / uncompromising discipline.`,
+            phoneticBreakdown: [
+              {
+                phrase: `When we evaluate ${customTopic}`,
+                focus: 'Smooth linked cadence; rising intonation before breath pause',
+                ipaNotes: '/wɛn wi ɪˈvæl.ju.eɪt/',
+              },
+              {
+                phrase: 'to the fundamental architecture.',
+                focus: 'Clear syllabic stress on fun-da-MEN-tal and AR-chi-tec-ture',
+                ipaNotes: '/tuː ðə ˌfʌn.dəˈmɛn.t̬əl ˈɑːr.kə.tɛk.tʃɚ/',
+              },
+            ],
+          },
+        });
       }
 
       const pick = FALLBACK_SHADOWING[Math.floor(Math.random() * FALLBACK_SHADOWING.length)];

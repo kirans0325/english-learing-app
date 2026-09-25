@@ -136,10 +136,11 @@ export function ShadowingStudio() {
   const [activeStep, setActiveStep] = useState<number>(1);
   const [isGeneratingAi, setIsGeneratingAi] = useState<boolean>(false);
   const [generationSource, setGenerationSource] = useState<'gemini' | 'curated' | null>(null);
+  const [desiredScenarioInput, setDesiredScenarioInput] = useState<string>('');
 
   const cleanScript = activeExercise.transcript.replace(/[/]+/g, '');
 
-  const handleFetchAiShadowingExercise = async () => {
+  const handleFetchAiShadowingExercise = async (customScenarioParam?: string) => {
     stopSpeech();
     setIsPlaying(false);
     setIsGeneratingAi(true);
@@ -148,7 +149,10 @@ export function ShadowingStudio() {
       const res = await fetch('/api/speaking/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ type: 'shadowing' }),
+        body: JSON.stringify({
+          type: 'shadowing',
+          customTopic: customScenarioParam?.trim() || undefined,
+        }),
       });
 
       if (res.ok) {
@@ -287,7 +291,7 @@ export function ShadowingStudio() {
           ))}
 
           <button
-            onClick={handleFetchAiShadowingExercise}
+            onClick={() => handleFetchAiShadowingExercise()}
             disabled={isGeneratingAi}
             className="rounded-xl px-3.5 py-2 text-xs font-bold transition flex items-center gap-1.5 bg-gradient-to-r from-purple-600 to-indigo-600 text-white shadow-xs hover:opacity-95 active:scale-95 disabled:opacity-50"
             title="Generate a brand new shadowing speech script in real-time with Google Gemini AI"
@@ -305,6 +309,46 @@ export function ShadowingStudio() {
             )}
           </button>
         </div>
+
+        {/* Desired Scenario Custom Input & Explore Button (near random button) */}
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            if (desiredScenarioInput.trim()) {
+              handleFetchAiShadowingExercise(desiredScenarioInput);
+            }
+          }}
+          className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 p-3 rounded-2xl bg-gradient-to-r from-indigo-50/70 via-purple-50/50 to-indigo-50/70 border border-indigo-100"
+        >
+          <div className="relative flex-1">
+            <input
+              type="text"
+              value={desiredScenarioInput}
+              onChange={(e) => setDesiredScenarioInput(e.target.value)}
+              placeholder="Enter your desired speaking scenario (e.g. Ted Talk on biology, Salary negotiation, Crisis apology)..."
+              disabled={isGeneratingAi}
+              className="w-full rounded-xl border border-indigo-200 bg-white px-3.5 py-1.5 text-xs sm:text-sm text-slate-800 placeholder-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200 transition shadow-2xs"
+            />
+          </div>
+          <button
+            type="submit"
+            disabled={isGeneratingAi || !desiredScenarioInput.trim()}
+            className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-1.5 text-xs sm:text-sm font-bold text-white shadow-xs hover:opacity-95 active:scale-95 disabled:opacity-50 transition shrink-0"
+            title="Explore your desired speaking scenario using Gemini AI"
+          >
+            {isGeneratingAi ? (
+              <>
+                <Loader2 className="h-3.5 w-3.5 animate-spin" />
+                <span>Generating...</span>
+              </>
+            ) : (
+              <>
+                <Sparkles className="h-3.5 w-3.5 text-indigo-200" />
+                <span>Explore Scenario</span>
+              </>
+            )}
+          </button>
+        </form>
 
         {/* Active Exercise Card */}
         <div className="rounded-3xl border border-indigo-100 bg-white p-6 shadow-xs space-y-4">
