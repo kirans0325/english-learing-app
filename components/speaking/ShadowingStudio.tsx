@@ -32,6 +32,24 @@ export interface ShadowingExercise {
     focus: string;
     ipaNotes: string;
   }[];
+  intermediateVersion?: {
+    durationSec: number;
+    transcript: string;
+    phoneticBreakdown: {
+      phrase: string;
+      focus: string;
+      ipaNotes: string;
+    }[];
+  };
+  advancedVersion?: {
+    durationSec: number;
+    transcript: string;
+    phoneticBreakdown: {
+      phrase: string;
+      focus: string;
+      ipaNotes: string;
+    }[];
+  };
 }
 
 export const SHADOWING_EXERCISES: ShadowingExercise[] = [
@@ -66,6 +84,55 @@ export const SHADOWING_EXERCISES: ShadowingExercise[] = [
         ipaNotes: '/kəmˈpliːt.li ˌʌnˈkɑːm.prə.maɪzd/',
       },
     ],
+    intermediateVersion: {
+      durationSec: 18,
+      transcript:
+        'While we understand your pricing constraints, / we cannot compromise on our ninety-nine point nine percent service SLA. // Reliability is the foundation of our partnership; /// cutting corners today / will cost both of us far more tomorrow.',
+      phoneticBreakdown: [
+        {
+          phrase: 'While we understand your pricing',
+          focus: 'Smooth rising cadence with polite diplomatic intonation',
+          ipaNotes: '/waɪl wiː ˌʌn.dɚˈstænd jɔːr ˈpraɪ.sɪŋ/',
+        },
+        {
+          phrase: 'we cannot compromise on our',
+          focus: 'Clear stress on "cannot" and "compromise"',
+          ipaNotes: '/wi ˈkæn.ɑːt ˈkɑːm.prə.maɪz ɑːn aʊ.ɚ/',
+        },
+        {
+          phrase: 'will cost both of us far more tomorrow',
+          focus: 'Definitive falling terminal pitch contour',
+          ipaNotes: '/wɪl kɔːst boʊθ əv ʌs fɑːr mɔːr təˈmɑːr.oʊ/',
+        },
+      ],
+    },
+    advancedVersion: {
+      durationSec: 36,
+      transcript:
+        'While we fully respect your position on pricing, / we cannot compromise on our ninety-nine point nine percent service SLA. // Reliability is the bedrock of our enterprise partnership; /// cutting corners today / will cost both of our organizations / exponentially more tomorrow. // Let us explore creative concession points / on multi-year payment terms, /// while keeping our performance architecture / completely uncompromised.',
+      phoneticBreakdown: [
+        {
+          phrase: 'While we fully respect your position',
+          focus: 'Smooth rhythmic cadence; unreduced /fʊl.i/ with polite, diplomatic tone',
+          ipaNotes: '/waɪl wiː ˈfʊl.i rɪˈspɛkt jɔːr pəˈzɪʃ.ən/',
+        },
+        {
+          phrase: 'we cannot compromise on our',
+          focus: 'Definitive stress on "cannot" and "compromise"',
+          ipaNotes: '/wi ˈkæn.ɑːt ˈkɑːm.prə.maɪz ɑːn aʊ.ɚ/',
+        },
+        {
+          phrase: 'exponentially more tomorrow.',
+          focus: 'Crisp rhythm on multi-syllabic "ex-po-nen-tial-ly"',
+          ipaNotes: '/ˌɛk.spoʊˈnɛn.ʃəl.i mɔːr təˈmɑːr.oʊ/',
+        },
+        {
+          phrase: 'completely uncompromised.',
+          focus: 'Terminal falling intonation asserting executive authority',
+          ipaNotes: '/kəmˈpliːt.li ˌʌnˈkɑːm.prə.maɪzd/',
+        },
+      ],
+    },
   },
   {
     id: 'sh-2',
@@ -98,6 +165,55 @@ export const SHADOWING_EXERCISES: ShadowingExercise[] = [
         ipaNotes: '/wɪð ʌnˈmætʃt ˈɛk.səl.əns/',
       },
     ],
+    intermediateVersion: {
+      durationSec: 18,
+      transcript:
+        'Every milestone we reached this quarter / was forged through your grit and hard work. // Market challenges will always test us, / but our team\'s conviction has never been stronger. /// Thank you for showing up every single day / with true dedication.',
+      phoneticBreakdown: [
+        {
+          phrase: 'Every milestone we reached',
+          focus: 'Compound stress on "milestone"; connected speech linking in "reached"',
+          ipaNotes: '/ˈɛv.ri ˈmaɪl.stoʊn wiː riːtʃt/',
+        },
+        {
+          phrase: 'was forged through your grit',
+          focus: 'Voiced dental fricative /ð/ in "through"; clean alveolar /t/',
+          ipaNotes: '/wʌz fɔːrdʒd θruː jɔːr ɡrɪt/',
+        },
+        {
+          phrase: 'with true dedication',
+          focus: 'Warm falling pitch contour expressing genuine gratitude',
+          ipaNotes: '/wɪð truː ˌdɛd.əˈkeɪ.ʃən/',
+        },
+      ],
+    },
+    advancedVersion: {
+      durationSec: 35,
+      transcript:
+        'Every milestone we reached this quarter / was forged through your grit, / intellectual curiosity, / and relentless ingenuity. // Market headwinds will inevitably test us, / but our underlying conviction / has never been stronger. /// True leadership / is not proven during tranquil seas, / but during turbulent storms. /// Thank you for showing up every single day / with unmatched excellence.',
+      phoneticBreakdown: [
+        {
+          phrase: 'Every milestone we reached this quarter',
+          focus: 'Compound stress on "milestone"; linked "reached this"',
+          ipaNotes: '/ˈɛv.ri ˈmaɪl.stoʊn wiː riːtʃt ðɪs ˈkwɔːr.t̬ɚ/',
+        },
+        {
+          phrase: 'was forged through your grit,',
+          focus: 'Voiced dental fricative /ð/ in "through"; sharp /t/ in "grit"',
+          ipaNotes: '/wʌz fɔːrdʒd θruː jɔːr ɡrɪt/',
+        },
+        {
+          phrase: 'is not proven during tranquil seas,',
+          focus: 'Breath cadence pause after "seas" before rhythmic contrast',
+          ipaNotes: '/ɪz nɑːt ˈpruː.vən ˈdʊr.ɪŋ ˈtræŋ.kwəl siːz/',
+        },
+        {
+          phrase: 'with unmatched excellence.',
+          focus: 'Melodic falling contour expressing profound executive gratitude',
+          ipaNotes: '/wɪð ʌnˈmætʃt ˈɛk.səl.əns/',
+        },
+      ],
+    },
   },
   {
     id: 'sh-3',
@@ -130,6 +246,55 @@ export const SHADOWING_EXERCISES: ShadowingExercise[] = [
         ipaNotes: '/ðæt skeɪlz ˈsiːm.ləs.li wɪð ˈɡloʊ.bəl dɪˈmænd/',
       },
     ],
+    intermediateVersion: {
+      durationSec: 19,
+      transcript:
+        'By separating our monolithic database / into serverless microservices, / we remove single points of failure. // The key benefit / is not just faster speed, / but total stability under heavy traffic spikes. /// This allows our system / to scale smoothly with customer growth.',
+      phoneticBreakdown: [
+        {
+          phrase: 'By separating our monolithic database',
+          focus: 'Clear syllabification in "monolithic database"',
+          ipaNotes: '/baɪ ˈsɛp.ə.reɪ.tɪŋ aʊ.ɚ ˌmɑː.nəˈlɪθ.ɪk ˈdeɪ.t̬ə.beɪs/',
+        },
+        {
+          phrase: 'into serverless microservices',
+          focus: 'Connected speech linking; flap T in "into"',
+          ipaNotes: '/ˈɪn.tuː ˈsɝː.vɚ.ləs ˈmaɪ.kroʊˌsɝː.vɪ.sɪz/',
+        },
+        {
+          phrase: 'to scale smoothly with customer growth',
+          focus: 'Smooth sibilant /s/ articulation and decisive finality',
+          ipaNotes: '/tu skeɪl ˈsmuːð.li wɪð ˈkʌs.tə.mɚ ɡroʊθ/',
+        },
+      ],
+    },
+    advancedVersion: {
+      durationSec: 38,
+      transcript:
+        'By decoupling our legacy monolithic database / into event-driven serverless functions, / we eliminate single points of failure across the board. // The architectural result / is not merely improved millisecond throughput, / but instantaneous resilience / under extreme traffic spikes. /// In short, / we are building a platform / that scales seamlessly / with global customer demand.',
+      phoneticBreakdown: [
+        {
+          phrase: 'By decoupling our legacy monolithic database',
+          focus: 'Secondary stress on "decoupling"; clear syllabification',
+          ipaNotes: '/baɪ diːˈkʌp.lɪŋ aʊ.ɚ ˈlɛɡ.ə.si ˌmɑː.nəˈlɪθ.ɪk ˈdeɪ.t̬ə.beɪs/',
+        },
+        {
+          phrase: 'into event-driven serverless functions,',
+          focus: 'Connected speech linking; clean flap T in event-driven',
+          ipaNotes: '/ˈɪn.tuː ɪˈvɛnt ˌdrɪv.ən ˈsɝː.vɚ.ləs ˈfʌŋk.ʃənz/',
+        },
+        {
+          phrase: 'but instantaneous resilience',
+          focus: 'Vowel reduction in /ˌɪn.stənˈteɪ.ni.əs rɪˈzɪl.jəns/',
+          ipaNotes: '/bʌt ˌɪn.stənˈteɪ.ni.əs rɪˈzɪl.jəns/',
+        },
+        {
+          phrase: 'that scales seamlessly with global demand.',
+          focus: 'Sibilant /s/ articulation and decisive finality cadence',
+          ipaNotes: '/ðæt skeɪlz ˈsiːm.ləs.li wɪð ˈɡloʊ.bəl dɪˈmænd/',
+        },
+      ],
+    },
   },
 ];
 
@@ -139,11 +304,27 @@ export function ShadowingStudio() {
   const [speed, setSpeed] = useState<number>(0.92);
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [activeStep, setActiveStep] = useState<number>(1);
+  const [responseLevel, setResponseLevel] = useState<'intermediate' | 'advanced'>('advanced');
   const [isGeneratingAi, setIsGeneratingAi] = useState<boolean>(false);
   const [generationSource, setGenerationSource] = useState<'gemini' | 'curated' | null>(null);
   const [desiredScenarioInput, setDesiredScenarioInput] = useState<string>('');
 
-  const cleanScript = activeExercise.transcript.replace(/\s*\/+\s*/g, ' ').trim();
+  const currentTranscript =
+    responseLevel === 'intermediate'
+      ? (activeExercise.intermediateVersion?.transcript || activeExercise.transcript)
+      : (activeExercise.advancedVersion?.transcript || activeExercise.transcript);
+
+  const currentDuration =
+    responseLevel === 'intermediate'
+      ? (activeExercise.intermediateVersion?.durationSec || 18)
+      : (activeExercise.advancedVersion?.durationSec || activeExercise.durationSec);
+
+  const currentPhonetics =
+    responseLevel === 'intermediate'
+      ? (activeExercise.intermediateVersion?.phoneticBreakdown || activeExercise.phoneticBreakdown.slice(0, 3))
+      : (activeExercise.advancedVersion?.phoneticBreakdown || activeExercise.phoneticBreakdown);
+
+  const cleanScript = currentTranscript.replace(/\s*\/+\s*/g, ' ').trim();
 
   const handleFetchAiShadowingExercise = async (customScenarioParam?: string) => {
     stopSpeech();
@@ -186,7 +367,7 @@ export function ShadowingStudio() {
 
     setIsPlaying(true);
     await speakWithPhilosopherVoice(cleanScript, {
-      rate: rateToUse,
+      rate: responseLevel === 'intermediate' ? rateToUse * 0.96 : rateToUse,
       pitch: 0.89, // Philosopher baritone resonance
       onEnd: () => setIsPlaying(false),
       onError: () => setIsPlaying(false),
@@ -361,8 +542,51 @@ export function ShadowingStudio() {
             <div>
               <div className="flex flex-wrap items-center gap-2">
                 <span className="text-[11px] font-bold uppercase tracking-wider text-indigo-600">
-                  {activeExercise.accent} • {activeExercise.difficulty}
+                  {activeExercise.accent} • {currentDuration}s
                 </span>
+
+                {/* Intermediate & Advance Cadence Toggle Buttons */}
+                <div className="inline-flex items-center rounded-xl bg-indigo-50/90 p-0.5 border border-indigo-200/90 text-xs ml-1">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (isPlaying) {
+                        stopSpeech();
+                        setIsPlaying(false);
+                      }
+                      setResponseLevel('intermediate');
+                    }}
+                    className={`rounded-lg px-2.5 py-1 text-xs font-bold transition flex items-center gap-1 ${
+                      responseLevel === 'intermediate'
+                        ? 'bg-white text-indigo-700 shadow-2xs'
+                        : 'text-slate-600 hover:text-indigo-950'
+                    }`}
+                    title="Switch to Intermediate Cadence Track (~18s • Core Cadence)"
+                  >
+                    <span>Intermediate</span>
+                    <span className="text-[10px] opacity-75 font-normal">(~18s)</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (isPlaying) {
+                        stopSpeech();
+                        setIsPlaying(false);
+                      }
+                      setResponseLevel('advanced');
+                    }}
+                    className={`rounded-lg px-2.5 py-1 text-xs font-bold transition flex items-center gap-1 ${
+                      responseLevel === 'advanced'
+                        ? 'bg-indigo-600 text-white shadow-2xs'
+                        : 'text-slate-600 hover:text-indigo-950'
+                    }`}
+                    title="Switch to Advance Masterclass Track (~36s • 3-Movement Cadence)"
+                  >
+                    <span>Advance</span>
+                    <span className="text-[10px] opacity-85 font-normal">(~36s)</span>
+                  </button>
+                </div>
+
                 {generationSource === 'gemini' && (
                   <span className="rounded-full bg-purple-100 text-purple-800 border border-purple-300 px-2 py-0.5 text-[10px] font-bold flex items-center gap-1">
                     <Sparkles className="h-2.5 w-2.5 text-purple-600" />
@@ -370,7 +594,7 @@ export function ShadowingStudio() {
                   </span>
                 )}
               </div>
-              <h4 className="text-xl font-bold text-slate-900 mt-0.5">{activeExercise.title}</h4>
+              <h4 className="text-xl font-bold text-slate-900 mt-1">{activeExercise.title}</h4>
               <p className="text-xs text-slate-500 mt-0.5">{activeExercise.scenario}</p>
             </div>
 
@@ -419,7 +643,7 @@ export function ShadowingStudio() {
                 ) : (
                   <>
                     <Volume2 className="h-4 w-4" />
-                    <span>Start Shadowing with Philosopher AI</span>
+                    <span>Start Shadowing ({responseLevel === 'intermediate' ? 'Intermediate' : 'Advance'})</span>
                   </>
                 )}
               </button>
@@ -428,22 +652,30 @@ export function ShadowingStudio() {
 
           {/* Transcript with Breath & Pause Markers */}
           <div className="rounded-2xl bg-indigo-50/40 p-5 border border-indigo-100/80">
-            <div className="flex items-center justify-between text-[11px] text-slate-400 font-semibold mb-2">
-              <span>CADENCE TRANSCRIPT: &quot;/&quot; = short breath, &quot;//&quot; = deliberate pause</span>
+            <div className="flex flex-wrap items-center justify-between text-[11px] text-slate-500 font-semibold mb-2 gap-2">
+              <span className="flex items-center gap-1.5">
+                <span className={`inline-block h-2 w-2 rounded-full ${responseLevel === 'intermediate' ? 'bg-emerald-500' : 'bg-purple-600'}`} />
+                <strong className="text-slate-800">{responseLevel === 'intermediate' ? 'INTERMEDIATE CADENCE' : 'ADVANCE MASTERCLASS CADENCE'}</strong>: &quot;/&quot; = short breath, &quot;//&quot; = deliberate pause{responseLevel === 'advanced' ? ', "///" = movement shift' : ''}
+              </span>
               <span className="text-indigo-700 font-bold">Follow 0.2s behind audio</span>
             </div>
             <p className="text-base sm:text-lg text-slate-900 font-medium leading-loose">
-              {activeExercise.transcript}
+              {currentTranscript}
             </p>
           </div>
 
           {/* Detailed Phonetic & Intonation Breakdown */}
           <div className="space-y-3 pt-2">
-            <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">
-              Chunk-by-Chunk Intonation & Reduction Analysis:
-            </span>
+            <div className="flex items-center justify-between">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-400 block">
+                Chunk-by-Chunk Intonation & Reduction Analysis ({responseLevel === 'intermediate' ? 'Core Cadence' : 'Advanced Prosody'}):
+              </span>
+              <span className="text-[11px] font-semibold text-indigo-600 bg-indigo-50 px-2 py-0.5 rounded-full border border-indigo-100">
+                {currentPhonetics.length} Focus Points
+              </span>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              {activeExercise.phoneticBreakdown.map((item, idx) => (
+              {currentPhonetics.map((item, idx) => (
                 <div
                   key={idx}
                   className="rounded-xl border border-slate-200/90 bg-slate-50/60 p-3.5 space-y-1"

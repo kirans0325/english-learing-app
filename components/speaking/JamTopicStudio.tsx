@@ -33,6 +33,8 @@ export interface JamTopic {
     link: string;
   };
   sampleResponse: string;
+  sampleResponseIntermediate?: string;
+  sampleResponseAdvanced?: string;
 }
 
 export const JAM_TOPICS: JamTopic[] = [
@@ -48,6 +50,10 @@ export const JAM_TOPICS: JamTopic[] = [
       explanation: 'Constant calendar interruptions destroy deep work and generate cognitive fatigue, whereas deliberate asynchronous exchanges foster thoughtful decision-making.',
       link: 'Consequently, the future of global work belongs to organizations that master written operational clarity.',
     },
+    sampleResponseIntermediate:
+      'When working across different time zones, clear written communication is much more important than constant meetings. In traditional offices, people rely on quick hallway chats to solve problems, but this leaves remote team members out of the loop. At my workplace, we solved this by writing down project plans and questions in shared documents before asking for a call. This allows colleagues in other countries to review the details and reply during their normal working hours. Ultimately, when teams learn to document their work clearly, everyone can work flexibly without feeling burned out by late-night meetings.',
+    sampleResponseAdvanced:
+      'Operating across global time zones requires a fundamental mindset shift from presence to documented accountability. In traditional office environments, communication happens haphazardly through hallway chatter or urgent calendar invites. While this feels fast, it frequently excludes distributed colleagues and fragments focus.\n\nIn contrast, high-performing asynchronous organizations operate on a disciplined principle: if it is not documented transparently, it does not exist. Every strategic decision, project specification, and architectural review is logged in clear written prose. A developer in Tokyo can review a proposal drafted in London, leaving thoughtful, nuanced feedback during their peak energy hours rather than groggily joining a midnight video conference.\n\nBy replacing hurried meetings with well-crafted memos, we eliminate the tyranny of time zones, protect deep intellectual focus, and empower colleagues with true autonomous ownership. The future of sustainable enterprise leadership is written, deliberate, and asynchronous.',
     sampleResponse:
       'Operating across global time zones requires a fundamental mindset shift from presence to documented accountability. In traditional office environments, communication happens haphazardly through hallway chatter or urgent calendar invites. While this feels fast, it frequently excludes distributed colleagues and fragments focus.\n\nIn contrast, high-performing asynchronous organizations operate on a disciplined principle: if it is not documented transparently, it does not exist. Every strategic decision, project specification, and architectural review is logged in clear written prose. A developer in Tokyo can review a proposal drafted in London, leaving thoughtful, nuanced feedback during their peak energy hours rather than groggily joining a midnight video conference.\n\nBy replacing hurried meetings with well-crafted memos, we eliminate the tyranny of time zones, protect deep intellectual focus, and empower colleagues with true autonomous ownership. The future of sustainable enterprise leadership is written, deliberate, and asynchronous.',
   },
@@ -63,6 +69,10 @@ export const JAM_TOPICS: JamTopic[] = [
       explanation: 'While machine learning models identify statistical correlations with speed, they cannot comprehend moral context or institutional equity.',
       link: 'Therefore, artificial intelligence should serve as an advisor, never the final judge.',
     },
+    sampleResponseIntermediate:
+      'Automated computer systems should never make critical life decisions without human supervision. Today, algorithms are being used to review job applications and evaluate loan requests because they are fast and handle large amounts of data. However, algorithms only learn from historical records, which often contain past human mistakes and unfair biases. For example, if a company has historically hired mostly one group of people, an algorithm might unfairly reject great candidates from different backgrounds. In conclusion, artificial intelligence can be a wonderful research tool to assist us, but real humans must always make the final ethical decision.',
+    sampleResponseAdvanced:
+      'The allure of fully autonomous decision-making lies in speed, efficiency, and perceived mathematical impartiality. However, delegating life-altering decisions—such as credit approvals, medical triage, or job candidate screening—to closed black-box models is profoundly dangerous.\n\nMachine learning models do not invent original moral principles; they extrapolate from historical patterns. When legacy datasets contain systemic bias, algorithms do not eliminate prejudice—they codify and amplify it at scale with cold mathematical precision. A hiring algorithm trained on past corporate promotions may quietly penalize non-traditional candidates simply because they do not match legacy keywords.\n\nA robust human-in-the-loop architecture ensures that moral nuance, personal context, and ethical empathy remain central to governance. Algorithms should be leveraged to surface patterns, flag anomalies, and digest vast datasets, but the final verdict must always rest with human conscience. Technology must inform judgment, never replace responsibility.',
     sampleResponse:
       'The allure of fully autonomous decision-making lies in speed, efficiency, and perceived mathematical impartiality. However, delegating life-altering decisions—such as credit approvals, medical triage, or job candidate screening—to closed black-box models is profoundly dangerous.\n\nMachine learning models do not invent original moral principles; they extrapolate from historical patterns. When legacy datasets contain systemic bias, algorithms do not eliminate prejudice—they codify and amplify it at scale with cold mathematical precision. A hiring algorithm trained on past corporate promotions may quietly penalize non-traditional candidates simply because they do not match legacy keywords.\n\nA robust human-in-the-loop architecture ensures that moral nuance, personal context, and ethical empathy remain central to governance. Algorithms should be leveraged to surface patterns, flag anomalies, and digest vast datasets, but the final verdict must always rest with human conscience. Technology must inform judgment, never replace responsibility.',
   },
@@ -78,6 +88,10 @@ export const JAM_TOPICS: JamTopic[] = [
       explanation: 'Every notification, subscription, and casual meeting extracts a cognitive toll on our finite daily willpower.',
       link: 'Simplifying our environment unlocks the deep cognitive energy required for creative breakthroughs.',
     },
+    sampleResponseIntermediate:
+      'In our busy modern world, real productivity comes from removing distractions rather than trying to do everything at once. We are constantly surrounded by phone alerts, long email chains, and unnecessary meetings that drain our daily energy. Many of the most successful thinkers intentionally simplify their daily routines—such as wearing similar clothes or keeping their desks clean—so they do not waste mental willpower on minor decisions. When we simplify our schedules and focus only on our highest priorities, we achieve much higher quality results. True success is not about being constantly busy; it is about protecting your time for what genuinely matters.',
+    sampleResponseAdvanced:
+      'We live in a culture that dangerously equates busyness with significance. We are bombarded with notifications, meetings, and endless micro-decisions that scatter our attention across trivialities. Yet, when you study the world’s most impactful creators, researchers, and leaders, you discover a fierce commitment to radical simplification.\n\nEvery human being awakens each morning with a finite reservoir of cognitive energy. If we exhaust that mental bandwidth deciding what outfit to wear, arguing in social media comment sections, or attending ill-defined status meetings, we leave our deepest creative ambitions starved of fuel. Figures like Steve Jobs and Nobel laureates deliberately designed minimalist environments to eliminate decision fatigue on secondary matters.\n\nRadical simplification is not about deprivation or living with empty shelves; it is about essentialism. It is the courage to say a decisive "no" to trivial opportunities so that we can channel our full, undivided genius into the work that truly matters. Simplicity is the ultimate sophistication.',
     sampleResponse:
       'We live in a culture that dangerously equates busyness with significance. We are bombarded with notifications, meetings, and endless micro-decisions that scatter our attention across trivialities. Yet, when you study the world’s most impactful creators, researchers, and leaders, you discover a fierce commitment to radical simplification.\n\nEvery human being awakens each morning with a finite reservoir of cognitive energy. If we exhaust that mental bandwidth deciding what outfit to wear, arguing in social media comment sections, or attending ill-defined status meetings, we leave our deepest creative ambitions starved of fuel. Figures like Steve Jobs and Nobel laureates deliberately designed minimalist environments to eliminate decision fatigue on secondary matters.\n\nRadical simplification is not about deprivation or living with empty shelves; it is about essentialism. It is the courage to say a decisive "no" to trivial opportunities so that we can channel our full, undivided genius into the work that truly matters. Simplicity is the ultimate sophistication.',
   },
@@ -93,6 +107,10 @@ export const JAM_TOPICS: JamTopic[] = [
       explanation: 'Senior leaders provide risk mitigation and political savvy, while junior contributors bring fresh perspectives and agile methodologies.',
       link: 'When mutual respect supersedes generational stereotypes, diversity transforms into market resilience.',
     },
+    sampleResponseIntermediate:
+      'Modern workplaces thrive when younger and older generations work together as equal partners rather than competitors. Experienced professionals have years of industry knowledge, crisis management skills, and relationship wisdom that cannot be replaced. At the same time, younger workers bring fresh digital fluency, creative problem-solving, and familiarity with new technology like AI tools. When companies set up two-way mentorship, senior managers learn modern digital skills while younger employees gain valuable career advice. In short, when teams respect both experience and new ideas, the entire organization becomes stronger and more adaptable.',
+    sampleResponseAdvanced:
+      'For the first time in modern economic history, four distinct generations share the corporate workplace—from Baby Boomers and Gen X to Millennials and Gen Z. It is tempting to reduce these demographic differences to simplistic workplace memes, labeling younger colleagues as impatient or veterans as resistant to innovation.\n\nHowever, visionary leaders recognize that intergenerational friction can be transmuted into an unmatched competitive advantage. Seasoned professionals possess tacit institutional knowledge, crisis management composure, and an intuitive grasp of human diplomacy that cannot be downloaded from an online course. Concurrently, younger entrants bring native fluency with artificial intelligence, rapid prototyping, and a healthy skepticism toward outdated legacy processes.\n\nWhen organizations establish mutual two-way mentorship, the magic happens: senior executives gain digital fluency, while emerging talents learn political finesse and stakeholder alignment. By cultivating cross-generational empathy, we build resilient teams where experience guides energy, and innovation rejuvenates wisdom.',
     sampleResponse:
       'For the first time in modern economic history, four distinct generations share the corporate workplace—from Baby Boomers and Gen X to Millennials and Gen Z. It is tempting to reduce these demographic differences to simplistic workplace memes, labeling younger colleagues as impatient or veterans as resistant to innovation.\n\nHowever, visionary leaders recognize that intergenerational friction can be transmuted into an unmatched competitive advantage. Seasoned professionals possess tacit institutional knowledge, crisis management composure, and an intuitive grasp of human diplomacy that cannot be downloaded from an online course. Concurrently, younger entrants bring native fluency with artificial intelligence, rapid prototyping, and a healthy skepticism toward outdated legacy processes.\n\nWhen organizations establish mutual two-way mentorship, the magic happens: senior executives gain digital fluency, while emerging talents learn political finesse and stakeholder alignment. By cultivating cross-generational empathy, we build resilient teams where experience guides energy, and innovation rejuvenates wisdom.',
   },
@@ -108,6 +126,10 @@ export const JAM_TOPICS: JamTopic[] = [
       explanation: 'When resources are limitless, teams default to throwing money at problems; when restricted, they are forced to invent novel solutions.',
       link: 'Embracing boundaries is the hallmark of genuine artistic and technical mastery.',
     },
+    sampleResponseIntermediate:
+      'Having tight limitations often leads to much better creative ideas than having unlimited resources. When teams have endless money and time, they often become indecisive and try to add too many unnecessary features. However, when you are given strict limits, your brain is forced to think outside the box and find simple, elegant solutions. A famous example is the classic book "Green Eggs and Ham," which was written using only fifty different words because of a publisher challenge. In conclusion, constraints should not be seen as barriers; they are powerful tools that unlock our highest creativity.',
+    sampleResponseAdvanced:
+      'There is a widespread misconception that artistic and technological innovation thrives in absolute freedom. In reality, unlimited resources and infinite options frequently breed paralysis and creative complacency. When an engineering team has an infinite budget and no hard deadline, they waste quarters debating abstract architectures and accumulating bloated features.\n\nIntroduce a strict boundary, however, and human ingenuity explodes. When Dr. Seuss was challenged by his publisher to write an engaging children’s book using strictly fifty vocabulary words, the result was "Green Eggs and Ham"—one of the best-selling books in literary history. The constraint forced him to examine every syllable, eliminate filler, and maximize comedic rhythm.\n\nConstraints act as intellectual guardrails. They force us to strip away vanity metrics, interrogate our core assumptions, and discover unconventional workarounds that abundance would have obscured. Do not lament your limitations; embrace them as the exact blueprint of your next breakthrough.',
     sampleResponse:
       'There is a widespread misconception that artistic and technological innovation thrives in absolute freedom. In reality, unlimited resources and infinite options frequently breed paralysis and creative complacency. When an engineering team has an infinite budget and no hard deadline, they waste quarters debating abstract architectures and accumulating bloated features.\n\nIntroduce a strict boundary, however, and human ingenuity explodes. When Dr. Seuss was challenged by his publisher to write an engaging children’s book using strictly fifty vocabulary words, the result was "Green Eggs and Ham"—one of the best-selling books in literary history. The constraint forced him to examine every syllable, eliminate filler, and maximize comedic rhythm.\n\nConstraints act as intellectual guardrails. They force us to strip away vanity metrics, interrogate our core assumptions, and discover unconventional workarounds that abundance would have obscured. Do not lament your limitations; embrace them as the exact blueprint of your next breakthrough.',
   },
@@ -120,6 +142,7 @@ export function JamTopicStudio() {
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [isSpeakingSample, setIsSpeakingSample] = useState<boolean>(false);
   const [showSample, setShowSample] = useState<boolean>(false);
+  const [responseLevel, setResponseLevel] = useState<'intermediate' | 'advanced'>('advanced');
   const [isGeneratingAi, setIsGeneratingAi] = useState<boolean>(false);
   const [generationSource, setGenerationSource] = useState<'gemini' | 'curated' | null>(null);
   const [desiredTopicInput, setDesiredTopicInput] = useState<string>('');
@@ -131,6 +154,11 @@ export function JamTopicStudio() {
     selectedCategory === 'All'
       ? JAM_TOPICS
       : JAM_TOPICS.filter((t) => t.category === selectedCategory);
+
+  const activeSampleResponse =
+    responseLevel === 'intermediate'
+      ? (activeTopic.sampleResponseIntermediate || activeTopic.sampleResponse)
+      : (activeTopic.sampleResponseAdvanced || activeTopic.sampleResponse);
 
   // Countdown timer logic
   useEffect(() => {
@@ -213,8 +241,8 @@ export function JamTopicStudio() {
     }
 
     setIsSpeakingSample(true);
-    await speakWithPhilosopherVoice(activeTopic.sampleResponse, {
-      rate: 0.98,
+    await speakWithPhilosopherVoice(activeSampleResponse, {
+      rate: responseLevel === 'intermediate' ? 0.94 : 0.98,
       pitch: 0.89,
       onEnd: () => setIsSpeakingSample(false),
       onError: () => setIsSpeakingSample(false),
@@ -474,11 +502,55 @@ export function JamTopicStudio() {
         {/* Model Response with Philosopher AI Audio */}
         <div className="rounded-2xl border border-emerald-100 bg-emerald-50/30 p-5 space-y-3">
           <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-2">
-              <Award className="h-4 w-4 text-emerald-700" />
-              <span className="text-xs font-bold uppercase tracking-wider text-emerald-900">
-                Model 60-Second Exemplar Response
-              </span>
+            <div className="flex flex-wrap items-center gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <Award className="h-4 w-4 text-emerald-700" />
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-900">
+                  Model Exemplar
+                </span>
+              </div>
+
+              {/* Intermediate and Advance Response Level Toggle Buttons */}
+              <div className="inline-flex items-center rounded-xl bg-emerald-100/80 p-0.5 border border-emerald-200/90 text-xs">
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (isSpeakingSample) {
+                      stopSpeech();
+                      setIsSpeakingSample(false);
+                    }
+                    setResponseLevel('intermediate');
+                  }}
+                  className={`rounded-lg px-2.5 py-1 text-xs font-bold transition flex items-center gap-1 ${
+                    responseLevel === 'intermediate'
+                      ? 'bg-white text-emerald-800 shadow-2xs'
+                      : 'text-emerald-700 hover:text-emerald-950'
+                  }`}
+                  title="Switch to Intermediate Speech Model (~110 words)"
+                >
+                  <span>Intermediate</span>
+                  <span className="text-[10px] opacity-75 font-normal">(~110w)</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (isSpeakingSample) {
+                      stopSpeech();
+                      setIsSpeakingSample(false);
+                    }
+                    setResponseLevel('advanced');
+                  }}
+                  className={`rounded-lg px-2.5 py-1 text-xs font-bold transition flex items-center gap-1 ${
+                    responseLevel === 'advanced'
+                      ? 'bg-emerald-700 text-white shadow-2xs'
+                      : 'text-emerald-700 hover:text-emerald-950'
+                  }`}
+                  title="Switch to Advance Masterclass Multi-Paragraph Model (~220 words)"
+                >
+                  <span>Advance</span>
+                  <span className="text-[10px] opacity-85 font-normal">(~220w)</span>
+                </button>
+              </div>
             </div>
 
             <div className="flex items-center gap-2">
@@ -499,7 +571,7 @@ export function JamTopicStudio() {
                 ) : (
                   <>
                     <Volume2 className="h-3.5 w-3.5" />
-                    <span>Listen (The Philosopher AI)</span>
+                    <span>Listen ({responseLevel === 'intermediate' ? 'Intermediate' : 'Advance'})</span>
                   </>
                 )}
               </button>
@@ -515,9 +587,18 @@ export function JamTopicStudio() {
           </div>
 
           {showSample && (
-            <div className="rounded-xl bg-white p-4 border border-emerald-100/80 shadow-2xs animate-in fade-in">
+            <div className="rounded-xl bg-white p-4 border border-emerald-100/80 shadow-2xs animate-in fade-in space-y-2">
+              <div className="flex items-center justify-between border-b border-emerald-50 pb-2 text-[11px]">
+                <span className="font-bold text-emerald-800 flex items-center gap-1.5">
+                  <span className={`inline-block h-2 w-2 rounded-full ${responseLevel === 'intermediate' ? 'bg-emerald-500' : 'bg-teal-600'}`} />
+                  {responseLevel === 'intermediate' ? 'Intermediate Speech Model' : 'Advance Masterclass Model'}
+                </span>
+                <span className="text-slate-400">
+                  {responseLevel === 'intermediate' ? 'Accessible conversational cadence' : 'Full PEEL multi-paragraph rhetoric'}
+                </span>
+              </div>
               <p className="text-xs sm:text-sm text-slate-800 leading-relaxed italic whitespace-pre-line">
-                &ldquo;{activeTopic.sampleResponse}&rdquo;
+                &ldquo;{activeSampleResponse}&rdquo;
               </p>
             </div>
           )}
