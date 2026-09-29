@@ -35,6 +35,76 @@ export interface PostQueryOptions {
   sortBy?: 'difficulty' | 'publishedAt' | 'latest';
 }
 
+/**
+ * Multi-token relevance scoring algorithm for matching search queries against posts.
+ * Prioritizes exact phrase matches, title matches, category and tag hits, and
+ * rewards articles matching all query tokens.
+ */
+export function scorePostSearch(post: Post, rawQuery: string): number {
+  const query = rawQuery.trim().toLowerCase();
+  if (!query) return 0;
+
+  const title = (post.title || '').toLowerCase();
+  const excerpt = (post.excerpt || '').toLowerCase();
+  const category = (post.category || '').toLowerCase();
+  const tags = (post.tags || []).map((t) => t.toLowerCase());
+  const content = (post.content || '').toLowerCase();
+
+  let score = 0;
+
+  // Exact phrase match bonuses
+  if (title === query) score += 200;
+  else if (title.includes(query)) score += 100;
+
+  if (category === query) score += 80;
+  else if (category.includes(query)) score += 50;
+
+  if (tags.some((t) => t === query)) score += 70;
+  else if (tags.some((t) => t.includes(query))) score += 40;
+
+  if (excerpt.includes(query)) score += 30;
+
+  // Multi-token evaluation
+  const tokens = query.split(/\s+/).filter(Boolean);
+  let matchedTokens = 0;
+
+  for (const token of tokens) {
+    let tokenMatched = false;
+
+    if (title.includes(token)) {
+      score += 35;
+      tokenMatched = true;
+    }
+    if (category.includes(token)) {
+      score += 25;
+      tokenMatched = true;
+    }
+    if (tags.some((t) => t.includes(token))) {
+      score += 20;
+      tokenMatched = true;
+    }
+    if (excerpt.includes(token)) {
+      score += 15;
+      tokenMatched = true;
+    }
+    if (content && content.includes(token)) {
+      score += 5;
+      tokenMatched = true;
+    }
+
+    if (tokenMatched) {
+      matchedTokens++;
+    }
+  }
+
+  // Significant boost if all tokens are represented in the article
+  if (tokens.length > 1 && matchedTokens === tokens.length) {
+    score += 50;
+  }
+
+  return score;
+}
+
 export async function getPosts(options: PostQueryOptions = {}): Promise<{
   posts: Post[];
   total: number;
@@ -84,7 +154,32 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
       }
 
       if (search && search.trim()) {
-        filter.$text = { $search: search.trim() };
+        const tokens = search.trim().split(/\s+/).filter(Boolean);
+        const orClauses: Record<string, any>[] = [];
+
+        // Exact phrase search
+        const safeQuery = search.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        orClauses.push(
+          { title: { $regex: safeQuery, $options: 'i' } },
+          { excerpt: { $regex: safeQuery, $options: 'i' } },
+          { category: { $regex: safeQuery, $options: 'i' } },
+          { tags: { $regex: safeQuery, $options: 'i' } }
+        );
+
+        // Multi-token search for each word
+        for (const token of tokens) {
+          const safeToken = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          orClauses.push(
+            { title: { $regex: safeToken, $options: 'i' } },
+            { excerpt: { $regex: safeToken, $options: 'i' } },
+            { category: { $regex: safeToken, $options: 'i' } },
+            { tags: { $regex: safeToken, $options: 'i' } }
+          );
+        }
+
+        if (orClauses.length > 0) {
+          filter.$or = orClauses;
+        }
       }
 
       const total = await collection.countDocuments(filter);
@@ -102,10 +197,15 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
         .limit(limit);
 
       const rawPosts = await cursor.toArray();
-      const posts: Post[] = rawPosts.map((p) => ({
+      let posts: Post[] = rawPosts.map((p) => ({
         ...p,
         _id: p._id?.toString(),
       }));
+
+      // Re-rank MongoDB results by search relevance score when searching
+      if (search && search.trim()) {
+        posts.sort((a, b) => scorePostSearch(b, search) - scorePostSearch(a, search));
+      }
 
       return {
         posts,
@@ -132,17 +232,14 @@ export async function getPosts(options: PostQueryOptions = {}): Promise<{
     }
     if (tag && !p.tags.some((t) => t.toLowerCase() === tag.toLowerCase())) return false;
     if (search && search.trim()) {
-      const q = search.toLowerCase();
-      const match =
-        p.title.toLowerCase().includes(q) ||
-        p.excerpt.toLowerCase().includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q));
-      if (!match) return false;
+      return scorePostSearch(p, search) > 0;
     }
     return true;
   });
 
-  if (sortBy === 'difficulty' || (!sortBy && category)) {
+  if (search && search.trim()) {
+    filtered.sort((a, b) => scorePostSearch(b, search) - scorePostSearch(a, search));
+  } else if (sortBy === 'difficulty' || (!sortBy && category)) {
     filtered.sort((a, b) => {
       const orderA = a.difficultyOrder ?? (a.difficulty === 'Beginner' ? 1 : a.difficulty === 'Advanced' ? 3 : 2);
       const orderB = b.difficultyOrder ?? (b.difficulty === 'Beginner' ? 1 : b.difficulty === 'Advanced' ? 3 : 2);

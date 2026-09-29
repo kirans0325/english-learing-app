@@ -14,6 +14,7 @@ interface SearchModalProps {
 export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   const [query, setQuery] = useState('');
   const [results, setResults] = useState<Post[]>([]);
+  const [recommendations, setRecommendations] = useState<Post[]>([]);
   const [loading, setLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -25,6 +26,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
       document.body.style.overflow = '';
       setQuery('');
       setResults([]);
+      setRecommendations([]);
     }
     return () => {
       document.body.style.overflow = '';
@@ -49,6 +51,7 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
   useEffect(() => {
     if (!query.trim()) {
       setResults([]);
+      setRecommendations([]);
       setLoading(false);
       return;
     }
@@ -59,17 +62,33 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
         const res = await fetch(`/api/search?q=${encodeURIComponent(query.trim())}`);
         const data = await res.json();
         setResults(data.posts || []);
+        setRecommendations(data.recommendations || []);
       } catch (err) {
         console.error('Search query failed:', err);
       } finally {
         setLoading(false);
       }
-    }, 250);
+    }, 200);
 
     return () => clearTimeout(timer);
   }, [query]);
 
   if (!isOpen) return null;
+
+  const foundedTags = Array.from(
+    new Set(results.flatMap((p) => [p.category, ...(p.tags || [])]))
+  ).slice(0, 6);
+
+  const curatedTopics = [
+    'Sentence Patterns',
+    'Report Writing',
+    'Business English',
+    'JAM Speaking',
+    'Speech Shadowing',
+    'Present Perfect',
+    'Grammar Essentials',
+    'Common Mistakes',
+  ];
 
   return (
     <div
@@ -112,37 +131,43 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
         <div className="max-h-[60vh] overflow-y-auto p-4 sm:p-6">
           {query.trim() === '' ? (
             <div className="py-6 text-center text-sm text-slate-500">
-              <p className="font-medium text-slate-700">Quick Search Topics</p>
+              <p className="font-semibold text-slate-700">Explore Popular Topics</p>
               <div className="mt-3 flex flex-wrap justify-center gap-2">
-                {['Present Simple', 'Articles', 'Business English', 'Phrasal Verbs', 'Common Mistakes'].map(
-                  (topic) => (
-                    <button
-                      key={topic}
-                      type="button"
-                      onClick={() => setQuery(topic)}
-                      className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition"
-                    >
-                      {topic}
-                    </button>
-                  )
-                )}
+                {curatedTopics.map((topic) => (
+                  <button
+                    key={topic}
+                    type="button"
+                    onClick={() => setQuery(topic)}
+                    className="rounded-full bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 hover:bg-emerald-50 hover:text-emerald-700 transition"
+                  >
+                    {topic}
+                  </button>
+                ))}
               </div>
             </div>
           ) : results.length > 0 ? (
             <div className="space-y-3">
-              <span className="text-xs font-bold tracking-wider text-slate-400 uppercase">
-                {results.length} Results Found
-              </span>
+              <div className="flex items-center justify-between text-xs font-bold tracking-wider text-slate-400 uppercase">
+                <span>{results.length} Results Found</span>
+                <span className="text-[10px] font-medium text-emerald-600">Relevance ranked</span>
+              </div>
               <div className="divide-y divide-slate-100">
                 {results.map((post) => (
                   <Link
                     key={post.slug}
                     href={`/blog/${post.slug}`}
                     onClick={onClose}
-                    className="group block py-3.5 px-2 rounded-xl transition hover:bg-slate-50"
+                    className="group block py-3 px-2.5 rounded-xl transition hover:bg-slate-50"
                   >
                     <div className="flex items-center justify-between gap-2">
-                      <Badge size="sm">{post.category}</Badge>
+                      <div className="flex items-center gap-2">
+                        <Badge size="sm">{post.category}</Badge>
+                        {post.difficulty && (
+                          <span className="rounded bg-slate-100 px-1.5 py-0.5 text-[10px] font-semibold text-slate-600">
+                            {post.difficulty}
+                          </span>
+                        )}
+                      </div>
                       <div className="flex items-center gap-1 text-xs text-slate-400">
                         <Clock className="h-3 w-3" />
                         <span>{post.readingTime}</span>
@@ -157,16 +182,78 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
                   </Link>
                 ))}
               </div>
+
+              {/* Founded Tag Suggestions */}
+              {foundedTags.length > 0 && (
+                <div className="pt-2 border-t border-slate-100">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                    Founded Topics & Tags
+                  </span>
+                  <div className="mt-1.5 flex flex-wrap gap-1.5">
+                    {foundedTags.map((tag) => (
+                      <button
+                        key={tag}
+                        type="button"
+                        onClick={() => setQuery(tag)}
+                        className="rounded-md border border-slate-200 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600 hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-700 transition"
+                      >
+                        #{tag}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           ) : !loading ? (
-            <div className="py-10 text-center">
-              <BookOpen className="mx-auto h-8 w-8 text-slate-300" />
-              <p className="mt-2 text-sm font-semibold text-slate-700">
-                No lessons found for &ldquo;{query}&rdquo;
-              </p>
-              <p className="mt-1 text-xs text-slate-500">
-                Try searching for tenses, vocabulary, or speaking phrases.
-              </p>
+            <div className="py-4">
+              <div className="rounded-xl bg-amber-50 p-3 text-xs text-amber-900">
+                <p className="font-semibold">No direct match for &ldquo;{query}&rdquo;</p>
+                <p className="mt-0.5 text-amber-800">
+                  Here are recommended lessons and founded topics to explore:
+                </p>
+              </div>
+
+              {recommendations.length > 0 && (
+                <div className="mt-4 divide-y divide-slate-100">
+                  <div className="pb-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                    Recommended Lessons
+                  </div>
+                  {recommendations.map((post) => (
+                    <Link
+                      key={post.slug}
+                      href={`/blog/${post.slug}`}
+                      onClick={onClose}
+                      className="group block py-2.5 px-2 rounded-xl transition hover:bg-slate-50"
+                    >
+                      <div className="flex items-center gap-2">
+                        <Badge size="sm">{post.category}</Badge>
+                        <span className="text-[11px] text-slate-400">{post.readingTime}</span>
+                      </div>
+                      <h4 className="mt-1 text-sm font-bold text-slate-900 group-hover:text-emerald-700 transition">
+                        {post.title}
+                      </h4>
+                    </Link>
+                  ))}
+                </div>
+              )}
+
+              <div className="mt-4 border-t border-slate-100 pt-3">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400">
+                  Founded Topic Suggestions
+                </span>
+                <div className="mt-2 flex flex-wrap gap-1.5">
+                  {curatedTopics.map((topic) => (
+                    <button
+                      key={topic}
+                      type="button"
+                      onClick={() => setQuery(topic)}
+                      className="rounded-lg border border-slate-200 bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-700 hover:border-emerald-300 hover:bg-emerald-50 hover:text-emerald-700 transition"
+                    >
+                      {topic}
+                    </button>
+                  ))}
+                </div>
+              </div>
             </div>
           ) : null}
         </div>
