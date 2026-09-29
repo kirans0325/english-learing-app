@@ -26,12 +26,12 @@ const FALLBACK_JAM_TOPICS = [
     keyVocabulary: ['asynchronous documentation', 'cognitive fatigue', 'transparent workflows', 'autonomous ownership', 'slack fatigue'],
     framework: {
       point: 'Asynchronous communication succeeds only when documentation replaces ad-hoc meetings as the single source of truth.',
-      evidence: 'Leading distributed engineering teams resolve 70% of blockers through structured memos rather than impromptu video calls.',
-      explanation: 'Constant calendar interruptions destroy deep work, whereas deliberate asynchronous exchanges foster thoughtful decision-making.',
-      link: 'Consequently, the future of work belongs to organizations that master written operational clarity.',
+      evidence: 'Leading distributed engineering teams resolve over 75% of operational blockers through structured memos rather than impromptu video calls.',
+      explanation: 'Constant calendar interruptions destroy deep work and generate cognitive fatigue, whereas deliberate asynchronous exchanges foster thoughtful decision-making.',
+      link: 'Consequently, the future of global work belongs to organizations that master written operational clarity.',
     },
     sampleResponse:
-      'Operating across global time zones requires a fundamental mindset shift from presence to documented accountability. In traditional offices, communication happens haphazardly through hallway chatter or urgent calendar invites. In contrast, high-performing asynchronous teams operate through transparent, written documentation. Every strategic decision, project specification, and engineering review is logged where anyone from Tokyo to San Francisco can audit it at their peak energy hours. By replacing hurried video meetings with structured written memos, we eliminate the tyranny of time zones and give professionals back their uninterrupted focus.',
+      'Operating across global time zones requires a fundamental mindset shift from presence to documented accountability. In traditional office environments, communication happens haphazardly through hallway chatter or urgent calendar invites. While this feels fast, it frequently excludes distributed colleagues and fragments focus.\n\nIn contrast, high-performing asynchronous organizations operate on a disciplined principle: if it is not documented transparently, it does not exist. Every strategic decision, project specification, and architectural review is logged in clear written prose. A developer in Tokyo can review a proposal drafted in London, leaving thoughtful, nuanced feedback during their peak energy hours rather than groggily joining a midnight video conference.\n\nBy replacing hurried meetings with well-crafted memos, we eliminate the tyranny of time zones, protect deep intellectual focus, and empower colleagues with true autonomous ownership. The future of sustainable enterprise leadership is written, deliberate, and asynchronous.',
   },
   {
     category: 'Technology',
@@ -40,12 +40,12 @@ const FALLBACK_JAM_TOPICS = [
     keyVocabulary: ['algorithmic accountability', 'black-box opacity', 'human-in-the-loop', 'unconscious bias', 'systemic equity'],
     framework: {
       point: 'Critical decisions affecting human livelihoods must mandate human-in-the-loop oversight to prevent systemic algorithmic discrimination.',
-      evidence: 'Historical hiring models have repeatedly penalized qualified candidates due to biased legacy training datasets.',
+      evidence: 'Historical predictive models have repeatedly penalized qualified candidates due to biased legacy training datasets and black-box opacity.',
       explanation: 'While machine learning models identify statistical correlations with speed, they cannot comprehend moral context or institutional equity.',
       link: 'Therefore, artificial intelligence should serve as an advisor, never the final judge.',
     },
     sampleResponse:
-      'The allure of fully autonomous decision-making lies in speed and perceived impartiality. However, delegating critical decisions like credit approvals or job candidate screening to closed black-box models is profoundly dangerous. Machine learning models do not invent principles; they extrapolate from historical patterns, often codifying and amplifying the very prejudices society strives to eradicate. A human-in-the-loop architecture ensures that moral nuance, personal context, and ethical empathy remain central to governance. We must use algorithms to flag insights, but preserve human conscience as the ultimate arbiter.',
+      'The allure of fully autonomous decision-making lies in speed, efficiency, and perceived mathematical impartiality. However, delegating life-altering decisions—such as credit approvals, medical triage, or job candidate screening—to closed black-box models is profoundly dangerous.\n\nMachine learning models do not invent original moral principles; they extrapolate from historical patterns. When legacy datasets contain systemic bias, algorithms do not eliminate prejudice—they codify and amplify it at scale with cold mathematical precision. A hiring algorithm trained on past corporate promotions may quietly penalize non-traditional candidates simply because they do not match legacy keywords.\n\nA robust human-in-the-loop architecture ensures that moral nuance, personal context, and ethical empathy remain central to governance. Algorithms should be leveraged to surface patterns, flag anomalies, and digest vast datasets, but the final verdict must always rest with human conscience. Technology must inform judgment, never replace responsibility.',
   },
   {
     category: 'Personal Growth',
@@ -59,7 +59,7 @@ const FALLBACK_JAM_TOPICS = [
       link: 'Simplifying our environment unlocks the deep cognitive energy required for creative breakthroughs.',
     },
     sampleResponse:
-      'We live in a culture that equates busyness with significance. Yet, when you study the world’s most impactful creators and thinkers, you discover an obsession with radical simplicity. Every morning we awaken with a limited reservoir of cognitive energy. If we exhaust that willpower deciding what to wear, scrolling through superficial social feeds, or attending unfocused meetings, we leave our deepest creative ambitions starving. Minimalism is not about deprivation; it is about radical intentionality. By saying no to the good, we reserve our best energy for what is truly extraordinary.',
+      'We live in a culture that dangerously equates busyness with significance. We are bombarded with notifications, meetings, and endless micro-decisions that scatter our attention across trivialities. Yet, when you study the world’s most impactful creators, researchers, and leaders, you discover a fierce commitment to radical simplification.\n\nEvery human being awakens each morning with a finite reservoir of cognitive energy. If we exhaust that mental bandwidth deciding what outfit to wear, arguing in social media comment sections, or attending ill-defined status meetings, we leave our deepest creative ambitions starved of fuel. Figures like Steve Jobs and Nobel laureates deliberately designed minimalist environments to eliminate decision fatigue on secondary matters.\n\nRadical simplification is not about deprivation or living with empty shelves; it is about essentialism. It is the courage to say a decisive "no" to trivial opportunities so that we can channel our full, undivided genius into the work that truly matters. Simplicity is the ultimate sophistication.',
   },
   {
     category: 'Society',
@@ -68,12 +68,12 @@ const FALLBACK_JAM_TOPICS = [
     keyVocabulary: ['intergenerational synergy', 'tacit institutional knowledge', 'digital fluency', 'mutual mentorship', 'cross-generational empathy'],
     framework: {
       point: 'High-performing teams pair the seasoned institutional judgment of veterans with the digital fluency of younger entrants.',
-      evidence: 'Reverse mentorship programs have helped traditional banks accelerate digital adoption by over 40%.',
+      evidence: 'Reverse mentorship programs have helped traditional Fortune 500 banks accelerate digital adoption by over 40%.',
       explanation: 'Senior leaders provide risk mitigation and political savvy, while junior contributors bring fresh perspectives and agile methodologies.',
       link: 'When mutual respect supersedes generational stereotypes, diversity transforms into market resilience.',
     },
     sampleResponse:
-      'In today’s workplace, for the first time in modern history, four distinct generations collaborate under the same corporate umbrella. It is easy to succumb to superficial stereotypes: labeling younger professionals as impatient or older colleagues as resistant to change. However, visionary organizations view this demographic blend as an unmatched competitive advantage. Younger employees bring native fluency with AI and emerging digital ecosystems, while seasoned colleagues contribute deep institutional memory, client crisis management, and diplomatic tact. By establishing two-way mentorship, we foster an environment of continuous learning where everyone leads and everyone learns.',
+      'For the first time in modern economic history, four distinct generations share the corporate workplace—from Baby Boomers and Gen X to Millennials and Gen Z. It is tempting to reduce these demographic differences to simplistic workplace memes, labeling younger colleagues as impatient or veterans as resistant to innovation.\n\nHowever, visionary leaders recognize that intergenerational friction can be transmuted into an unmatched competitive advantage. Seasoned professionals possess tacit institutional knowledge, crisis management composure, and an intuitive grasp of human diplomacy that cannot be downloaded from an online course. Concurrently, younger entrants bring native fluency with artificial intelligence, rapid prototyping, and a healthy skepticism toward outdated legacy processes.\n\nWhen organizations establish mutual two-way mentorship, the magic happens: senior executives gain digital fluency, while emerging talents learn political finesse and stakeholder alignment. By cultivating cross-generational empathy, we build resilient teams where experience guides energy, and innovation rejuvenates wisdom.',
   },
   {
     category: 'Creative',
@@ -87,7 +87,7 @@ const FALLBACK_JAM_TOPICS = [
       link: 'Embracing boundaries is the hallmark of genuine artistic and technical mastery.',
     },
     sampleResponse:
-      'There is a widespread misconception that creativity thrives in boundless freedom. In reality, unlimited resources and infinite options frequently breed paralysis and creative bloat. When you are told you can build anything with no budget or deadline, you waste months debating abstract possibilities. But when you are given three weeks, a shoestring budget, and a strict five-feature ceiling, creative friction takes over. Constraints force you to strip away vanity metrics, interrogate core assumptions, and uncover unconventional shortcuts. As the architect Frank Gehry once noted, constraints are the artist’s greatest ally.',
+      'There is a widespread misconception that artistic and technological innovation thrives in absolute freedom. In reality, unlimited resources and infinite options frequently breed paralysis and creative complacency. When an engineering team has an infinite budget and no hard deadline, they waste quarters debating abstract architectures and accumulating bloated features.\n\nIntroduce a strict boundary, however, and human ingenuity explodes. When Dr. Seuss was challenged by his publisher to write an engaging children’s book using strictly fifty vocabulary words, the result was "Green Eggs and Ham"—one of the best-selling books in literary history. The constraint forced him to examine every syllable, eliminate filler, and maximize comedic rhythm.\n\nConstraints act as intellectual guardrails. They force us to strip away vanity metrics, interrogate our core assumptions, and discover unconventional workarounds that abundance would have obscured. Do not lament your limitations; embrace them as the exact blueprint of your next breakthrough.',
   },
 ];
 
@@ -97,14 +97,14 @@ const FALLBACK_SHADOWING = [
     title: 'Negotiating Terms with Quiet Confidence',
     scenario: 'Setting firm commercial boundaries in a multi-party enterprise contract dispute.',
     accent: 'Workplace Executive' as const,
-    durationSec: 16,
+    durationSec: 36,
     difficulty: 'Advanced' as const,
     transcript:
-      'While we fully respect your position on pricing, / we cannot compromise on our ninety-nine point nine percent service SLA. // Reliability is the bedrock of our partnership; /// therefore, / let us explore alternative concession points / that protect your budget.',
+      'While we fully respect your position on pricing, / we cannot compromise on our ninety-nine point nine percent service SLA. // Reliability is the bedrock of our enterprise partnership; /// cutting corners today / will cost both of our organizations / exponentially more tomorrow. // Let us explore creative concession points / on multi-year payment terms, /// while keeping our performance architecture / completely uncompromised.',
     phoneticBreakdown: [
       {
         phrase: 'While we fully respect your position',
-        focus: 'Smooth rhythmic cadence; unreduced /fʊl.i/ with polite tone',
+        focus: 'Smooth rhythmic cadence; unreduced /fʊl.i/ with polite, diplomatic tone',
         ipaNotes: '/waɪl wiː ˈfʊl.i rɪˈspɛkt jɔːr pəˈzɪʃ.ən/',
       },
       {
@@ -113,14 +113,14 @@ const FALLBACK_SHADOWING = [
         ipaNotes: '/wi ˈkæn.ɑːt ˈkɑːm.prə.maɪz ɑːn aʊ.ɚ/',
       },
       {
-        phrase: 'ninety-nine point nine percent',
-        focus: 'Flap T in ninety-nine; crisp numerical precision',
-        ipaNotes: '/ˈnaɪn.t̬i naɪn pɔɪnt naɪn pɚˈsɛnt/',
+        phrase: 'exponentially more tomorrow.',
+        focus: 'Crisp rhythm on multi-syllabic "ex-po-nen-tial-ly"',
+        ipaNotes: '/ˌɛk.spoʊˈnɛn.ʃəl.i mɔːr təˈmɑːr.oʊ/',
       },
       {
-        phrase: 'Reliability is the bedrock',
-        focus: 'Primary stress on "Reliability" and "bedrock"',
-        ipaNotes: '/rɪˌlaɪ.əˈbɪl.ə.t̬i ɪz ðə ˈbɛd.rɑːk/',
+        phrase: 'completely uncompromised.',
+        focus: 'Terminal falling intonation asserting executive authority',
+        ipaNotes: '/kəmˈpliːt.li ˌʌnˈkɑːm.prə.maɪzd/',
       },
     ],
   },
@@ -128,41 +128,46 @@ const FALLBACK_SHADOWING = [
     title: 'The Inspiring Townhall Address',
     scenario: 'Rallying a global team after navigating a challenging fiscal quarter.',
     accent: 'General American' as const,
-    durationSec: 15,
+    durationSec: 35,
     difficulty: 'Intermediate' as const,
     transcript:
-      'Every milestone we reached this quarter / was forged through your grit and ingenuity. // Market headwinds will test us, / but our conviction / has never been stronger. /// Thank you for showing up / with unmatched excellence.',
+      'Every milestone we reached this quarter / was forged through your grit, / intellectual curiosity, / and relentless ingenuity. // Market headwinds will inevitably test us, / but our underlying conviction / has never been stronger. /// True leadership / is not proven during tranquil seas, / but during turbulent storms. /// Thank you for showing up every single day / with unmatched excellence.',
     phoneticBreakdown: [
       {
-        phrase: 'Every milestone we reached',
+        phrase: 'Every milestone we reached this quarter',
         focus: 'Compound stress on "milestone"; linked "reached this"',
-        ipaNotes: '/ˈɛv.ri ˈmaɪl.stoʊn wiː riːtʃt/',
+        ipaNotes: '/ˈɛv.ri ˈmaɪl.stoʊn wiː riːtʃt ðɪs ˈkwɔːr.t̬ɚ/',
       },
       {
-        phrase: 'was forged through your grit',
-        focus: 'Voiced dental fricative /ð/ in "through"; crisp /t/ in "grit"',
+        phrase: 'was forged through your grit,',
+        focus: 'Voiced dental fricative /ð/ in "through"; sharp /t/ in "grit"',
         ipaNotes: '/wʌz fɔːrdʒd θruː jɔːr ɡrɪt/',
       },
       {
-        phrase: 'has never been stronger.',
-        focus: 'Melodic falling contour expressing unwavering resolve',
-        ipaNotes: '/hæz ˈnɛv.ɚ bɪn ˈstrɔːŋ.ɡɚ/',
+        phrase: 'is not proven during tranquil seas,',
+        focus: 'Breath cadence pause after "seas" before rhythmic contrast',
+        ipaNotes: '/ɪz nɑːt ˈpruː.vən ˈdʊr.ɪŋ ˈtræŋ.kwəl siːz/',
+      },
+      {
+        phrase: 'with unmatched excellence.',
+        focus: 'Melodic falling contour expressing profound executive gratitude',
+        ipaNotes: '/wɪð ʌnˈmætʃt ˈɛk.səl.əns/',
       },
     ],
   },
   {
     title: 'The Architectural Engineering Brief',
-    scenario: 'Explaining a complex cloud microservices refactor to stakeholders.',
+    scenario: 'Explaining a complex cloud microservices refactor to executive stakeholders.',
     accent: 'Cultured Mid-Atlantic' as const,
-    durationSec: 17,
+    durationSec: 38,
     difficulty: 'Advanced' as const,
     transcript:
-      'By decoupling the monolithic database / into event-driven serverless functions, / we eliminate single points of failure. // The result / is not merely improved throughput, / but instantaneous resilience / under extreme traffic spikes.',
+      'By decoupling our legacy monolithic database / into event-driven serverless functions, / we eliminate single points of failure across the board. // The architectural result / is not merely improved millisecond throughput, / but instantaneous resilience / under extreme traffic spikes. /// In short, / we are building a platform / that scales seamlessly / with global customer demand.',
     phoneticBreakdown: [
       {
-        phrase: 'By decoupling the monolithic database',
+        phrase: 'By decoupling our legacy monolithic database',
         focus: 'Secondary stress on "decoupling"; clear syllabification',
-        ipaNotes: '/baɪ diːˈkʌp.lɪŋ ðə ˌmɑː.nəˈlɪθ.ɪk ˈdeɪ.t̬ə.beɪs/',
+        ipaNotes: '/baɪ diːˈkʌp.lɪŋ aʊ.ɚ ˈlɛɡ.ə.si ˌmɑː.nəˈlɪθ.ɪk ˈdeɪ.t̬ə.beɪs/',
       },
       {
         phrase: 'into event-driven serverless functions,',
@@ -173,6 +178,11 @@ const FALLBACK_SHADOWING = [
         phrase: 'but instantaneous resilience',
         focus: 'Vowel reduction in /ˌɪn.stənˈteɪ.ni.əs rɪˈzɪl.jəns/',
         ipaNotes: '/bʌt ˌɪn.stənˈteɪ.ni.əs rɪˈzɪl.jəns/',
+      },
+      {
+        phrase: 'that scales seamlessly with global demand.',
+        focus: 'Sibilant /s/ articulation and decisive finality cadence',
+        ipaNotes: '/ðæt skeɪlz ˈsiːm.ləs.li wɪð ˈɡloʊ.bəl dɪˈmænd/',
       },
     ],
   },
@@ -200,7 +210,7 @@ export async function POST(req: NextRequest) {
       if (geminiKey) {
         try {
           const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 6500);
+          const timeoutId = setTimeout(() => controller.abort(), 9500);
 
           const promptText = customTopic
             ? `You are an elite master English speech coach. The user wants to practice a 60-Second JAM (Just-A-Minute) Speaking Challenge specifically on this DESIRED TOPIC: "${customTopic}".
@@ -219,7 +229,7 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
     "explanation": "PEEL Explanation: 1 analytical rationale",
     "link": "PEEL Link: 1 concluding takeaway sentence"
   },
-  "sampleResponse": "An articulate, spoken-English masterclass model response (110-135 words) delivered in a warm, dignified cadence suitable for audio playback."
+  "sampleResponse": "A comprehensive, articulate, multi-paragraph masterclass model speech (190-240 words) strictly adhering to the PEEL framework (Point, Evidence, Explanation, Link). Separate into 2-3 logical paragraphs using double newlines (\\n\\n) to ensure a structured, elegant delivery suitable for audio playback."
 }`
             : `You are a master English speech coach. Generate ONE fresh, intellectually engaging 60-Second JAM (Just-A-Minute) Speaking Topic.
 ${category ? `Category preferred: ${category}.` : 'Choose any compelling category: Workplace, Technology, Personal Growth, Society, or Creative.'}
@@ -236,7 +246,7 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
     "explanation": "PEEL Explanation: 1 deeper analytical insight",
     "link": "PEEL Link: 1 concluding takeaway sentence"
   },
-  "sampleResponse": "An articulate, spoken-English masterclass model response (110-135 words) delivered in a warm, dignified cadence suitable for audio playback."
+  "sampleResponse": "A comprehensive, articulate, multi-paragraph masterclass model speech (190-240 words) strictly adhering to the PEEL framework (Point, Evidence, Explanation, Link). Separate into 2-3 logical paragraphs using double newlines (\\n\\n) to ensure a structured, elegant delivery suitable for audio playback."
 }`;
 
           const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${geminiKey}`;
@@ -248,7 +258,7 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
               contents: [{ role: 'user', parts: [{ text: promptText }] }],
               generationConfig: {
                 temperature: 0.85,
-                maxOutputTokens: 600,
+                maxOutputTokens: 1200,
               },
             }),
           });
@@ -299,7 +309,7 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
               explanation: `Failing to navigate the nuances of ${customTopic} creates systemic vulnerabilities over the long term.`,
               link: `Ultimately, mastering our approach to ${customTopic} defines our capacity for forward-looking leadership.`,
             },
-            sampleResponse: `When we examine ${customTopic}, the central challenge is not merely technical, but philosophical. In our rapidly evolving landscape, simplistic solutions fail to address underlying complexities. By cultivating disciplined critical analysis, rigorous stakeholder alignment, and transparent execution, we transform challenges surrounding ${customTopic} into lasting strategic advantages. True mastery begins with asking the right questions before rushing toward premature answers.`,
+            sampleResponse: `When we critically examine ${customTopic}, the central imperative is not merely operational, but foundational to how forward-thinking leaders navigate complexity. In a rapidly changing landscape, superficial answers quickly succumb to diminishing returns, whereas disciplined strategic depth creates compounding, enduring value.\n\nConsider how leading innovators approach ${customTopic}. Rather than reacting impulsively to short-term disruptions, they establish clear architectural frameworks, foster psychological safety across cross-functional teams, and rigorously test their assumptions against empirical reality. By treating ${customTopic} as a core strategic capability rather than an isolated checklist item, they build systems that remain resilient even under intense pressure.\n\nUltimately, our approach to ${customTopic} reveals our organizational maturity. When we combine intellectual curiosity with decisive, transparent execution, we turn ambiguity into our greatest competitive differentiator.`,
           },
         });
       }
@@ -323,50 +333,70 @@ Respond ONLY with a valid JSON object strictly matching this schema with NO mark
       if (geminiKey) {
         try {
           const controller = new AbortController();
-          const timeoutId = setTimeout(() => controller.abort(), 6500);
+          const timeoutId = setTimeout(() => controller.abort(), 9500);
 
           const promptText = customTopic
             ? `You are an elite Hollywood & Executive English Accent Coach. The user wants to practice speech shadowing specifically on this DESIRED TOPIC / SCENARIO: "${customTopic}".
-Generate ONE original speech shadowing exercise for advanced spoken cadence specifically about "${customTopic}".
-Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble, and NO extra text:
+Generate ONE comprehensive, original speech shadowing masterclass exercise for advanced spoken cadence specifically about "${customTopic}".
+Respond ONLY with a valid JSON object strictly matching this schema with NO markdown code fences, NO preamble, and NO extra text:
 {
   "title": "Concise Descriptive Title for ${customTopic} (4-6 words)",
   "scenario": "Speaking context: ${customTopic}",
   "accent": "General American",
-  "durationSec": 15,
+  "durationSec": 35,
   "difficulty": "Intermediate",
-  "transcript": "Natural spoken sentence with single slash / for brief pauses, double slash // for breath pauses, and triple slash /// for major emphatic pauses (40-60 words).",
+  "transcript": "A comprehensive, rhythmic 3-movement spoken speech passage (80-115 words). Use single slash / for momentary rhythm pauses, double slash // for conscious breath pauses, and triple slash /// for dramatic transitions between movements.",
   "phoneticBreakdown": [
     {
-      "phrase": "Short excerpt phrase",
+      "phrase": "First key rhythmic chunk (3-6 words)",
       "focus": "Exact accent mechanism (e.g. Flap T, Schwa reduction, Linked consonants, Pitch contour)",
       "ipaNotes": "/IPA transcription/"
     },
     {
-      "phrase": "Second excerpt phrase",
-      "focus": "Intonation or stress guidance",
+      "phrase": "Second key rhythmic chunk (3-6 words)",
+      "focus": "Stress, reduction, or liaison guidance",
+      "ipaNotes": "/IPA transcription/"
+    },
+    {
+      "phrase": "Third key rhythmic chunk (3-6 words)",
+      "focus": "Prosodic inflection or cadence focus",
+      "ipaNotes": "/IPA transcription/"
+    },
+    {
+      "phrase": "Fourth key rhythmic chunk (3-6 words)",
+      "focus": "Terminal falling contour or decisive cadence",
       "ipaNotes": "/IPA transcription/"
     }
   ]
 }`
-            : `You are an elite Hollywood & Executive English Accent Coach. Generate ONE original speech shadowing exercise for advanced spoken cadence.
-Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble, and NO extra text:
+            : `You are an elite Hollywood & Executive English Accent Coach. Generate ONE comprehensive, original speech shadowing masterclass exercise for advanced spoken cadence.
+Respond ONLY with a valid JSON object strictly matching this schema with NO markdown code fences, NO preamble, and NO extra text:
 {
   "title": "Concise Descriptive Title (4-6 words)",
   "scenario": "Specific workplace, diplomatic, or keynote speaking context",
   "accent": "General American",
-  "durationSec": 15,
+  "durationSec": 35,
   "difficulty": "Intermediate",
-  "transcript": "Natural spoken sentence with single slash / for brief pauses, double slash // for breath pauses, and triple slash /// for major emphatic pauses (40-60 words).",
+  "transcript": "A comprehensive, rhythmic 3-movement spoken speech passage (80-115 words). Use single slash / for momentary rhythm pauses, double slash // for conscious breath pauses, and triple slash /// for dramatic transitions between movements.",
   "phoneticBreakdown": [
     {
-      "phrase": "Short excerpt phrase",
+      "phrase": "First key rhythmic chunk (3-6 words)",
       "focus": "Exact accent mechanism (e.g. Flap T, Schwa reduction, Linked consonants, Pitch contour)",
       "ipaNotes": "/IPA transcription/"
     },
     {
-      "phrase": "Second excerpt phrase",
-      "focus": "Intonation or stress guidance",
+      "phrase": "Second key rhythmic chunk (3-6 words)",
+      "focus": "Stress, reduction, or liaison guidance",
+      "ipaNotes": "/IPA transcription/"
+    },
+    {
+      "phrase": "Third key rhythmic chunk (3-6 words)",
+      "focus": "Prosodic inflection or cadence focus",
+      "ipaNotes": "/IPA transcription/"
+    },
+    {
+      "phrase": "Fourth key rhythmic chunk (3-6 words)",
+      "focus": "Terminal falling contour or decisive cadence",
       "ipaNotes": "/IPA transcription/"
     }
   ]
@@ -381,7 +411,7 @@ Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble,
               contents: [{ role: 'user', parts: [{ text: promptText }] }],
               generationConfig: {
                 temperature: 0.85,
-                maxOutputTokens: 600,
+                maxOutputTokens: 1200,
               },
             }),
           });
@@ -402,7 +432,7 @@ Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble,
                     title: parsed.title,
                     scenario: parsed.scenario || 'Executive workplace communication.',
                     accent: parsed.accent || 'General American',
-                    durationSec: parsed.durationSec || 15,
+                    durationSec: parsed.durationSec || 35,
                     difficulty: parsed.difficulty || 'Intermediate',
                     transcript: parsed.transcript,
                     phoneticBreakdown: parsed.phoneticBreakdown,
@@ -425,19 +455,29 @@ Respond ONLY with a valid JSON object with NO markdown code fences, NO preamble,
             title: customTopic.length > 35 ? customTopic.slice(0, 35) : customTopic,
             scenario: `Executive keynote & strategic reflection on ${customTopic}.`,
             accent: 'General American' as const,
-            durationSec: 15,
-            difficulty: 'Intermediate' as const,
-            transcript: `When we evaluate ${customTopic}, / we must look beyond immediate surface metrics // to the fundamental architecture. /// Real, lasting transformation / happens through steady, / uncompromising discipline.`,
+            durationSec: 36,
+            difficulty: 'Advanced' as const,
+            transcript: `When we critically evaluate ${customTopic}, / we must look beyond immediate surface metrics // to the fundamental architecture that sustains our vision. /// Every enduring breakthrough / in modern industry / was forged not in moments of effortless stability, / but through rigorous, / deliberate iteration. /// If we commit ourselves / to uncompromising execution today, / we lay the groundwork / for exponential value / tomorrow.`,
             phoneticBreakdown: [
               {
-                phrase: `When we evaluate ${customTopic}`,
-                focus: 'Smooth linked cadence; rising intonation before breath pause',
-                ipaNotes: '/wɛn wi ɪˈvæl.ju.eɪt/',
+                phrase: `When we critically evaluate ${customTopic}`,
+                focus: 'Polysyllabic cadence on "critically evaluate"; smooth rising pitch inflection before pause',
+                ipaNotes: '/wɛn wi ˈkrɪt̬.ɪ.kli ɪˈvæl.ju.eɪt/',
               },
               {
-                phrase: 'to the fundamental architecture.',
-                focus: 'Clear syllabic stress on fun-da-MEN-tal and AR-chi-tec-ture',
-                ipaNotes: '/tuː ðə ˌfʌn.dəˈmɛn.t̬əl ˈɑːr.kə.tɛk.tʃɚ/',
+                phrase: 'to the fundamental architecture that sustains our vision',
+                focus: 'Secondary rhythmic stress on "fundamental architecture"; voiceless /s/ linking in sustains',
+                ipaNotes: '/tuː ðə ˌfʌn.dəˈmɛn.t̬əl ˈɑːr.kə.tɛk.tʃɚ ðæt səˈsteɪnz aʊ.ɚ ˈvɪʒ.ən/',
+              },
+              {
+                phrase: 'was forged not in moments of effortless stability',
+                focus: 'Voiced /d/ coda in "forged"; crisp alveolar /t/ taps in "effortless stability"',
+                ipaNotes: '/wʌz fɔːrdʒd nɑːt ɪn ˈmoʊ.mənts əv ˈɛf.ɚt.ləs stəˈbɪl.ə.t̬i/',
+              },
+              {
+                phrase: 'for exponential value tomorrow',
+                focus: 'Falling terminal intonation contour conveying decisive executive certainty',
+                ipaNotes: '/fɔːr ˌɛk.spoʊˈnɛn.ʃəl ˈvæl.juː təˈmɔːr.oʊ/',
               },
             ],
           },

@@ -39,77 +39,77 @@ export const JAM_TOPICS: JamTopic[] = [
   {
     id: 'jam-1',
     category: 'Workplace',
-    title: 'Remote Work vs. Office Collaboration',
-    prompt: 'Should companies allow employees to work remotely forever, or is in-person collaboration essential?',
-    keyVocabulary: ['productivity', 'work-life integration', 'serendipitous hallway conversations', 'tangible deliverables', 'hybrid model'],
+    title: 'Managing Asynchronous Teams Across Timezones',
+    prompt: 'How can modern organizations maintain team cohesion when colleagues never share the same working hours?',
+    keyVocabulary: ['asynchronous documentation', 'cognitive fatigue', 'transparent workflows', 'autonomous ownership', 'slack fatigue'],
     framework: {
-      point: 'A blended hybrid model delivers the highest sustainable productivity and employee well-being.',
-      evidence: 'Studies show deep focus tasks thrive in home offices, while complex team brainstorming benefits from in-person energy.',
-      explanation: 'Remote flexibility reduces burnout from daily commutes, but complete isolation weakens company culture over time.',
-      link: 'Therefore, modern leaders should measure output rather than physical presence.',
+      point: 'Asynchronous communication succeeds only when documentation replaces ad-hoc meetings as the single source of truth.',
+      evidence: 'Leading distributed engineering teams resolve over 75% of operational blockers through structured memos rather than impromptu video calls.',
+      explanation: 'Constant calendar interruptions destroy deep work and generate cognitive fatigue, whereas deliberate asynchronous exchanges foster thoughtful decision-making.',
+      link: 'Consequently, the future of global work belongs to organizations that master written operational clarity.',
     },
     sampleResponse:
-      'In today’s fast-paced economy, the debate between remote work and office presence boils down to intentionality. I believe a balanced hybrid model offers the best of both worlds. For focused, analytical tasks like coding or strategic writing, working from home eliminates grueling commutes and unnecessary interruptions. However, when it comes to creative brainstorming and cross-functional team trust, face-to-face interactions spark spontaneous ideas that digital chats simply cannot replicate. Ultimately, companies shouldn’t force employees into rigid extremes; rather, we should measure employees by tangible deliverables and value, empowering professionals to choose the optimal environment for each task.',
+      'Operating across global time zones requires a fundamental mindset shift from presence to documented accountability. In traditional office environments, communication happens haphazardly through hallway chatter or urgent calendar invites. While this feels fast, it frequently excludes distributed colleagues and fragments focus.\n\nIn contrast, high-performing asynchronous organizations operate on a disciplined principle: if it is not documented transparently, it does not exist. Every strategic decision, project specification, and architectural review is logged in clear written prose. A developer in Tokyo can review a proposal drafted in London, leaving thoughtful, nuanced feedback during their peak energy hours rather than groggily joining a midnight video conference.\n\nBy replacing hurried meetings with well-crafted memos, we eliminate the tyranny of time zones, protect deep intellectual focus, and empower colleagues with true autonomous ownership. The future of sustainable enterprise leadership is written, deliberate, and asynchronous.',
   },
   {
     id: 'jam-2',
     category: 'Technology',
-    title: 'Artificial Intelligence in Everyday Education',
-    prompt: 'Is AI helping students learn faster, or is it making critical thinking obsolete?',
-    keyVocabulary: ['personalized pedagogy', 'cognitive offloading', 'critical evaluation', 'interactive tutor', 'synthesis'],
+    title: 'The Ethics of Autonomous Decision Systems',
+    prompt: 'Should automated algorithms be allowed to make critical financial or hiring decisions without human veto power?',
+    keyVocabulary: ['algorithmic accountability', 'black-box opacity', 'human-in-the-loop', 'unconscious bias', 'systemic equity'],
     framework: {
-      point: 'AI is a multiplier for curious minds, provided we teach students verification rather than blind acceptance.',
-      evidence: 'Language learners can now practice conversational English 24/7 with instant grammatical feedback.',
-      explanation: 'When AI acts as a patient coach rather than an answer cheat sheet, deep conceptual comprehension skyrockets.',
-      link: 'The priority of modern education is shifting from memorization to rigorous critical evaluation.',
+      point: 'Critical decisions affecting human livelihoods must mandate human-in-the-loop oversight to prevent systemic algorithmic discrimination.',
+      evidence: 'Historical predictive models have repeatedly penalized qualified candidates due to biased legacy training datasets and black-box opacity.',
+      explanation: 'While machine learning models identify statistical correlations with speed, they cannot comprehend moral context or institutional equity.',
+      link: 'Therefore, artificial intelligence should serve as an advisor, never the final judge.',
     },
     sampleResponse:
-      'Artificial intelligence is neither a villain nor a savior—it is an amplifier of human intent. In modern education, AI provides unprecedented personalized tutoring. A student struggling with complex grammar or calculus can ask for ten different analogies until the concept clicks, something a single classroom teacher rarely has time to provide. The real danger is cognitive passivity—copying answers without understanding the underlying mechanics. As educators, our mission is no longer to test rote memorization, but to train students in critical evaluation, ethical inquiry, and original synthesis.',
+      'The allure of fully autonomous decision-making lies in speed, efficiency, and perceived mathematical impartiality. However, delegating life-altering decisions—such as credit approvals, medical triage, or job candidate screening—to closed black-box models is profoundly dangerous.\n\nMachine learning models do not invent original moral principles; they extrapolate from historical patterns. When legacy datasets contain systemic bias, algorithms do not eliminate prejudice—they codify and amplify it at scale with cold mathematical precision. A hiring algorithm trained on past corporate promotions may quietly penalize non-traditional candidates simply because they do not match legacy keywords.\n\nA robust human-in-the-loop architecture ensures that moral nuance, personal context, and ethical empathy remain central to governance. Algorithms should be leveraged to surface patterns, flag anomalies, and digest vast datasets, but the final verdict must always rest with human conscience. Technology must inform judgment, never replace responsibility.',
   },
   {
     id: 'jam-3',
     category: 'Personal Growth',
-    title: 'The Value of Embracing Public Failure',
-    prompt: 'Why is failure often a more reliable teacher than immediate success?',
-    keyVocabulary: ['resilience', 'iterative improvement', 'complacency', 'humility', 'growth mindset'],
+    title: 'The Discipline of Radical Simplification',
+    prompt: 'Why do high achievers deliberately choose minimalism in an era of endless consumption and stimulation?',
+    keyVocabulary: ['cognitive overload', 'deliberate minimalism', 'essentialism', 'mental bandwidth', 'superficial trivialities'],
     framework: {
-      point: 'Early failure shatters illusions of competence and forces rigorous self-examination.',
-      evidence: 'Every master speaker was once a nervous beginner who stumbled through awkward pauses.',
-      explanation: 'Success often breeds complacency, while constructive failure isolates the precise skills needing refinement.',
-      link: 'Embracing discomfort is the only proven shortcut to mastery.',
+      point: 'True productivity is achieved not by doing more things, but by eliminating non-essential commitments.',
+      evidence: 'Steve Jobs and Barack Obama adopted daily signature wardrobes specifically to eradicate decision fatigue on trivial choices.',
+      explanation: 'Every notification, subscription, and casual meeting extracts a cognitive toll on our finite daily willpower.',
+      link: 'Simplifying our environment unlocks the deep cognitive energy required for creative breakthroughs.',
     },
     sampleResponse:
-      'Most people run away from failure because our culture glorifies effortless triumph. Yet, in my experience, failure is the only genuine catalyst for long-term mastery. When you succeed on your first attempt, you rarely understand why—you might simply have been lucky. But when you stumble during a presentation or fail a challenging exam, the pain forces you to examine your assumptions, identify blind spots, and rebuild with intentional discipline. Failure strips away ego and builds true resilience. As the philosopher Seneca observed, difficulties strengthen the mind, as labor does the body.',
+      'We live in a culture that dangerously equates busyness with significance. We are bombarded with notifications, meetings, and endless micro-decisions that scatter our attention across trivialities. Yet, when you study the world’s most impactful creators, researchers, and leaders, you discover a fierce commitment to radical simplification.\n\nEvery human being awakens each morning with a finite reservoir of cognitive energy. If we exhaust that mental bandwidth deciding what outfit to wear, arguing in social media comment sections, or attending ill-defined status meetings, we leave our deepest creative ambitions starved of fuel. Figures like Steve Jobs and Nobel laureates deliberately designed minimalist environments to eliminate decision fatigue on secondary matters.\n\nRadical simplification is not about deprivation or living with empty shelves; it is about essentialism. It is the courage to say a decisive "no" to trivial opportunities so that we can channel our full, undivided genius into the work that truly matters. Simplicity is the ultimate sophistication.',
   },
   {
     id: 'jam-4',
     category: 'Society',
-    title: 'Social Media: Connection or Digital Isolation?',
-    prompt: 'Has social media brought people closer together or increased loneliness?',
-    keyVocabulary: ['algorithmic echo chambers', 'curated highlights', 'superficial connectivity', 'meaningful community', 'digital detox'],
+    title: 'Bridging the Generational Workplace Divide',
+    prompt: 'How can multi-generational teams turn differing values on hierarchy and work ethic into a competitive advantage?',
+    keyVocabulary: ['intergenerational synergy', 'tacit institutional knowledge', 'digital fluency', 'mutual mentorship', 'cross-generational empathy'],
     framework: {
-      point: 'Social platforms offer boundless connectivity but shallow emotional intimacy.',
-      evidence: 'We know what an acquaintance had for breakfast 5,000 miles away, yet feel unable to call anyone in a crisis.',
-      explanation: 'Comparing raw everyday lives to polished digital highlight reels generates chronic inadequacy.',
-      link: 'We must cultivate offline presence while using digital tools purely as utilitarian communication channels.',
+      point: 'High-performing teams pair the seasoned institutional judgment of veterans with the digital fluency of younger entrants.',
+      evidence: 'Reverse mentorship programs have helped traditional Fortune 500 banks accelerate digital adoption by over 40%.',
+      explanation: 'Senior leaders provide risk mitigation and political savvy, while junior contributors bring fresh perspectives and agile methodologies.',
+      link: 'When mutual respect supersedes generational stereotypes, diversity transforms into market resilience.',
     },
     sampleResponse:
-      'We are living in the most hyper-connected era in human history, yet study after study reveals epidemic levels of loneliness. Social media provides the illusion of companionship without the demands of real intimacy. We scroll through hundreds of curated highlight reels, subconsciously comparing our messy behind-the-scenes realities with others’ staged triumphs. While these platforms can mobilize movements and keep far-flung families in touch, they cannot replace the warmth of shared silence, eye contact, and authentic vulnerability. True belonging requires being seen in our entirety, not through a polished filter.',
+      'For the first time in modern economic history, four distinct generations share the corporate workplace—from Baby Boomers and Gen X to Millennials and Gen Z. It is tempting to reduce these demographic differences to simplistic workplace memes, labeling younger colleagues as impatient or veterans as resistant to innovation.\n\nHowever, visionary leaders recognize that intergenerational friction can be transmuted into an unmatched competitive advantage. Seasoned professionals possess tacit institutional knowledge, crisis management composure, and an intuitive grasp of human diplomacy that cannot be downloaded from an online course. Concurrently, younger entrants bring native fluency with artificial intelligence, rapid prototyping, and a healthy skepticism toward outdated legacy processes.\n\nWhen organizations establish mutual two-way mentorship, the magic happens: senior executives gain digital fluency, while emerging talents learn political finesse and stakeholder alignment. By cultivating cross-generational empathy, we build resilient teams where experience guides energy, and innovation rejuvenates wisdom.',
   },
   {
     id: 'jam-5',
     category: 'Creative',
-    title: 'If You Could Teach the World One Skill',
-    prompt: 'If you had the power to instantly give every human being one skill, what would it be?',
-    keyVocabulary: ['empathic listening', 'de-escalation', 'cognitive empathy', 'constructive dialogue', 'unconscious bias'],
+    title: 'The Paradox of Constraints in Innovation',
+    prompt: 'Does having unlimited resources inspire better creative work, or do tight limitations produce superior ideas?',
+    keyVocabulary: ['creative friction', 'resourcefulness', 'paralysis of choice', 'frugal innovation', 'catalytic constraints'],
     framework: {
-      point: 'The single most transformative skill humanity needs is active, non-judgmental listening.',
-      evidence: 'Most international conflicts and personal divorces stem from individuals feeling invalidated and unheard.',
-      explanation: 'We spend years teaching children how to read and speak, but virtually zero time teaching them how to truly hear others.',
-      link: 'Genuine listening dissolves hostility before polarization takes root.',
+      point: 'Strict constraints act as a catalyst for creative breakthroughs by eliminating the paralysis of infinite choice.',
+      evidence: 'Dr. Seuss wrote "Green Eggs and Ham" using a strict publisher-enforced bet of exactly fifty unique words.',
+      explanation: 'When resources are limitless, teams default to throwing money at problems; when restricted, they are forced to invent novel solutions.',
+      link: 'Embracing boundaries is the hallmark of genuine artistic and technical mastery.',
     },
     sampleResponse:
-      'If I could bestow one superpower upon humanity, it would not be coding, rhetoric, or economics—it would be the rare art of empathic listening. Most people do not listen with the intent to understand; they listen with the intent to reply. We reload our arguments while the other person is still speaking. If everyone possessed the ability to quiet their inner monologue, set aside defensive pride, and genuinely step into another person’s lived experience for sixty seconds, the vast majority of our political polarization and relationship breakdowns would dissolve. When people feel deeply understood, conflict transforms into collaboration.',
+      'There is a widespread misconception that artistic and technological innovation thrives in absolute freedom. In reality, unlimited resources and infinite options frequently breed paralysis and creative complacency. When an engineering team has an infinite budget and no hard deadline, they waste quarters debating abstract architectures and accumulating bloated features.\n\nIntroduce a strict boundary, however, and human ingenuity explodes. When Dr. Seuss was challenged by his publisher to write an engaging children’s book using strictly fifty vocabulary words, the result was "Green Eggs and Ham"—one of the best-selling books in literary history. The constraint forced him to examine every syllable, eliminate filler, and maximize comedic rhythm.\n\nConstraints act as intellectual guardrails. They force us to strip away vanity metrics, interrogate our core assumptions, and discover unconventional workarounds that abundance would have obscured. Do not lament your limitations; embrace them as the exact blueprint of your next breakthrough.',
   },
 ];
 
@@ -516,7 +516,7 @@ export function JamTopicStudio() {
 
           {showSample && (
             <div className="rounded-xl bg-white p-4 border border-emerald-100/80 shadow-2xs animate-in fade-in">
-              <p className="text-xs sm:text-sm text-slate-800 leading-relaxed italic">
+              <p className="text-xs sm:text-sm text-slate-800 leading-relaxed italic whitespace-pre-line">
                 &ldquo;{activeTopic.sampleResponse}&rdquo;
               </p>
             </div>

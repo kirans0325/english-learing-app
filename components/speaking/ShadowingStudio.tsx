@@ -37,92 +37,97 @@ export interface ShadowingExercise {
 export const SHADOWING_EXERCISES: ShadowingExercise[] = [
   {
     id: 'sh-1',
-    title: 'The Confident Elevator Pitch',
-    scenario: 'Introducing your strategic expertise in a high-stakes executive interview.',
+    title: 'Negotiating Terms with Quiet Confidence',
+    scenario: 'Setting firm commercial boundaries in a multi-party enterprise contract dispute.',
     accent: 'Workplace Executive',
-    durationSec: 15,
-    difficulty: 'Intermediate',
+    durationSec: 36,
+    difficulty: 'Advanced',
     transcript:
-      'Over the past five years, / I’ve led cross-functional teams // to streamline operations and scale revenue by thirty percent. /// My passion lies in solving ambiguous bottlenecks / through data-driven clarity.',
+      'While we fully respect your position on pricing, / we cannot compromise on our ninety-nine point nine percent service SLA. // Reliability is the bedrock of our enterprise partnership; /// cutting corners today / will cost both of our organizations / exponentially more tomorrow. // Let us explore creative concession points / on multi-year payment terms, /// while keeping our performance architecture / completely uncompromised.',
     phoneticBreakdown: [
       {
-        phrase: 'Over the past five years,',
-        focus: 'Rising intonation on "years" indicating continuation',
-        ipaNotes: '/ˈoʊ.vɚ ðə pæst faɪv jɪərz/',
+        phrase: 'While we fully respect your position',
+        focus: 'Smooth rhythmic cadence; unreduced /fʊl.i/ with polite, diplomatic tone',
+        ipaNotes: '/waɪl wiː ˈfʊl.i rɪˈspɛkt jɔːr pəˈzɪʃ.ən/',
       },
       {
-        phrase: 'I’ve led cross-functional teams',
-        focus: 'Compound noun stress: primary stress on "cross"',
-        ipaNotes: '/aɪv lɛd ˌkrɔsˈfʌŋk.ʃən.əl tiːmz/',
+        phrase: 'we cannot compromise on our',
+        focus: 'Definitive stress on "cannot" and "compromise"',
+        ipaNotes: '/wi ˈkæn.ɑːt ˈkɑːm.prə.maɪz ɑːn aʊ.ɚ/',
       },
       {
-        phrase: 'to streamline operations',
-        focus: 'Flap T in operations; smooth vowel linking',
-        ipaNotes: '/tu ˈstriːm.laɪn ˌɑː.pɚˈeɪ.ʃənz/',
+        phrase: 'exponentially more tomorrow.',
+        focus: 'Crisp rhythm on multi-syllabic "ex-po-nen-tial-ly"',
+        ipaNotes: '/ˌɛk.spoʊˈnɛn.ʃəl.i mɔːr təˈmɑːr.oʊ/',
       },
       {
-        phrase: 'through data-driven clarity.',
-        focus: 'Final falling pitch contour signifying authority',
-        ipaNotes: '/θruː ˈdeɪ.t̬ə ˈdrɪv.ən ˈklær.ə.t̬i/',
+        phrase: 'completely uncompromised.',
+        focus: 'Terminal falling intonation asserting executive authority',
+        ipaNotes: '/kəmˈpliːt.li ˌʌnˈkɑːm.prə.maɪzd/',
       },
     ],
   },
   {
     id: 'sh-2',
-    title: 'Diplomatic Disagreement in Meetings',
-    scenario: 'Politely redirecting a colleague without sounding confrontational or defensive.',
-    accent: 'Cultured Mid-Atlantic',
-    durationSec: 14,
+    title: 'The Inspiring Townhall Address',
+    scenario: 'Rallying a global team after navigating a challenging fiscal quarter.',
+    accent: 'General American',
+    durationSec: 35,
     difficulty: 'Intermediate',
     transcript:
-      'I definitely see the merit in your proposal, / and I appreciate the thorough analysis. // However, / have we factored in the potential latency risks / for our international enterprise clients?',
+      'Every milestone we reached this quarter / was forged through your grit, / intellectual curiosity, / and relentless ingenuity. // Market headwinds will inevitably test us, / but our underlying conviction / has never been stronger. /// True leadership / is not proven during tranquil seas, / but during turbulent storms. /// Thank you for showing up every single day / with unmatched excellence.',
     phoneticBreakdown: [
       {
-        phrase: 'I definitely see the merit',
-        focus: 'Stress on "definitely" and "merit" shows goodwill',
-        ipaNotes: '/aɪ ˈdɛf.ən.ət.li siː ðə ˈmɛr.ɪt/',
+        phrase: 'Every milestone we reached this quarter',
+        focus: 'Compound stress on "milestone"; linked "reached this"',
+        ipaNotes: '/ˈɛv.ri ˈmaɪl.stoʊn wiː riːtʃt ðɪs ˈkwɔːr.t̬ɚ/',
       },
       {
-        phrase: 'However, have we factored in',
-        focus: 'Glottal pause after "However"; linked "factored-in"',
-        ipaNotes: '/haʊˈɛv.ɚ / hæv wi ˈfæk.tɚd ɪn/',
+        phrase: 'was forged through your grit,',
+        focus: 'Voiced dental fricative /ð/ in "through"; sharp /t/ in "grit"',
+        ipaNotes: '/wʌz fɔːrdʒd θruː jɔːr ɡrɪt/',
       },
       {
-        phrase: 'the potential latency risks',
-        focus: 'Mid-vowel reduction to schwa in "potential"',
-        ipaNotes: '/ðə pəˈtɛn.ʃəl ˈleɪ.tən.si rɪsks/',
+        phrase: 'is not proven during tranquil seas,',
+        focus: 'Breath cadence pause after "seas" before rhythmic contrast',
+        ipaNotes: '/ɪz nɑːt ˈpruː.vən ˈdʊr.ɪŋ ˈtræŋ.kwəl siːz/',
+      },
+      {
+        phrase: 'with unmatched excellence.',
+        focus: 'Melodic falling contour expressing profound executive gratitude',
+        ipaNotes: '/wɪð ʌnˈmætʃt ˈɛk.səl.əns/',
       },
     ],
   },
   {
     id: 'sh-3',
-    title: 'The Visionary Tech Keynote',
-    scenario: 'Inspiring an audience with rhythmic storytelling and deliberate, dramatic pauses.',
-    accent: 'General American',
-    durationSec: 18,
+    title: 'The Architectural Engineering Brief',
+    scenario: 'Explaining a complex cloud microservices refactor to executive stakeholders.',
+    accent: 'Cultured Mid-Atlantic',
+    durationSec: 38,
     difficulty: 'Advanced',
     transcript:
-      'Technology is at its best / not when it dazzles us with complexity, // but when it quietly disappears into the background / of our daily lives. /// True innovation / should feel like second nature.',
+      'By decoupling our legacy monolithic database / into event-driven serverless functions, / we eliminate single points of failure across the board. // The architectural result / is not merely improved millisecond throughput, / but instantaneous resilience / under extreme traffic spikes. /// In short, / we are building a platform / that scales seamlessly / with global customer demand.',
     phoneticBreakdown: [
       {
-        phrase: 'Technology is at its best',
-        focus: 'Flap T in "at its" sounds like [æ.dɪts]',
-        ipaNotes: '/tɛkˈnɑː.lə.dʒi ɪz æt ɪts bɛst/',
+        phrase: 'By decoupling our legacy monolithic database',
+        focus: 'Secondary stress on "decoupling"; clear syllabification',
+        ipaNotes: '/baɪ diːˈkʌp.lɪŋ aʊ.ɚ ˈlɛɡ.ə.si ˌmɑː.nəˈlɪθ.ɪk ˈdeɪ.t̬ə.beɪs/',
       },
       {
-        phrase: 'not when it dazzles us with complexity,',
-        focus: 'Rhythmic staccato cadence; sharp stop on "not"',
-        ipaNotes: '/nɑːt wɛn ɪt ˈdæz.əlz ʌs/',
+        phrase: 'into event-driven serverless functions,',
+        focus: 'Connected speech linking; clean flap T in event-driven',
+        ipaNotes: '/ˈɪn.tuː ɪˈvɛnt ˌdrɪv.ən ˈsɝː.vɚ.ləs ˈfʌŋk.ʃənz/',
       },
       {
-        phrase: 'quietly disappears into the background',
-        focus: 'Glottal stop in "quietly" [ˈkwaɪ.ət.li]',
-        ipaNotes: '/ˈkwaɪ.ət.li ˌdɪs.əˈpɪrz/',
+        phrase: 'but instantaneous resilience',
+        focus: 'Vowel reduction in /ˌɪn.stənˈteɪ.ni.əs rɪˈzɪl.jəns/',
+        ipaNotes: '/bʌt ˌɪn.stənˈteɪ.ni.əs rɪˈzɪl.jəns/',
       },
       {
-        phrase: 'True innovation should feel like second nature.',
-        focus: 'Climactic resonance with final definitive cadence',
-        ipaNotes: '/truː ˌɪn.əˈveɪ.ʃən ʃʊd fiːl laɪk ˈsɛk.ənd ˈneɪ.tʃɚ/',
+        phrase: 'that scales seamlessly with global demand.',
+        focus: 'Sibilant /s/ articulation and decisive finality cadence',
+        ipaNotes: '/ðæt skeɪlz ˈsiːm.ləs.li wɪð ˈɡloʊ.bəl dɪˈmænd/',
       },
     ],
   },
@@ -138,7 +143,7 @@ export function ShadowingStudio() {
   const [generationSource, setGenerationSource] = useState<'gemini' | 'curated' | null>(null);
   const [desiredScenarioInput, setDesiredScenarioInput] = useState<string>('');
 
-  const cleanScript = activeExercise.transcript.replace(/[/]+/g, '');
+  const cleanScript = activeExercise.transcript.replace(/\s*\/+\s*/g, ' ').trim();
 
   const handleFetchAiShadowingExercise = async (customScenarioParam?: string) => {
     stopSpeech();
