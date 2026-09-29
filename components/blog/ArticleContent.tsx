@@ -287,7 +287,12 @@ function parseMarkdownLines(rawText: string): ParsedBlock[] {
 
     // Heading 2
     if (trimmed.startsWith('## ')) {
-      const title = trimmed.replace(/^##\s+/, '').trim();
+      let title = trimmed.replace(/^##\s+/, '').trim();
+      title = title
+        .replace(/\$\\\\?to\$/g, '→')
+        .replace(/\\\\?to\b/g, '→')
+        .replace(/\\\\?text\{([^}]+)\}/g, '$1')
+        .replace(/\$([A-Za-z0-9_+\- ]+)\$/g, '$1');
       const id = title.toLowerCase().replace(/[^\w]+/g, '-');
       blocks.push({ type: 'h2', title, id });
       i++;
@@ -296,7 +301,12 @@ function parseMarkdownLines(rawText: string): ParsedBlock[] {
 
     // Heading 3
     if (trimmed.startsWith('### ')) {
-      const title = trimmed.replace(/^###\s+/, '').trim();
+      let title = trimmed.replace(/^###\s+/, '').trim();
+      title = title
+        .replace(/\$\\\\?to\$/g, '→')
+        .replace(/\\\\?to\b/g, '→')
+        .replace(/\\\\?text\{([^}]+)\}/g, '$1')
+        .replace(/\$([A-Za-z0-9_+\- ]+)\$/g, '$1');
       const id = title.toLowerCase().replace(/[^\w]+/g, '-');
       blocks.push({ type: 'h3', title, id });
       i++;
@@ -529,6 +539,13 @@ function formatInline(str: string): string {
   return str
     // Sanitize any raw stray backslash-escaped backticks
     .replace(/\\`/g, '`')
+    // Sanitize LaTeX arrows: $\to$ or $\\to$ or \to
+    .replace(/\$\\\\?to\$/g, '→')
+    .replace(/\\\\?to\b/g, '→')
+    // Sanitize LaTeX \text{...} wrappers
+    .replace(/\\\\?text\{([^}]+)\}/g, '$1')
+    // Clean inline math syntax variables like $SV$ or $O_d$ while preserving currency ($100, $5 million, \$50k)
+    .replace(/\$([A-Za-z][A-Za-z0-9_+\- ]*)\$/g, '$1')
     // Bold: **text**
     .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-slate-900">$1</strong>')
     // Italic: *text*

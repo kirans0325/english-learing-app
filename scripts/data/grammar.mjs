@@ -46,7 +46,7 @@ A **noun** names a person, place, thing, entity, quality, or abstract concept.
 4. **Abstract Nouns**: Intangible concepts, emotions, or conditions (*integrity, resilience, ambiguity*).
 5. **Collective Nouns**: Single groups composed of multiple individuals (*team, committee, jury*). In American English, collective nouns take singular verbs (*"The committee **has** decided"*); in British English, they can take plural verbs if individual members are emphasized (*"The committee **have** divided opinions"*).
 6. **Countable vs. Uncountable (Mass) Nouns**: 
-   - Countable: takes plurals (*report $\\to$ reports*).
+   - Countable: takes plurals (*report → reports*).
    - Uncountable: cannot be counted directly; rejects indefinite article *a/an* and plurals (*information, advice, equipment, software*).
 
 :::grammar
@@ -100,7 +100,7 @@ An **adjective** modifies, describes, or quantifies a noun or pronoun.
 
 ### The Royal Order of Cumulative Adjectives:
 When multiple adjectives precede a noun, native speakers adhere to this precise cognitive sequence:
-1. **Quantity/Number** $\\to$ 2. **Opinion** $\\to$ 3. **Size** $\\to$ 4. **Physical Quality** $\\to$ 5. **Age** $\\to$ 6. **Shape** $\\to$ 7. **Color** $\\to$ 8. **Origin** $\\to$ 9. **Material** $\\to$ 10. **Purpose/Type**
+1. **Quantity/Number** → 2. **Opinion** → 3. **Size** → 4. **Physical Quality** → 5. **Age** → 6. **Shape** → 7. **Color** → 8. **Origin** → 9. **Material** → 10. **Purpose/Type**
 
 > *"Three (1) charming (2) small (3) antique (5) oval (6) mahogany (9) conference (10) tables."*
 
@@ -242,18 +242,18 @@ Before analyzing the patterns, let us clarify the five building blocks that asse
 1. **Subject (S)**: The entity performing the action or being described (noun, pronoun, or noun phrase).
 2. **Verb (V)**: The dynamic action or state of being. The nature of the verb (**transitivity**) dictates which pattern must be used.
 3. **Object (O)**:
-   - **Direct Object ($O_d$)**: The entity directly receiving the action of a transitive verb (*What?* or *Whom?*).
-   - **Indirect Object ($O_i$)**: The beneficiary or recipient of the action (*To whom?* or *For whom?*).
+   - **Direct Object (Od)**: The entity directly receiving the action of a transitive verb (*What?* or *Whom?*).
+   - **Indirect Object (Oi)**: The beneficiary or recipient of the action (*To whom?* or *For whom?*).
 4. **Complement (C)**:
-   - **Subject Complement ($C_s$)**: Renames or describes the subject following a **linking/copular verb** (*be, become, seem*).
-   - **Object Complement ($C_o$)**: Renames or describes the direct object following verbs of naming, electing, or considering.
+   - **Subject Complement (Cs)**: Renames or describes the subject following a **linking/copular verb** (*be, become, seem*).
+   - **Object Complement (Co)**: Renames or describes the direct object following verbs of naming, electing, or considering.
 5. **Adverbial (A)**: An obligatory or optional modifier indicating time, place, manner, or circumstance.
 
 ---
 
-## Pattern 1: $SV$ (Subject + Intransitive Verb)
+## Pattern 1: SV (Subject + Intransitive Verb)
 
-In the $SV$ pattern, the verb is **intransitive**—it requires no object or complement to complete its grammatical meaning.
+In the SV pattern, the verb is **intransitive**—it requires no object or complement to complete its grammatical meaning.
 
 \`\`\`
 [Subject] + [Intransitive Verb]
@@ -265,12 +265,12 @@ In the $SV$ pattern, the verb is **intransitive**—it requires no object or com
 - *"The global economy **is recovering**."*
 
 ### Workplace Expansion:
-While the core structure is just $SV$, in professional writing we frequently expand the predicate with **optional prepositional adverbials**:
+While the core structure is just SV, in professional writing we frequently expand the predicate with **optional prepositional adverbials**:
 > *"The regional sales directors (S) **convened** (V) [at headquarters] (Optional A) [yesterday morning] (Optional A)."*
 
 ---
 
-## Pattern 2: $SVO$ (Subject + Transitive Verb + Direct Object)
+## Pattern 2: SVO (Subject + Transitive Verb + Direct Object)
 
 The most common syntactic structure in English. The verb is **monotransitive**—it requires a direct object to complete its meaning.
 
@@ -279,8 +279,8 @@ The most common syntactic structure in English. The verb is **monotransitive**�
 \`\`\`
 
 ### Concrete Examples:
-- *"The board (S) **ratified** (V) the merger agreement ($O_d$)."*
-- *"Our engineers (S) **debugged** (V) the server application ($O_d$)."*
+- *"The board (S) **ratified** (V) the merger agreement (Od)."*
+- *"Our engineers (S) **debugged** (V) the server application (Od)."*
 
 :::grammar
 INCORRECT: The financial analyst discussed about the quarterly forecast.
@@ -290,7 +290,7 @@ EXPLANATION: "Discuss" is a monotransitive verb following the SVO pattern. It co
 
 ---
 
-## Pattern 3: $SVC$ (Subject + Linking Verb + Subject Complement)
+## Pattern 3: SVC (Subject + Linking Verb + Subject Complement)
 
 In this pattern, the verb does not express an action; it acts as an **equal sign** linking the subject to a noun (predicate nominative) or adjective (predicate adjective).
 
@@ -299,47 +299,47 @@ In this pattern, the verb does not express an action; it acts as an **equal sign
 \`\`\`
 
 ### Concrete Examples:
-- *"The proposal (S) **seems** (V) **viable** ($C_s$ - Adjective)."*
-- *"Dr. Aris (S) **became** (V) **the Chief Information Officer** ($C_s$ - Noun)."*
+- *"The proposal (S) **seems** (V) **viable** (Cs - Adjective)."*
+- *"Dr. Aris (S) **became** (V) **the Chief Information Officer** (Cs - Noun)."*
 
 Common linking verbs include: *be, remain, become, seem, appear, look, sound, taste, smell, feel, prove, turn*.
 
 ---
 
-## Pattern 4: $SVOO$ (Subject + Ditransitive Verb + Indirect Object + Direct Object)
+## Pattern 4: SVOO (Subject + Ditransitive Verb + Indirect Object + Direct Object)
 
-Ditransitive verbs allow **two objects**: the recipient ($O_i$) and the item transferred ($O_d$).
+Ditransitive verbs allow **two objects**: the recipient (Oi) and the item transferred (Od).
 
 \`\`\`
 [Subject] + [Ditransitive Verb] + [Indirect Object] + [Direct Object]
 \`\`\`
 
 ### Concrete Examples:
-- *"The mentor (S) **gave** (V) the intern ($O_i$) invaluable guidance ($O_d$)."*
-- *"The recruiter (S) **sent** (V) the candidate ($O_i$) an official offer letter ($O_d$)."*
+- *"The mentor (S) **gave** (V) the intern (Oi) invaluable guidance (Od)."*
+- *"The recruiter (S) **sent** (V) the candidate (Oi) an official offer letter (Od)."*
 
 ### The Dative Alternation:
-You can convert any $SVOO$ sentence into an $SVO + \\text{Prepositional Phrase}$ structure:
-- $SVOO$: *"She showed **me** ($O_i$) **the dashboard** ($O_d$)."*
-- $SVOA$: *"She showed **the dashboard** ($O_d$) **to me** (Prepositional A)."*
+You can convert any SVOO sentence into an SVO + Prepositional Phrase structure:
+- SVOO: *"She showed **me** (Oi) **the dashboard** (Od)."*
+- SVOA: *"She showed **the dashboard** (Od) **to me** (Prepositional A)."*
 
 ---
 
-## Pattern 5: $SVOC$ (Subject + Complex-Transitive Verb + Direct Object + Object Complement)
+## Pattern 5: SVOC (Subject + Complex-Transitive Verb + Direct Object + Object Complement)
 
-In this pattern, the object complement ($C_o$) completes the meaning of the direct object. If you remove the complement, the sentence collapses or alters its meaning entirely.
+In this pattern, the object complement (Co) completes the meaning of the direct object. If you remove the complement, the sentence collapses or alters its meaning entirely.
 
 \`\`\`
 [Subject] + [Complex-Transitive Verb] + [Direct Object] + [Object Complement]
 \`\`\`
 
 ### Concrete Examples:
-- *"The board (S) **elected** (V) Elena ($O_d$) **Chairperson** ($C_o$)."*
-- *"The auditor (S) **found** (V) the financial records ($O_d$) **flawless** ($C_o$)."*
+- *"The board (S) **elected** (V) Elena (Od) **Chairperson** (Co)."*
+- *"The auditor (S) **found** (V) the financial records (Od) **flawless** (Co)."*
 
 ---
 
-## Pattern 6: $SVA$ (Subject + Verb + Obligatory Adverbial)
+## Pattern 6: SVA (Subject + Verb + Obligatory Adverbial)
 
 Certain verbs require an adverbial (often of location, direction, or time) to be complete. Without the adverbial, the sentence is ungrammatical.
 
@@ -353,7 +353,7 @@ Certain verbs require an adverbial (often of location, direction, or time) to be
 
 ---
 
-## Pattern 7: $SVOA$ (Subject + Verb + Direct Object + Obligatory Adverbial)
+## Pattern 7: SVOA (Subject + Verb + Direct Object + Obligatory Adverbial)
 
 Here, a transitive verb requires both a direct object and an adverbial of placement or direction.
 
@@ -362,8 +362,8 @@ Here, a transitive verb requires both a direct object and an adverbial of placem
 \`\`\`
 
 ### Concrete Examples:
-- *"The courier (S) **delivered** (V) the parcel ($O_d$) **to the front desk** (Obligatory A)."*
-- *"She (S) **put** (V) the keys ($O_d$) **on the counter** (Obligatory A)."*
+- *"The courier (S) **delivered** (V) the parcel (Od) **to the front desk** (Obligatory A)."*
+- *"She (S) **put** (V) the keys (Od) **on the counter** (Obligatory A)."*
 
 :::diagram
 TITLE: The 7 Core English Sentence Pattern Syntax Tree Blueprint
@@ -478,8 +478,8 @@ CATEGORY: Syntactic Precision
 Gary Provost famously wrote on the rhythm of writing: *"This sentence has five words. Here are five more words. Five-word sentences are fine. But several together become monotonous... Now write sentences that vary. Write a long sentence that carries the reader like a symphony."*
 
 ### How to Apply It:
-- **Use short $SV$ or $SVO$ patterns** for decisive declarations, shock value, or topic sentences.
-- **Use expanded $SVOO$, $SVOC$, and complex compound patterns** for technical nuance, evidence, and logical qualification.
+- **Use short SV or SVO patterns** for decisive declarations, shock value, or topic sentences.
+- **Use expanded SVOO, SVOC, and complex compound patterns** for technical nuance, evidence, and logical qualification.
 
 ---
 
@@ -515,7 +515,7 @@ EXPLANATION: "Marcus" is the direct object receiving the appointment, and "inter
     title: 'Subject-Verb Agreement Mastery: Tricky Collective Nouns, Inversions, Indefinite Pronouns & Proximity Rules',
     slug: 'subject-verb-agreement-mastery-guide',
     excerpt: 'Master the intricate rules of subject-verb agreement: navigating intervening prepositional phrases, collective nouns, the Rule of Proximity, inverted word order, and fractional quantities.',
-    content: `The golden rule of English syntax appears deceptively elementary: a singular subject requires a singular verb, and a plural subject requires a plural verb ($S_s \\to V_s$, $S_p \\to V_p$). 
+    content: `The golden rule of English syntax appears deceptively elementary: a singular subject requires a singular verb, and a plural subject requires a plural verb (Singular Subject → Singular Verb, Plural Subject → Plural Verb). 
 
 Yet in professional communications, board resolutions, and academic journals, **Subject-Verb Agreement (SVA) errors** remain among the most frequent grammatical blunders. Why? Because English sentences frequently separate subjects from verbs with deceptive intervening clauses, indefinite pronouns, inverted word orders, and collective nouns.
 
@@ -561,8 +561,8 @@ When two or more distinct subjects are coordinated by *and*, they take a plural 
 
 ### B. Joined by "Or / Nor" (The Rule of Proximity)
 When subjects are linked by *either... or*, *neither... nor*, or *or*, the verb agrees with the **subject closest to it**:
-- *"Neither the manager **nor the supervisors were** informed."* (Supervisors is plural $\\to$ were).
-- *"Neither the supervisors **nor the manager was** informed."* (Manager is singular $\\to$ was).
+- *"Neither the manager **nor the supervisors were** informed."* (Supervisors is plural → were).
+- *"Neither the supervisors **nor the manager was** informed."* (Manager is singular → was).
 
 ---
 
@@ -577,8 +577,8 @@ Indefinite pronouns fall into three strict categories:
    - *"Several **were** disqualified during the preliminary audit."*
 3. **Variable (The SANAM Pronouns)**: **S**ome, **A**ll, **N**one, **A**ny, **M**ost.
    - For SANAM pronouns, look at the noun in the prepositional phrase (*object of the preposition*):
-   - Uncountable noun $\\to$ Singular verb: *"All of the **data is** verified."*, *"None of the **capital was** lost."*
-   - Plural noun $\\to$ Plural verb: *"All of the **servers are** operational."*, *"None of the **candidates were** certified."*
+   - Uncountable noun → Singular verb: *"All of the **data is** verified."*, *"None of the **capital was** lost."*
+   - Plural noun → Plural verb: *"All of the **servers are** operational."*, *"None of the **candidates were** certified."*
 
 :::vocab
 WORD: Proximity
@@ -605,9 +605,9 @@ Collective nouns (*team, committee, board, jury, faculty, audience, orchestra*) 
 ## 5. Inverted Sentences & Dummy Subjects (There / Here)
 
 In sentences opening with *There* or *Here*, *There* is merely an expletive (dummy subject). The true subject follows the verb:
-- *"There **is a critical bug** in the payment gateway."* (Bug is singular $\\to$ is).
-- *"There **are three critical bugs** in the payment gateway."* (Bugs is plural $\\to$ are).
-- Inverted: *"Behind the mainframe **sit** the cybersecurity engineers."* (Engineers is plural $\\to$ sit).
+- *"There **is a critical bug** in the payment gateway."* (Bug is singular → is).
+- *"There **are three critical bugs** in the payment gateway."* (Bugs is plural → are).
+- Inverted: *"Behind the mainframe **sit** the cybersecurity engineers."* (Engineers is plural → sit).
 
 ---
 
@@ -781,7 +781,7 @@ Omitting articles is just as important as including them. Use the **Zero Article
 ## Executive Writing Tip: The "Zero-Article Trap" in Specifications
 
 In technical manuals, legal contracts, and business plans, omitting articles erroneously creates ambiguity:
-- *"Client agrees to deliver software."* $\\to$ Ambiguous. Does this mean *any* software, or *the specific software* defined in Appendix A?
+- *"Client agrees to deliver software."* → Ambiguous. Does this mean *any* software, or *the specific software* defined in Appendix A?
 - Write: *"The Client agrees to deliver **the** Software specified in Section 4."*
 
 ---
@@ -826,7 +826,7 @@ In this masterclass, we will decode the dimensional hierarchy of spatial and tem
 
 ---
 
-## The Pyramid of Time: At $\\to$ On $\\to$ In
+## The Pyramid of Time: At → On → In
 
 Think of temporal prepositions as an inverted pyramid, narrowing from broad historical eras down to precise seconds:
 
@@ -1135,7 +1135,7 @@ TIME AXIS: PAST ◄────────────────────�
 [ CONTINUOUS ]   │ • In-progress during past frame│ • In-progress right now        │ • In-progress at future point
                  │   "Server was rebooting."      │   "Server is rebooting."       │   "Server will be rebooting."
                  │                                │                                │
-[ PERFECT ]      │ • Past-Before-The-Past ($had$) │ • Past event with PRESENT link │ • Completed by future deadline
+[ PERFECT ]      │ • Past-Before-The-Past (had)   │ • Past event with PRESENT link │ • Completed by future deadline
                  │   "Cluster had failed BEFORE   │   "We have patched the bug."   │   "By Friday, team will
                  │    backup completed."          │   (Impact: site is up now)     │    have deployed v3.0."
                  │                                │                                │
@@ -1175,7 +1175,7 @@ EXPLANATION: "Yesterday at 5:00 PM" is a closed, specific temporal anchor. You m
 
 ## 2. Past Perfect: The "Past-Before-the-Past"
 
-The **Past Perfect** ($had + V3$) establishes **temporal priority**. When narrating past events, use the Past Perfect to signal that an event occurred *before* another past event.
+The **Past Perfect** (had + V3) establishes **temporal priority**. When narrating past events, use the Past Perfect to signal that an event occurred *before* another past event.
 
 \`\`\`
 Timeline:
@@ -1490,12 +1490,12 @@ Formula:
 
 Because the location and time of reporting differ from the original utterance, spatial and temporal markers shift:
 
-- *Now* $\\to$ *then / at that time*
-- *Today* $\\to$ *that day*
-- *Yesterday* $\\to$ *the day before / the previous day*
-- *Tomorrow* $\\to$ *the next day / the following day*
-- *This / These* $\\to$ *that / those*
-- *Here* $\\to$ *there*
+- *Now* → *then / at that time*
+- *Today* → *that day*
+- *Yesterday* → *the day before / the previous day*
+- *Tomorrow* → *the next day / the following day*
+- *This / These* → *that / those*
+- *Here* → *there*
 
 ---
 
@@ -1709,7 +1709,7 @@ EXPLANATION: In standard American and British English, the negative logical dedu
 
 ---
 
-## Past Modals of Deduction ($Modal + have + V3$)
+## Past Modals of Deduction (Modal + have + V3)
 
 When evaluating past events with imperfect information:
 
@@ -1807,7 +1807,7 @@ CATEGORY: Logical Decision Tree
 | **Zero** | Universal / Present | Present Simple | Present Simple | Scientific laws, inevitable facts |
 | **First** | Future Real | Present Simple | Will + Base Verb | Actionable plans, probable events |
 | **Second** | Present/Future Unreal | Past Simple | Would + Base Verb | Hypothetical dreams, advice |
-| **Third** | Past Counterfactual | Past Perfect ($had + V3$) | Would have + V3 | Regrets, post-mortems, history |
+| **Third** | Past Counterfactual | Past Perfect (had + V3) | Would have + V3 | Regrets, post-mortems, history |
 
 ---
 
@@ -1847,12 +1847,12 @@ Describes past events that did *not* happen, analyzing alternative outcomes:
 
 Real life rarely confines causes and results to the same historical time bucket. Mixed conditionals bridge this gap:
 
-### Pattern A: Past Action $\\to$ Present Result
+### Pattern A: Past Action → Present Result
 An action in the past impacts the speaker's present state:
 - Formula: **If + Past Perfect, would + Base Verb**
 - *"If I **had completed** my MBA in Boston (Past Cause), I **would be leading** the New York division today (Present Result)."*
 
-### Pattern B: Permanent Present Condition $\\to$ Past Result
+### Pattern B: Permanent Present Condition → Past Result
 A permanent personal trait or enduring condition influenced a specific past action:
 - Formula: **If + Past Simple, would have + V3**
 - *"If Marcus **were not** so meticulous (Permanent Trait), he **would have overlooked** the accounting discrepancy last month (Past Action)."*
@@ -1981,9 +1981,9 @@ Many professionals freeze when deciding between *who* and *whom*. The solution i
 
 ### The Test in Action:
 - Sentence: *"The executive (who/whom) delivered the speech..."*
-  - Test: Did **he** deliver the speech, or did **him** deliver the speech? $\\to$ **He** delivered it. $\\to$ Use **WHO**.
+  - Test: Did **he** deliver the speech, or did **him** deliver the speech? → **He** delivered it. → Use **WHO**.
 - Sentence: *"The candidate (who/whom) we selected..."*
-  - Test: We selected **he**, or we selected **him**? $\\to$ We selected **him**. $\\to$ Use **WHOM**.
+  - Test: We selected **he**, or we selected **him**? → We selected **him**. → Use **WHOM**.
 
 ---
 
@@ -2065,7 +2065,7 @@ EXPLANATION: Because the author has only one eldest brother, his identity is alr
     title: 'Advanced Inversion, Subjunctive Mood & Cleft Sentences: The Rhetorical Grammar Masterclass',
     slug: 'advanced-inversion-subjunctive-and-rhetorical-grammar',
     excerpt: 'Master advanced rhetorical English syntax: negative inversion, the mandative subjunctive in corporate resolutions, cleft sentences for emphasis, and fronting for dramatic flow.',
-    content: `When writing moves from functional communication to high-stakes leadership, academic authority, or persuasive rhetoric, basic $SVO$ sentence patterns no longer suffice. Great writers manipulate **syntactic word order** to spotlight key ideas, create suspense, and command the reader's psychological attention.
+    content: `When writing moves from functional communication to high-stakes leadership, academic authority, or persuasive rhetoric, basic SVO sentence patterns no longer suffice. Great writers manipulate **syntactic word order** to spotlight key ideas, create suspense, and command the reader's psychological attention.
 
 In this advanced masterclass, we will explore three sophisticated rhetorical grammar tools:
 1. **Negative & Restrictive Inversion**

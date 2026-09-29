@@ -130,7 +130,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                   Step-by-Step Curriculum
                 </span>
                 <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">
-                  {category.name} Curriculum (Basic $\to$ Advanced)
+                  {category.name} Curriculum (Basic → Advanced)
                 </h2>
               </div>
               <Link

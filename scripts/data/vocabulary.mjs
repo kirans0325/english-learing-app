@@ -288,7 +288,7 @@ In English, when you use multiple adjectives before a single noun, native speake
 \`\`\`
 
 - **Example**: *"She purchased an **exquisite antique Italian mahogany** dining table."*
-  *(Opinion $\\to$ Age $\\to$ Origin $\\to$ Material)*
+  *(Opinion → Age → Origin → Material)*
 
 :::grammar
 INCORRECT: He wore a woolen brown handsome winter coat.
@@ -388,9 +388,9 @@ EXPLANATION: "Viscous" describes substances with high viscosity and thickness, l
     content: `In the craft of writing, verbs are the muscular engine of the sentence. Nouns name the actors, but **verbs provide the kinetic energy**.
 
 Weak writers depend on generic verbs propped up with crutch adverbs:
-- *"He walked very slowly"* $\\to$ *"He **trudged**."*
-- *"She said angrily"* $\\to$ *"She **snapped**."*
-- *"We made an improvement to"* $\\to$ *"We **optimized**."*
+- *"He walked very slowly"* → *"He **trudged**."*
+- *"She said angrily"* → *"She **snapped**."*
+- *"We made an improvement to"* → *"We **optimized**."*
 
 When you choose the exact, muscular action verb, you cut out fluff, eliminate ambiguity, and propel the reader forward.
 
@@ -1005,10 +1005,10 @@ DIFFICULTY: Intermediate
 ## 3. Synesthesia: Cross-Sensory Figurative Language
 
 Synesthesia occurs when vocabulary from one physical sense is applied to describe another sense:
-- *Auditory $\\to$ Tactile*: **"A sharp tone of voice"**
-- *Auditory $\\to$ Visual*: **"A bright, colorful trumpet melody"**
-- *Visual $\\to$ Temperature*: **"A cold, frosty stare"**
-- *Atmosphere $\\to$ Weight*: **"A heavy, suffocating silence in the courtroom"**
+- *Auditory → Tactile*: **"A sharp tone of voice"**
+- *Auditory → Visual*: **"A bright, colorful trumpet melody"**
+- *Visual → Temperature*: **"A cold, frosty stare"**
+- *Atmosphere → Weight*: **"A heavy, suffocating silence in the courtroom"**
 
 :::grammar
 INCORRECT: The CEO used an euphemism when describing the company's loss.

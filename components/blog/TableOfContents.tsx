@@ -11,7 +11,13 @@ export function TableOfContents({ content }: TableOfContentsProps) {
   // Extract all ## and ### headings
   const headings = Array.from(content.matchAll(/^(#{2,3})\s+(.+)$/gm)).map((m) => {
     const level = m[1].length;
-    const title = m[2].trim();
+    let title = m[2].trim();
+    // Clean any LaTeX remnants (e.g. $\to$ or $SV$)
+    title = title
+      .replace(/\$\\\\?to\$/g, '→')
+      .replace(/\\\\?to\b/g, '→')
+      .replace(/\\\\?text\{([^}]+)\}/g, '$1')
+      .replace(/\$([A-Za-z0-9_+\- ]+)\$/g, '$1');
     const id = title.toLowerCase().replace(/[^\w]+/g, '-');
     return { level, title, id };
   });
